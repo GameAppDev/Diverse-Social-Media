@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.1)
+  - GoogleMaps (7.0.0):
+    - GoogleMaps/Maps (= 7.0.0)
+  - GoogleMaps/Base (7.0.0)
+  - GoogleMaps/Maps (7.0.0):
+    - GoogleMaps/Base
+  - Kingfisher (6.3.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - GoogleMaps
+  - Kingfisher (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  GoogleMaps: 6e9c923ca035989709fcb5771544fda4cc5fa2a4
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+
+PODFILE CHECKSUM: bc600333d57d32abf12ed85eccdcd4596ece5cab
+
+COCOAPODS: 1.11.3

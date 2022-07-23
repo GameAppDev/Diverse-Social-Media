@@ -1,0 +1,6 @@
+framework module Pods_Diverse_Social_MediaTests {
+  umbrella header "Pods-Diverse-Social-MediaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
