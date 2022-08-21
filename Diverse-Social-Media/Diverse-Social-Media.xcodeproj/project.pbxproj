@@ -16,6 +16,14 @@
 		5CC55951288C13590060EF7D /* Diverse_Social_MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC55950288C13590060EF7D /* Diverse_Social_MediaTests.swift */; };
 		5CC5595B288C13590060EF7D /* Diverse_Social_MediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5595A288C13590060EF7D /* Diverse_Social_MediaUITests.swift */; };
 		5CC5595D288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */; };
+		5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A8F28B24E8200F529C0 /* ThemeManager.swift */; };
+		5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9128B2517500F529C0 /* Colours.swift */; };
+		5CFF5A9428B2520700F529C0 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9328B2520700F529C0 /* Fonts */; };
+		5CFF5A9628B2521400F529C0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9528B2521400F529C0 /* Fonts.swift */; };
+		5CFF5A9A28B26EBC00F529C0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9928B26EBC00F529C0 /* RootViewController.swift */; };
+		5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9C28B2722D00F529C0 /* UserManager.swift */; };
+		5CFF5AA228B2742800F529C0 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA128B2742800F529C0 /* CGFloatExtension.swift */; };
+		5CFF5AA428B2747600F529C0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA328B2747600F529C0 /* UITableViewExtension.swift */; };
 		B52D319AFEA4F8FC69E9F0B8 /* Pods_Diverse_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B954CE80CE9BB23948A5C8 /* Pods_Diverse_Social_Media.framework */; };
 		D29F3C91E2D96ED10344104D /* Pods_Diverse_Social_MediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA2465E390756689BF542D9 /* Pods_Diverse_Social_MediaTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +61,14 @@
 		5CC55956288C13590060EF7D /* Diverse-Social-MediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diverse-Social-MediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC5595A288C13590060EF7D /* Diverse_Social_MediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diverse_Social_MediaUITests.swift; sourceTree = "<group>"; };
 		5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diverse_Social_MediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CFF5A8F28B24E8200F529C0 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		5CFF5A9128B2517500F529C0 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		5CFF5A9328B2520700F529C0 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		5CFF5A9528B2521400F529C0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5CFF5A9928B26EBC00F529C0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5CFF5A9C28B2722D00F529C0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		5CFF5AA128B2742800F529C0 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		5CFF5AA328B2747600F529C0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-MediaTests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-MediaTests/Pods-Diverse-Social-MediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAF909CE7EF4088555FCEAFB /* Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE4A8D3B5AC874B1F7F60088 /* Pods-Diverse-Social-Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				5CC55936288C13580060EF7D /* AppDelegate.swift */,
+				5CFF5A9928B26EBC00F529C0 /* RootViewController.swift */,
+				5CFF5A9B28B2721500F529C0 /* User */,
+				5CFF5AA028B272E800F529C0 /* Extensions */,
+				5CFF5A8E28B2453500F529C0 /* Theme */,
 				5CC5593C288C13580060EF7D /* Main.storyboard */,
 				5CC55942288C13590060EF7D /* Assets.xcassets */,
 				5CC55944288C13590060EF7D /* LaunchScreen.storyboard */,
@@ -152,6 +172,34 @@
 				5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */,
 			);
 			path = "Diverse-Social-MediaUITests";
+			sourceTree = "<group>";
+		};
+		5CFF5A8E28B2453500F529C0 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF5A8F28B24E8200F529C0 /* ThemeManager.swift */,
+				5CFF5A9128B2517500F529C0 /* Colours.swift */,
+				5CFF5A9528B2521400F529C0 /* Fonts.swift */,
+				5CFF5A9328B2520700F529C0 /* Fonts */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		5CFF5A9B28B2721500F529C0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF5A9C28B2722D00F529C0 /* UserManager.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5CFF5AA028B272E800F529C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF5AA128B2742800F529C0 /* CGFloatExtension.swift */,
+				5CFF5AA328B2747600F529C0 /* UITableViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B7048B099789BC1D87EB54BF /* Frameworks */ = {
@@ -278,6 +326,7 @@
 				5CC55946288C13590060EF7D /* LaunchScreen.storyboard in Resources */,
 				5CC55943288C13590060EF7D /* Assets.xcassets in Resources */,
 				5CC5593E288C13580060EF7D /* Main.storyboard in Resources */,
+				5CFF5A9428B2520700F529C0 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +489,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */,
+				5CFF5A9628B2521400F529C0 /* Fonts.swift in Sources */,
+				5CFF5A9A28B26EBC00F529C0 /* RootViewController.swift in Sources */,
 				5CC55937288C13580060EF7D /* AppDelegate.swift in Sources */,
+				5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */,
+				5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */,
+				5CFF5AA428B2747600F529C0 /* UITableViewExtension.swift in Sources */,
+				5CFF5AA228B2742800F529C0 /* CGFloatExtension.swift in Sources */,
+				5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -600,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -623,18 +679,19 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzhan.Diverse-Social-Media";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -651,18 +708,19 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzhan.Diverse-Social-Media";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
