@@ -148,10 +148,8 @@
 				5CFF5A9B28B2721500F529C0 /* User */,
 				5CFF5AA028B272E800F529C0 /* Extensions */,
 				5CFF5A8E28B2453500F529C0 /* Theme */,
+				5CE7DF8728BB7DDB00699EFE /* Supporting Files */,
 				5CC5593C288C13580060EF7D /* Main.storyboard */,
-				5CC55942288C13590060EF7D /* Assets.xcassets */,
-				5CC55944288C13590060EF7D /* LaunchScreen.storyboard */,
-				5CC55947288C13590060EF7D /* Info.plist */,
 				5CC5593F288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld */,
 			);
 			path = "Diverse-Social-Media";
@@ -172,6 +170,16 @@
 				5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */,
 			);
 			path = "Diverse-Social-MediaUITests";
+			sourceTree = "<group>";
+		};
+		5CE7DF8728BB7DDB00699EFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CC55942288C13590060EF7D /* Assets.xcassets */,
+				5CC55947288C13590060EF7D /* Info.plist */,
+				5CC55944288C13590060EF7D /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5CFF5A8E28B2453500F529C0 /* Theme */ = {

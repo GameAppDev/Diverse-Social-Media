@@ -13,7 +13,7 @@ class RootViewController: UIViewController {
     @IBOutlet var bottomSafeArea: UIView!
     @IBOutlet var activeView: UIView!
     
-    private var activeNC:UINavigationController?
+    private var activeNC: UINavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,9 +13,9 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window:UIWindow?
-    var theStoryboard:UIStoryboard!
-    var rootVC:RootViewController!
+    var window: UIWindow?
+    var theStoryboard: UIStoryboard!
+    var rootVC: RootViewController!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

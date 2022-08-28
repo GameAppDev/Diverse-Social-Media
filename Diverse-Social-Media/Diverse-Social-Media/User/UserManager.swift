@@ -27,8 +27,8 @@ class UserManager {
     private var characterPhoto: String?
     private var about: String?
     
-    public var isGuest:Bool {
-        return (userType ?? .Guest) == .Guest
+    public var isGuest: Bool {
+        return (self.userType ?? .Guest) == .Guest
     }
     
     private init() {}
@@ -52,6 +52,7 @@ class UserManager {
         self.email = email
         self.characterPhoto = characterPhoto
         self.about = about
+        debugPrint("<--- User Model is ready --->")
     }
     
     private func createUserId() -> String {
@@ -59,11 +60,11 @@ class UserManager {
     }
     
     public func getFullName() -> String {
-        return (firstName ?? "Name") + (lastName ?? "Surname")
+        return (self.firstName ?? "Name") + (self.lastName ?? "Surname")
     }
     
     public func getUserType() -> UserType {
-        return userType ?? .Guest
+        return self.userType ?? .Guest
     }
     
     public func deleteUser() {
@@ -74,5 +75,6 @@ class UserManager {
         self.email = nil
         self.characterPhoto = nil
         self.about = nil
+        debugPrint("<--- User Model is clean --->")
     }
 }
