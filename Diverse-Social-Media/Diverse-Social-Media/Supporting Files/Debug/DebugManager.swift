@@ -7,6 +7,4 @@
 
 import Foundation
 
-class DebugManager {
-    
-}
+class DebugManager { }

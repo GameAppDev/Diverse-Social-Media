@@ -61,14 +61,6 @@
                                     <action selector="registerClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Yrg-Ba-5Ko"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-5G-U28">
-                                <rect key="frame" x="148" y="544" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Nxb-5G-U28" secondAttribute="height" multiplier="1:1" id="FrO-re-eVB"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4j-uR-DHr">
                                 <rect key="frame" x="148" y="544" width="24" height="24"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +88,6 @@
                             <constraint firstItem="Bm9-er-k3g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="6M0-0f-7hn"/>
                             <constraint firstItem="8jA-Iy-DpJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="CgP-57-t4B"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="A24-yh-f1Z" secondAttribute="trailing" id="Dpd-17-KS2"/>
-                            <constraint firstItem="Yk4-OS-FDl" firstAttribute="top" secondItem="Nxb-5G-U28" secondAttribute="bottom" id="FHB-hC-tI5"/>
                             <constraint firstItem="o4j-uR-DHr" firstAttribute="top" secondItem="Bm9-er-k3g" secondAttribute="bottom" id="GFV-Rt-5hi"/>
                             <constraint firstItem="xNn-Th-JGP" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Gj6-j6-dxI"/>
                             <constraint firstItem="Jec-sV-bhp" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.35" id="Hg5-RH-E47"/>
@@ -110,7 +101,6 @@
                             <constraint firstItem="Bm9-er-k3g" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kcs-lg-F1T"/>
                             <constraint firstItem="IOw-Ca-h4q" firstAttribute="width" secondItem="Jec-sV-bhp" secondAttribute="width" id="lKl-qD-m43"/>
                             <constraint firstItem="IOw-Ca-h4q" firstAttribute="top" secondItem="8jA-Iy-DpJ" secondAttribute="bottom" id="siy-5b-J2b"/>
-                            <constraint firstItem="Nxb-5G-U28" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v6p-iZ-bfy"/>
                         </constraints>
                     </view>
                     <connections>

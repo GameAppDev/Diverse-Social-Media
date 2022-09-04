@@ -24,13 +24,14 @@ extension LoginInteractor: PLoginPresenterToInteractor {
     }
     
     func setUserModel(user: User) {
-        var model:[String: Any] = [:]
-        model["userType"] = user.userType
-        model["firstName"] = user.firstName
-        model["lastName"] = user.lastName
-        model["email"] = user.email
-        model["characterPhoto"] = user.characterPhoto
-        model["about"] = user.about
+        let model: [String: Any] = [
+            "userType": user.userType,
+            "firstName": user.firstName,
+            "lastName": user.lastName,
+            "email": user.email,
+            "characterPhoto": user.characterPhoto,
+            "about": user.about
+        ]
         
         UserManager.shared.setUserModel(model: model)
     }

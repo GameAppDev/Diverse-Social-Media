@@ -8,9 +8,11 @@
 import Foundation
 import UIKit
 
-final class SplashRouter {
+final class SplashRouter: Routerable {
     
-    public weak var view: SplashViewController?
+    private(set) weak var view: Viewable!
+    
+    public var viewController: SplashViewController?
     
     private func setupModule() -> SplashViewController {
         guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.splashVC.storyboardName, storyboardIdentifier: ApplicationConstants.splashVC.storyboardIdentifier) as? SplashViewController else { return SplashViewController() }
@@ -23,7 +25,7 @@ final class SplashRouter {
     
         interactor.presenter = presenter
         
-        router.view = viewController
+        router.viewController = viewController
         
         viewController.modalPresentationStyle = .fullScreen
         return viewController
@@ -36,7 +38,9 @@ final class SplashRouter {
 
 extension SplashRouter: PSplashPresenterToRouter {
     
-    func openLoginVC() { }
+    func openLoginVC() {
+        LoginRouter().push(from: view)
+    }
     
     func openRegisterVC() { }
 }

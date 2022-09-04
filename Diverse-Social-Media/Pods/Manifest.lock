@@ -2,9 +2,6 @@ PODS:
   - Alamofire (5.6.1)
   - GoogleMaps (7.0.0):
     - GoogleMaps/Maps (= 7.0.0)
-  - GoogleMaps/Base (7.0.0)
-  - GoogleMaps/Maps (7.0.0):
-    - GoogleMaps/Base
   - Kingfisher (6.3.1)
 
 DEPENDENCIES:

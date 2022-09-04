@@ -17,7 +17,7 @@ class SplashViewController: BaseViewController {
     @IBOutlet private weak var languageImageView: UIImageView!
     @IBOutlet private weak var languageLabel: UILabel!
     
-    public weak var presenter: SplashPresenter?
+    public var presenter: SplashPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()

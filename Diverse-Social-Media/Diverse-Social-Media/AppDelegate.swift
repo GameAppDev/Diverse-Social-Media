@@ -14,24 +14,40 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var theStoryboard: UIStoryboard!
-    var rootVC: RootViewController!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        theStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        setLanguage()
         
-        openRoot()
+        decideUserLoggedInStatusAndContinue()
         
         return true
     }
     
-    private func openRoot() {
-        rootVC = theStoryboard.instantiateViewController(withIdentifier: "RootVC") as? RootViewController
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = rootVC
+    private func setLanguage() {
+        var lang = Locale.current.languageCode //check short language name
+        if (lang == nil) || (lang == "") {
+            lang = "eng"
+        }
+        UserDefaults.standard.setValue(lang, forKey: "LANGUAGE")
+        UserDefaults.standard.synchronize()
+    }
+    
+    private func decideUserLoggedInStatusAndContinue() {
+        let isUserLoggedIn: Bool = (UserDefaults.standard.string(forKey: "LOGGEDIN") ?? "0") == "1"
+        isUserLoggedIn ? (handleStatusUserLoggedIn()) : (handleStatusGuest())
+    }
+    
+    private func handleStatusGuest() {
+        let viewController = SplashRouter().openVC()
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [viewController]
+        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
+    
+    private func handleStatusUserLoggedIn() { }
 
     // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer = {
