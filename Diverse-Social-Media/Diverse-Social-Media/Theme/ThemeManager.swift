@@ -18,7 +18,7 @@ enum ThemeItem {
     case ViewBG
 }
 
-class ThemeManager {
+final class ThemeManager {
     
     public func getThemeColourFor(item: ThemeItem) -> UIColor {
         let userType: UserType = UserManager.shared.getUserType()

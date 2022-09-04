@@ -9,7 +9,7 @@ import UIKit
 
 extension UITableView {
     
-    func registerCellWith(identifier:String) {
+    func registerCellWith(identifier: String) {
         self.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
         self.tableFooterView = UIView()
         self.rowHeight = UITableView.automaticDimension

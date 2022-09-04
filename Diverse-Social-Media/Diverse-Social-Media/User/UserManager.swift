@@ -33,7 +33,7 @@ class UserManager {
     
     private init() {}
     
-    public func setUserModel(model:NSDictionary) {
+    public func setUserModel(model:[String: Any]) {
         guard
             let userType = model["userType"] as? UserType,
             let firstName = model["firstName"] as? String,
