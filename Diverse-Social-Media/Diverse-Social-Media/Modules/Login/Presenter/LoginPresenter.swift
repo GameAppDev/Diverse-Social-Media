@@ -9,9 +9,9 @@ import Foundation
 
 final class LoginPresenter {
     
-    private weak var view: LoginViewController?
-    private weak var interactor: LoginInteractor?
-    private weak var router: LoginRouter?
+    private var view: LoginViewController?
+    private var interactor: LoginInteractor?
+    private var router: LoginRouter?
     
     init(view: LoginViewController, interactor: LoginInteractor, router: LoginRouter) {
         self.view = view
@@ -31,12 +31,12 @@ extension LoginPresenter: PLoginViewToPresenter {
         view?.setNavBar()
     }
     
-    func startLoginProcess(username: String?, password: String?) {
-        guard let name = username, let pass = password else {
+    func startLoginProcess(username: String, password: String) {
+        guard username != "", password != "" else {
             router?.showPopup(message: "Username or Password is not correct")
             return
         }
-        interactor?.fetchUserData(username: name, password: pass)
+        interactor?.fetchUserData(username: username, password: password)
     }
 }
 

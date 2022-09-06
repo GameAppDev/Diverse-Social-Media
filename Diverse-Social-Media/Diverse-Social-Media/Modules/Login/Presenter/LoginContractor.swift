@@ -10,7 +10,7 @@ import Foundation
 protocol PLoginViewToPresenter {
     func viewDidLoad()
     func viewWillAppear()
-    func startLoginProcess(username: String?, password: String?)
+    func startLoginProcess(username: String, password: String)
 }
 
 protocol PLoginPresenterToInteractor {

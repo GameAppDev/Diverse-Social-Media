@@ -12,7 +12,7 @@ final class SplashRouter: Routerable {
     
     private(set) weak var view: Viewable!
     
-    public var viewController: SplashViewController?
+    private var viewController: SplashViewController?
     
     private func setupModule() -> SplashViewController {
         guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.splashVC.storyboardName, storyboardIdentifier: ApplicationConstants.splashVC.storyboardIdentifier) as? SplashViewController else { return SplashViewController() }
@@ -31,7 +31,7 @@ final class SplashRouter: Routerable {
         return viewController
     }
     
-    public func openVC() -> SplashViewController {
+    public func returnVC() -> SplashViewController {
         return self.setupModule()
     }
 }
@@ -39,8 +39,12 @@ final class SplashRouter: Routerable {
 extension SplashRouter: PSplashPresenterToRouter {
     
     func openLoginVC() {
-        LoginRouter().push(from: view)
+        let nextVC = LoginRouter().returnVC()
+        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    func openRegisterVC() { }
+    func openRegisterVC() {
+        let nextVC = RegisterUserTypeRouter().returnVC()
+        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+    }
 }

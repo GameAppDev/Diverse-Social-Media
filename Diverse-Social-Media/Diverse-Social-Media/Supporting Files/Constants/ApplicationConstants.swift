@@ -11,9 +11,9 @@ class ApplicationConstants {
     
     static let baseUrl = "https://www...com"
     
-    static let rootVC: StoryboardItem = StoryboardItem(storyboardName: "Main", storyboardIdentifier: "RootVC")
     static let splashVC: StoryboardItem = StoryboardItem(storyboardName: "Splash", storyboardIdentifier: "SplashVC")
     static let loginVC: StoryboardItem = StoryboardItem(storyboardName: "Login", storyboardIdentifier: "LoginVC")
+    static let registerUserTypeVC: StoryboardItem = StoryboardItem(storyboardName: "RegisterUserType", storyboardIdentifier: "RegisterUserTypeVC")
 }
 
 struct StoryboardItem {

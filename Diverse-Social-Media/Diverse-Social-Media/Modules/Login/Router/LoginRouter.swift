@@ -12,7 +12,7 @@ final class LoginRouter: Routerable {
     
     private(set) weak var view: Viewable!
     
-    var viewController: LoginViewController?
+    private var viewController: LoginViewController?
     
     private func setupModule() -> LoginViewController {
         guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.loginVC.storyboardName, storyboardIdentifier: ApplicationConstants.loginVC.storyboardIdentifier) as? LoginViewController else { return LoginViewController() }
@@ -31,15 +31,8 @@ final class LoginRouter: Routerable {
         return viewController
     }
     
-    public func push(from: Viewable) {
-        let viewController = setupModule()
-        from.push(viewController, animated: true)
-    }
-    
-    public func present(from: Viewable) {
-        let viewController = setupModule()
-        let nav = UINavigationController(rootViewController: viewController)
-        from.present(nav, animated: true)
+    public func returnVC() -> LoginViewController {
+        return setupModule()
     }
 }
 

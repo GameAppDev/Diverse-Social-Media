@@ -13,6 +13,8 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         resetNavigationBar()
+        
+        hideKeyboardWhenCicked()
     }
     
     private func resetNavigationBar() {

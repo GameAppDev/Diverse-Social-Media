@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B4C154139E32DA5B045F8B9 /* Pods_Diverse_Social_Media_Diverse_Social_MediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD34C901B705C9752BF5179 /* Pods_Diverse_Social_Media_Diverse_Social_MediaUITests.framework */; };
+		5C09CD4928C7CCC200CB457E /* UserTypeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD4828C7CCC200CB457E /* UserTypeConfig.swift */; };
+		5C12B37728C77ABE001B1F26 /* UserTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12B37528C77ABE001B1F26 /* UserTypeCollectionViewCell.swift */; };
+		5C12B37828C77ABE001B1F26 /* UserTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C12B37628C77ABE001B1F26 /* UserTypeCollectionViewCell.xib */; };
+		5C12B37A28C77DF3001B1F26 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12B37928C77DF3001B1F26 /* UICollectionViewExtension.swift */; };
+		5C12B37E28C786CB001B1F26 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12B37D28C786CB001B1F26 /* ArrayExtension.swift */; };
 		5C2E00C028C259970016B1E3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00BF28C259970016B1E3 /* UIViewExtension.swift */; };
 		5C2E00C228C2664C0016B1E3 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00C128C2664C0016B1E3 /* NSObjectExtension.swift */; };
 		5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00C428C274EF0016B1E3 /* DebugManager.swift */; };
@@ -43,6 +48,13 @@
 		5CC55951288C13590060EF7D /* Diverse_Social_MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC55950288C13590060EF7D /* Diverse_Social_MediaTests.swift */; };
 		5CC5595B288C13590060EF7D /* Diverse_Social_MediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5595A288C13590060EF7D /* Diverse_Social_MediaUITests.swift */; };
 		5CC5595D288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */; };
+		5CDF7D0E28C7404F0000B64C /* RegisterUserTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D0D28C7404F0000B64C /* RegisterUserTypeRouter.swift */; };
+		5CDF7D1028C740640000B64C /* RegisterUserTypeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D0F28C740640000B64C /* RegisterUserTypeEntities.swift */; };
+		5CDF7D1228C740780000B64C /* RegisterUserTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */; };
+		5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1328C740850000B64C /* RegisterUserTypeInteractor.swift */; };
+		5CDF7D1628C740980000B64C /* RegisterUserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */; };
+		5CDF7D1828C740A30000B64C /* RegisterUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */; };
+		5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */; };
 		5CE7DF9028BBA3C700699EFE /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF8F28BBA3C700699EFE /* UIViewControllerExtension.swift */; };
 		5CE7DF9628BBA77E00699EFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */; };
 		5CE7DF9828BBB5BC00699EFE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9728BBB5BC00699EFE /* NavigationBar.swift */; };
@@ -79,6 +91,11 @@
 		1BD34C901B705C9752BF5179 /* Pods_Diverse_Social_Media_Diverse_Social_MediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diverse_Social_Media_Diverse_Social_MediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C326AD3718EB4131E493E2B /* Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44B954CE80CE9BB23948A5C8 /* Pods_Diverse_Social_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diverse_Social_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C09CD4828C7CCC200CB457E /* UserTypeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeConfig.swift; sourceTree = "<group>"; };
+		5C12B37528C77ABE001B1F26 /* UserTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C12B37628C77ABE001B1F26 /* UserTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		5C12B37928C77DF3001B1F26 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		5C12B37D28C786CB001B1F26 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		5C2E00BF28C259970016B1E3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5C2E00C128C2664C0016B1E3 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		5C2E00C428C274EF0016B1E3 /* DebugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugManager.swift; sourceTree = "<group>"; };
@@ -118,6 +135,13 @@
 		5CC55956288C13590060EF7D /* Diverse-Social-MediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diverse-Social-MediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC5595A288C13590060EF7D /* Diverse_Social_MediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diverse_Social_MediaUITests.swift; sourceTree = "<group>"; };
 		5CC5595C288C13590060EF7D /* Diverse_Social_MediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diverse_Social_MediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CDF7D0D28C7404F0000B64C /* RegisterUserTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeRouter.swift; sourceTree = "<group>"; };
+		5CDF7D0F28C740640000B64C /* RegisterUserTypeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeEntities.swift; sourceTree = "<group>"; };
+		5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypePresenter.swift; sourceTree = "<group>"; };
+		5CDF7D1328C740850000B64C /* RegisterUserTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeInteractor.swift; sourceTree = "<group>"; };
+		5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeViewController.swift; sourceTree = "<group>"; };
+		5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterUserType.storyboard; sourceTree = "<group>"; };
+		5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeContractor.swift; sourceTree = "<group>"; };
 		5CE7DF8F28BBA3C700699EFE /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5CE7DF9728BBB5BC00699EFE /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -176,6 +200,15 @@
 				85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C12B37428C77AA1001B1F26 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C12B37528C77ABE001B1F26 /* UserTypeCollectionViewCell.swift */,
+				5C12B37628C77ABE001B1F26 /* UserTypeCollectionViewCell.xib */,
+			);
+			path = CollectionViews;
 			sourceTree = "<group>";
 		};
 		5C2E00C328C274B70016B1E3 /* Debug */ = {
@@ -277,6 +310,7 @@
 			children = (
 				5C2E00D128C2859E0016B1E3 /* Splash */,
 				5C2E00C628C277820016B1E3 /* Login */,
+				5CDF7D0628C722AD0000B64C /* Register */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -386,6 +420,69 @@
 			path = "Diverse-Social-MediaUITests";
 			sourceTree = "<group>";
 		};
+		5CDF7D0628C722AD0000B64C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D0728C73FEB0000B64C /* RegisterUserType */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5CDF7D0728C73FEB0000B64C /* RegisterUserType */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D0828C73FFD0000B64C /* View */,
+				5CDF7D0928C740030000B64C /* Interactor */,
+				5CDF7D0C28C7401A0000B64C /* Presenter */,
+				5CDF7D0B28C740130000B64C /* Entity */,
+				5CDF7D0A28C7400B0000B64C /* Router */,
+			);
+			path = RegisterUserType;
+			sourceTree = "<group>";
+		};
+		5CDF7D0828C73FFD0000B64C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C12B37428C77AA1001B1F26 /* CollectionViews */,
+				5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */,
+				5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CDF7D0928C740030000B64C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D1328C740850000B64C /* RegisterUserTypeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5CDF7D0A28C7400B0000B64C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D0D28C7404F0000B64C /* RegisterUserTypeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5CDF7D0B28C740130000B64C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D0F28C740640000B64C /* RegisterUserTypeEntities.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5CDF7D0C28C7401A0000B64C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */,
+				5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		5CE7DF8728BB7DDB00699EFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				5CFF5A9C28B2722D00F529C0 /* UserManager.swift */,
+				5C09CD4828C7CCC200CB457E /* UserTypeConfig.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -452,7 +550,9 @@
 				5CFF5AA128B2742800F529C0 /* CGFloatExtension.swift */,
 				5C2E00BF28C259970016B1E3 /* UIViewExtension.swift */,
 				5C6515F028C4EDDE006993E6 /* StringExtension.swift */,
+				5C12B37928C77DF3001B1F26 /* UICollectionViewExtension.swift */,
 				5C2E00CF28C27A290016B1E3 /* UIStoryboardExtension.swift */,
+				5C12B37D28C786CB001B1F26 /* ArrayExtension.swift */,
 				5CFF5AA328B2747600F529C0 /* UITableViewExtension.swift */,
 				5C2E00C128C2664C0016B1E3 /* NSObjectExtension.swift */,
 				5CE7DF8F28BBA3C700699EFE /* UIViewControllerExtension.swift */,
@@ -579,6 +679,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDF7D1828C740A30000B64C /* RegisterUserType.storyboard in Resources */,
 				5CC55946288C13590060EF7D /* LaunchScreen.storyboard in Resources */,
 				5CC55943288C13590060EF7D /* Assets.xcassets in Resources */,
 				5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */,
@@ -586,6 +687,7 @@
 				5CFF5A9428B2520700F529C0 /* Fonts in Resources */,
 				5CE7DF9A28BBBF4B00699EFE /* NavigationBar.xib in Resources */,
 				5C6515D128C4CA00006993E6 /* Splash.storyboard in Resources */,
+				5C12B37828C77ABE001B1F26 /* UserTypeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,18 +815,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C12B37A28C77DF3001B1F26 /* UICollectionViewExtension.swift in Sources */,
+				5CDF7D1628C740980000B64C /* RegisterUserTypeViewController.swift in Sources */,
 				5C6515E928C4D7F5006993E6 /* Models.swift in Sources */,
 				5C2E00CC28C277F30016B1E3 /* LoginViewController.swift in Sources */,
 				5C6515F128C4EDDE006993E6 /* StringExtension.swift in Sources */,
 				5C2E00CE28C2784D0016B1E3 /* LoginInteractor.swift in Sources */,
+				5CDF7D1228C740780000B64C /* RegisterUserTypePresenter.swift in Sources */,
 				5C2E00D028C27A290016B1E3 /* UIStoryboardExtension.swift in Sources */,
 				5C2E00D728C285E80016B1E3 /* SplashInteractor.swift in Sources */,
 				5C6515DC28C4CDBD006993E6 /* Routerable.swift in Sources */,
 				5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */,
 				5C2E00C828C277A80016B1E3 /* LoginPresenter.swift in Sources */,
 				5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */,
+				5CDF7D1028C740640000B64C /* RegisterUserTypeEntities.swift in Sources */,
 				5C6515EF28C4DADE006993E6 /* Networkable.swift in Sources */,
+				5C12B37728C77ABE001B1F26 /* UserTypeCollectionViewCell.swift in Sources */,
 				5C6515D328C4CC47006993E6 /* SplashContractor.swift in Sources */,
+				5C09CD4928C7CCC200CB457E /* UserTypeConfig.swift in Sources */,
 				5C6515F828C50177006993E6 /* LoginEntities.swift in Sources */,
 				5CFF5A9628B2521400F529C0 /* Fonts.swift in Sources */,
 				5CE7DF9628BBA77E00699EFE /* BaseViewController.swift in Sources */,
@@ -735,14 +843,18 @@
 				5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */,
 				5C6515DE28C4CDF4006993E6 /* Viewable.swift in Sources */,
 				5C2E00C228C2664C0016B1E3 /* NSObjectExtension.swift in Sources */,
+				5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */,
 				5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */,
 				5C2E00D928C2862B0016B1E3 /* SplashViewController.swift in Sources */,
+				5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */,
 				5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */,
+				5C12B37E28C786CB001B1F26 /* ArrayExtension.swift in Sources */,
 				5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */,
 				5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */,
 				5CFF5AA428B2747600F529C0 /* UITableViewExtension.swift in Sources */,
 				5C6515D828C4CD1C006993E6 /* Interactorable.swift in Sources */,
 				5C6515DA28C4CD75006993E6 /* Presenterable.swift in Sources */,
+				5CDF7D0E28C7404F0000B64C /* RegisterUserTypeRouter.swift in Sources */,
 				5C2E00D328C285A90016B1E3 /* SplashRouter.swift in Sources */,
 				5C2E00C028C259970016B1E3 /* UIViewExtension.swift in Sources */,
 				5CFF5AA228B2742800F529C0 /* CGFloatExtension.swift in Sources */,

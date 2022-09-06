@@ -36,10 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func decideUserLoggedInStatusAndContinue() {
         let isUserLoggedIn: Bool = (UserDefaults.standard.string(forKey: "LOGGEDIN") ?? "0") == "1"
         isUserLoggedIn ? (handleStatusUserLoggedIn()) : (handleStatusGuest())
+        debugPrint("<--- Is User already loggedin? \(isUserLoggedIn) --->")
     }
     
     private func handleStatusGuest() {
-        let viewController = SplashRouter().openVC()
+        let viewController = SplashRouter().returnVC()
         let navigationController = UINavigationController()
         navigationController.viewControllers = [viewController]
         

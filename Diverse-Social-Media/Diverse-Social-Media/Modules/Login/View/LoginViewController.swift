@@ -13,7 +13,7 @@ class LoginViewController: BaseViewController {
     @IBOutlet private weak var passwordTF: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
     
-    public weak var presenter: LoginPresenter?
+    public var presenter: LoginPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,6 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction private func loginClicked(_ sender: UIButton) {
-        presenter?.startLoginProcess(username: usernameTF.text, password: passwordTF.text)
+        presenter?.startLoginProcess(username: usernameTF.text ?? "", password: passwordTF.text ?? "")
     }
 }

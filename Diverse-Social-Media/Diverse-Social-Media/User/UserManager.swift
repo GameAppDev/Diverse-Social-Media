@@ -7,14 +7,6 @@
 
 import Foundation
 
-enum UserType {
-    case CaptanAmerica
-    case IronMan
-    case Hulk
-    case BlackPanther
-    case Guest
-}
-
 class UserManager {
     
     static let shared = UserManager()
