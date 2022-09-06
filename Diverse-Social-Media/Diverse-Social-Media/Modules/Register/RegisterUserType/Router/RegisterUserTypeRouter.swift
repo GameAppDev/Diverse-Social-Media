@@ -35,3 +35,13 @@ final class RegisterUserTypeRouter: Routerable {
         return self.setupModule()
     }
 }
+
+extension RegisterUserTypeRouter: PRegisterUserTypePresenterToRouter {
+    
+    func openNextVC(userType: UserTypeItems) {
+        let nextVC = RegisterUserInfoRouter().returnVC(userType: userType)
+        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    func showPopup(message: String) { }
+}

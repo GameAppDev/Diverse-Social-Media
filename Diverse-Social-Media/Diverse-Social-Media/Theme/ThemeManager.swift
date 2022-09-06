@@ -125,7 +125,7 @@ extension ThemeManager {
     private func getCaptanAmericaFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont(name: "SourceSansPro-Bold", size: CGFloat(28).ws) ?? getSystemFontFor(item)
-        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(24).ws) ?? getSystemFontFor(item)
+        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(32).ws) ?? getSystemFontFor(item)
         case .Text: return UIFont(name: "SourceSansPro-Regular", size: CGFloat(16).ws) ?? getSystemFontFor(item)
         case .Title: return UIFont(name: "SourceSansPro-SemiBoldItalic", size: CGFloat(24).ws) ?? getSystemFontFor(item)
         default: return getSystemFontFor(item) //Not Theme Text Item
@@ -135,7 +135,7 @@ extension ThemeManager {
     private func getIronManFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont(name: "SourceSansPro-Bold", size: CGFloat(26).ws) ?? getSystemFontFor(item)
-        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(22).ws) ?? getSystemFontFor(item)
+        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(30).ws) ?? getSystemFontFor(item)
         case .Text: return UIFont(name: "SourceSansPro-Regular", size: CGFloat(14).ws) ?? getSystemFontFor(item)
         case .Title: return UIFont(name: "SourceSansPro-SemiBoldItalic", size: CGFloat(22).ws) ?? getSystemFontFor(item)
         default: return getSystemFontFor(item) //Not Theme Text Item
@@ -145,7 +145,7 @@ extension ThemeManager {
     private func getHulkFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont(name: "SourceSansPro-Bold", size: CGFloat(30).ws) ?? getSystemFontFor(item)
-        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(26).ws) ?? getSystemFontFor(item)
+        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(34).ws) ?? getSystemFontFor(item)
         case .Text: return UIFont(name: "SourceSansPro-Regular", size: CGFloat(18).ws) ?? getSystemFontFor(item)
         case .Title: return UIFont(name: "SourceSansPro-SemiBoldItalic", size: CGFloat(26).ws) ?? getSystemFontFor(item)
         default: return getSystemFontFor(item) //Not Theme Text Item
@@ -155,7 +155,7 @@ extension ThemeManager {
     private func getBlackPantherFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont(name: "SourceSansPro-Bold", size: CGFloat(24).ws) ?? getSystemFontFor(item)
-        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(20).ws) ?? getSystemFontFor(item)
+        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(28).ws) ?? getSystemFontFor(item)
         case .Text: return UIFont(name: "SourceSansPro-Regular", size: CGFloat(12).ws) ?? getSystemFontFor(item)
         case .Title: return UIFont(name: "SourceSansPro-SemiBoldItalic", size: CGFloat(20).ws) ?? getSystemFontFor(item)
         default: return getSystemFontFor(item) //Not Theme Text Item
@@ -165,7 +165,7 @@ extension ThemeManager {
     private func getGuestFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont(name: "SourceSansPro-Bold", size: CGFloat(26).ws) ?? getSystemFontFor(item)
-        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(24).ws) ?? getSystemFontFor(item)
+        case .ButtonTitle: return UIFont(name: "SourceSansPro-SemiBold", size: CGFloat(32).ws) ?? getSystemFontFor(item)
         case .Text: return UIFont(name: "SourceSansPro-Regular", size: CGFloat(16).ws) ?? getSystemFontFor(item)
         case .Title: return UIFont(name: "SourceSansPro-SemiBoldItalic", size: CGFloat(22).ws) ?? getSystemFontFor(item)
         default: return getSystemFontFor(item) //Not Theme Text Item
@@ -175,7 +175,7 @@ extension ThemeManager {
     private func getSystemFontFor(_ item: ThemeItem) -> UIFont {
         switch item {
         case .NavBarTitle: return UIFont.boldSystemFont(ofSize: CGFloat(28).ws)
-        case .ButtonTitle: return UIFont.boldSystemFont(ofSize: CGFloat(24).ws)
+        case .ButtonTitle: return UIFont.boldSystemFont(ofSize: CGFloat(32).ws)
         case .Text: return UIFont.systemFont(ofSize: CGFloat(16).ws)
         case .Title: return UIFont.systemFont(ofSize: CGFloat(24).ws)
         default: return UIFont.systemFont(ofSize: CGFloat(10).ws) //Not Theme Text Item

@@ -14,15 +14,21 @@ class UserTypeCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var userTypeImageView: UIImageView!
     @IBOutlet private weak var userTypeNameLabel: UILabel!
     
-    //height -> 180 - width -> 140
+    //width -> 140
+    //height -> 180
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setupViews()
+    }
+    
+    private func setupViews() {
+        userTypeNameLabel.text = "Unknown"
         userTypeNameLabel.font = UIFont.titleFont
         userTypeNameLabel.textColor = UIColor.titleColour
         
-        userTypeImageView.image = UIImage(named: "")
+        userTypeImageView.image = UIImage(named: "Unknown")
         
         userTypeCellView.roundCorners(size: CGFloat(10).ws)
         userTypeCellView.setBorder(width: CGFloat(1).ws, color: UIColor.textColour)

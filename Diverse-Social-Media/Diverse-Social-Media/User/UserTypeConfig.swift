@@ -23,7 +23,7 @@ struct UserTypeConfig {
     private var blackPanther = UserTypeItems(type: .BlackPanther, name: "Black Panther", image: "BlackPanther", info: "", isSelected: false)
     
     public func getUserTypes() -> [UserTypeItems] {
-        return [self.captanAmerica, self.ironMan, self.hulk, self.blackPanther]
+        return [self.captanAmerica, self.ironMan, self.hulk, self.blackPanther, self.captanAmerica, self.ironMan, self.hulk, self.blackPanther,self.captanAmerica, self.ironMan, self.hulk, self.blackPanther,self.captanAmerica, self.ironMan, self.hulk, self.blackPanther]
     }
     
      public func getUserTypeCount() -> Int {

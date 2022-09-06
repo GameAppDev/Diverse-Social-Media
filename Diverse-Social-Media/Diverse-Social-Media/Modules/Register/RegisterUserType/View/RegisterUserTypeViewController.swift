@@ -29,19 +29,22 @@ class RegisterUserTypeViewController: BaseViewController {
         setNavigationBarItems(title: "Select User Type".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
     }
     
-    public func setupViews() { }
+    public func setupViews() {
+        collectionView.backgroundColor = UIColor.clear
+    }
     
     public func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.registerCell(UserTypeCollectionViewCell.self)
+        collectionView.registerFooterCell(PrimaryButtonCollectionViewCell.self)
     }
 }
 
 extension RegisterUserTypeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter?.userTypeCount ?? 0
+        return (presenter?.userTypeCount ?? 0)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -60,8 +63,9 @@ extension RegisterUserTypeViewController: UICollectionViewDataSource, UICollecti
         guard let userTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: UserTypeCollectionViewCell.className, for: indexPath) as? UserTypeCollectionViewCell else { return UICollectionViewCell() }
         
         if let userTypes = presenter?.userTypes {
-            if let name = userTypes[safe: indexPath.row]?.name, let image = userTypes[safe: indexPath.row]?.image {
+            if let name = userTypes[safe: indexPath.row]?.name, let image = userTypes[safe: indexPath.row]?.image, let isSelected = userTypes[safe: indexPath.row]?.isSelected {
                 userTypeCell.configureCell(name: name, image: image)
+                isSelected ? (userTypeCell.setSelectedCell()) : (userTypeCell.setDeselectedCell())
             }
         }
         
@@ -69,10 +73,30 @@ extension RegisterUserTypeViewController: UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.setCollectionViewUIAndUserType(index: indexPath.row, isSelected: true)
+        presenter?.setUserTypeAndReloadCollectionView(index: indexPath.row, isSelected: true)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        presenter?.setCollectionViewUIAndUserType(index: indexPath.row, isSelected: false)
+    //Footer
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: CGFloat(320).ws, height: CGFloat(60).ws)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionFooter:
+            guard let customButtonCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: PrimaryButtonCollectionViewCell.className, for: indexPath) as? PrimaryButtonCollectionViewCell else { return UICollectionViewCell()}
+            
+            customButtonCell.configureCell(delegate: self, name: "Next".localized)
+            
+            return customButtonCell
+        default: return UICollectionViewCell()
+        }
+    }
+}
+
+extension RegisterUserTypeViewController: PrimaryButtonCellDelegate {
+    
+    func primaryButtonClickAction() {
+        presenter?.navigateToNext()
     }
 }
