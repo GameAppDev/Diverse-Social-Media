@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PrimaryTextFieldTableViewCell" customModule="Diverse_Social_Media" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-iW-OiE" userLabel="marginH15">
+                        <rect key="frame" x="0.0" y="60" width="320" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Adz-iW-OiE" secondAttribute="height" multiplier="64:3" id="MeX-wp-Q5Z"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ui-py-Phc" userLabel="cellView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-96-R8Y">
+                                <rect key="frame" x="0.0" y="24" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9x-40-0o0" userLabel="TFView">
+                                <rect key="frame" x="0.0" y="24" width="280" height="36"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HQY-wI-A2f">
+                                        <rect key="frame" x="10" y="0.0" width="260" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HQY-wI-A2f" firstAttribute="top" secondItem="e9x-40-0o0" secondAttribute="top" id="4xq-yc-8MH"/>
+                                    <constraint firstItem="HQY-wI-A2f" firstAttribute="centerX" secondItem="e9x-40-0o0" secondAttribute="centerX" id="5qt-LU-PJx"/>
+                                    <constraint firstAttribute="bottom" secondItem="HQY-wI-A2f" secondAttribute="bottom" id="6kf-WZ-VzV"/>
+                                    <constraint firstAttribute="width" secondItem="e9x-40-0o0" secondAttribute="height" multiplier="70:9" id="UTJ-7R-QKo"/>
+                                    <constraint firstItem="HQY-wI-A2f" firstAttribute="width" secondItem="e9x-40-0o0" secondAttribute="width" multiplier="0.93" id="jrr-FT-iGw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e9x-40-0o0" secondAttribute="trailing" id="2jp-Lo-qJ9"/>
+                            <constraint firstItem="rtt-96-R8Y" firstAttribute="leading" secondItem="7ui-py-Phc" secondAttribute="leading" id="EeY-UV-P8m"/>
+                            <constraint firstItem="e9x-40-0o0" firstAttribute="top" secondItem="rtt-96-R8Y" secondAttribute="bottom" id="UCA-6Y-vIt"/>
+                            <constraint firstItem="e9x-40-0o0" firstAttribute="leading" secondItem="7ui-py-Phc" secondAttribute="leading" id="nn9-lJ-Mza"/>
+                            <constraint firstItem="rtt-96-R8Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7ui-py-Phc" secondAttribute="top" id="sXX-dM-qt7"/>
+                            <constraint firstAttribute="bottom" secondItem="e9x-40-0o0" secondAttribute="bottom" id="zgZ-PG-toc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Adz-iW-OiE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0eV-7q-kV1"/>
+                    <constraint firstAttribute="bottom" secondItem="Adz-iW-OiE" secondAttribute="bottom" id="H8r-RJ-1vd"/>
+                    <constraint firstItem="7ui-py-Phc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N8o-Nk-ZAB"/>
+                    <constraint firstItem="7ui-py-Phc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dtd-J1-2GX"/>
+                    <constraint firstAttribute="trailing" secondItem="Adz-iW-OiE" secondAttribute="trailing" id="g6D-jK-XJK"/>
+                    <constraint firstItem="7ui-py-Phc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.875" id="lMJ-PV-DJp"/>
+                    <constraint firstItem="Adz-iW-OiE" firstAttribute="top" secondItem="7ui-py-Phc" secondAttribute="bottom" id="yUf-zi-xXX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="primaryTF" destination="HQY-wI-A2f" id="Xea-BC-tVC"/>
+                <outlet property="primaryTFTitleLabel" destination="rtt-96-R8Y" id="D0H-in-NPX"/>
+                <outlet property="primaryTFView" destination="e9x-40-0o0" id="fTr-PP-eEH"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="104"/>
+        </tableViewCell>
+    </objects>
+</document>

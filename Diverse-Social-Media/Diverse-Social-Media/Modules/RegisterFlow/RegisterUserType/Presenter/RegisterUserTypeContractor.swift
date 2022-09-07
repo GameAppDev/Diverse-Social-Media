@@ -8,13 +8,19 @@
 import Foundation
 
 protocol PRegisterUserTypeViewToPresenter {
+    
     func viewDidLoad()
+    
     func viewWillAppear()
+    
     func setUserTypeAndReloadCollectionView(index: Int, isSelected:Bool)
+    
     func navigateToNext()
 }
 
 protocol PRegisterUserTypePresenterToRouter {
+    
     func showPopup(message: String)
-    func openNextVC(userType: UserTypeItems)
+    
+    func openNextVC(registerModel: [String: Any])
 }

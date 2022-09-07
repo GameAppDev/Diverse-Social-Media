@@ -14,12 +14,12 @@ final class RegisterUserInfoRouter: Routerable {
     
     private var viewController: RegisterUserInfoViewController?
     
-    private func setupModule(userType: UserTypeItems) -> RegisterUserInfoViewController {
+    private func setupModule(registerModel: [String: Any]) -> RegisterUserInfoViewController {
         guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.registerUserInfoVC.storyboardName, storyboardIdentifier: ApplicationConstants.registerUserInfoVC.storyboardIdentifier) as? RegisterUserInfoViewController else { return RegisterUserInfoViewController() }
         
         let interactor = RegisterUserInfoInteractor()
         let router = RegisterUserInfoRouter()
-        let presenter = RegisterUserInfoPresenter(view: viewController, interactor: interactor, router: router, userType: userType)
+        let presenter = RegisterUserInfoPresenter(view: viewController, interactor: interactor, router: router, registerModel: registerModel)
 
         viewController.presenter = presenter
     
@@ -31,12 +31,17 @@ final class RegisterUserInfoRouter: Routerable {
         return viewController
     }
     
-    public func returnVC(userType: UserTypeItems) -> RegisterUserInfoViewController {
-        return self.setupModule(userType: userType)
+    public func returnVC(registerModel: [String: Any]) -> RegisterUserInfoViewController {
+        return self.setupModule(registerModel: registerModel)
     }
 }
 
 extension RegisterUserInfoRouter: PRegisterUserInfoPresenterToRouter {
     
-    func openNextVC() { }
+    func openNextVC(registerModel: [String: Any]) {
+        let nextVC = RegisterUsernamePasswordRouter().returnVC(registerModel: registerModel)
+        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    func showPopup(message: String) { }
 }

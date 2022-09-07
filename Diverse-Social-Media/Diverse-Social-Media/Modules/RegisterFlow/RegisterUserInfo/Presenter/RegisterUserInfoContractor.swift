@@ -8,11 +8,17 @@
 import Foundation
 
 protocol PRegisterUserInfoViewToPresenter {
+    
     func viewDidLoad()
+    
     func viewWillAppear()
-    func navigateToNext()
+    
+    func navigateToNext(registerModel: [String: Any])
 }
 
 protocol PRegisterUserInfoPresenterToRouter {
-    func openNextVC()
+    
+    func openNextVC(registerModel: [String: Any])
+    
+    func showPopup(message: String)
 }

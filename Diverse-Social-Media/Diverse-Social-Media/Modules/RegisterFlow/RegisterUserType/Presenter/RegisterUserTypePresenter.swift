@@ -61,6 +61,7 @@ extension RegisterUserTypePresenter: PRegisterUserTypeViewToPresenter {
             router?.showPopup(message: "Please select an user type".localized)
             return
         }
-        router?.openNextVC(userType: type)
+        let registerModel: [String: Any] = ["userType": type]
+        router?.openNextVC(registerModel: registerModel)
     }
 }

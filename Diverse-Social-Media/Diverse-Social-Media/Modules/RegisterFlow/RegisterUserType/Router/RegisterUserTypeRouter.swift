@@ -38,8 +38,8 @@ final class RegisterUserTypeRouter: Routerable {
 
 extension RegisterUserTypeRouter: PRegisterUserTypePresenterToRouter {
     
-    func openNextVC(userType: UserTypeItems) {
-        let nextVC = RegisterUserInfoRouter().returnVC(userType: userType)
+    func openNextVC(registerModel: [String: Any]) {
+        let nextVC = RegisterUserInfoRouter().returnVC(registerModel: registerModel)
         self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
     }
     

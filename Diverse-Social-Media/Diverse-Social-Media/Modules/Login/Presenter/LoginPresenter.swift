@@ -33,7 +33,7 @@ extension LoginPresenter: PLoginViewToPresenter {
     
     func startLoginProcess(username: String, password: String) {
         guard username != "", password != "" else {
-            router?.showPopup(message: "Username or Password is not correct")
+            router?.showPopup(message: "Username or Password is not correct".localized)
             return
         }
         interactor?.fetchUserData(username: username, password: password)

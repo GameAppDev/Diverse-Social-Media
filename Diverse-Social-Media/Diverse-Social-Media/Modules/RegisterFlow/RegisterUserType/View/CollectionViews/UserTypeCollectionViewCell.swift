@@ -26,7 +26,7 @@ class UserTypeCollectionViewCell: UICollectionViewCell {
     private func setupViews() {
         userTypeNameLabel.text = "Unknown"
         userTypeNameLabel.font = UIFont.titleFont
-        userTypeNameLabel.textColor = UIColor.titleColour
+        userTypeNameLabel.textColor = UIColor.textColour
         
         userTypeImageView.image = UIImage(named: "Unknown")
         
@@ -43,9 +43,11 @@ class UserTypeCollectionViewCell: UICollectionViewCell {
     
     public func setSelectedCell() {
         userTypeCellView.setBorder(width: CGFloat(2).ws, color: UIColor.titleColour)
+        userTypeNameLabel.textColor = UIColor.titleColour
     }
     
     public func setDeselectedCell() {
         userTypeCellView.setBorder(width: CGFloat(1).ws, color: UIColor.textColour)
+        userTypeNameLabel.textColor = UIColor.textColour
     }
 }

@@ -25,7 +25,7 @@ class UserManager {
     
     private init() {}
     
-    public func setUserModel(model:[String: Any]) {
+    public func setUserModel(model:[String: Any]) -> Bool {
         guard
             let userType = model["userType"] as? UserType,
             let firstName = model["firstName"] as? String,
@@ -35,7 +35,7 @@ class UserManager {
             let about = model["about"] as? String
         else {
             debugPrint("<---! User Model is not correct format !--->")
-            return
+            return false
         }
         self.userId = createUserId()
         self.userType = userType
@@ -45,6 +45,7 @@ class UserManager {
         self.characterPhoto = characterPhoto
         self.about = about
         debugPrint("<--- User Model is ready --->")
+        return true
     }
     
     private func createUserId() -> String {

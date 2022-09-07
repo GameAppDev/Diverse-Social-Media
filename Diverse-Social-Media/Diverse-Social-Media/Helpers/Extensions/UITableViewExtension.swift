@@ -9,10 +9,15 @@ import UIKit
 
 extension UITableView {
     
-    func registerCellWith(identifier: String) {
-        self.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
-        self.tableFooterView = UIView()
-        self.rowHeight = UITableView.automaticDimension
-        self.separatorStyle = .none
+    func registerCell<T: UITableViewCell>(_ cell: T.Type) {
+        register(nibFromClass(cell), forCellReuseIdentifier: cell.className)
+    }
+
+    func registerFooterView<T: UITableViewHeaderFooterView>(_ cell: T.Type) {
+        register(nibFromClass(cell), forHeaderFooterViewReuseIdentifier: cell.className)
+    }
+    
+    fileprivate func nibFromClass(_ type: UIView.Type) -> UINib {
+        return UINib(nibName: type.className, bundle: nil)
     }
 }

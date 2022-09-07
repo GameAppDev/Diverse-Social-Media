@@ -8,13 +8,18 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resetNavigationBar()
+        setSuperViewBGColour()
         
         hideKeyboardWhenCicked()
+    }
+    
+    private func setSuperViewBGColour() {
+        view.backgroundColor = UIColor.viewBGColour
     }
     
     private func resetNavigationBar() {
@@ -43,8 +48,11 @@ class BaseViewController: UIViewController {
         setNavigationBarView(navBarView: navigationBar)
     }
     
-    private func setNavigationBarView(navBarView: UIView) {
+    private func setNavigationBarView(navBarView: NavigationBar) {
         self.navigationController?.navigationBar.addSubview(navBarView)
+        navBarView.layoutIfNeeded()
+        //navBarView.setNeedsLayout()
+        //navBarView.setNeedsDisplay()
     }
 }
 
