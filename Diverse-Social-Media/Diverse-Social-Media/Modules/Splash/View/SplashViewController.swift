@@ -9,16 +9,13 @@ import UIKit
 
 class SplashViewController: BaseViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private weak var registerButton: UIButton!
     
-    @IBOutlet weak var registerButton: UIButton!
-    
-    @IBOutlet weak var languageImageView: UIImageView!
-    
-    @IBOutlet weak var languageLabel: UILabel!
-    
+    @IBOutlet private weak var languageImageView: UIImageView!
+    @IBOutlet private weak var languageLabel: UILabel!
     
     public var presenter: SplashPresenter?
     
@@ -35,11 +32,11 @@ class SplashViewController: BaseViewController {
     }
     
     public func setNavBar() {
-        setNavigationBarItems(title: nil, leftButton: nil, rightButton: nil, containerColour: nil)
+        setNavigationBarItems(title: "", leftButton: nil, rightButton: nil, containerColour: UIColor.navbarBGColour)
     }
     
     public func setupViews() {
-        titleLabel.text = "Welcome to Diverse Social Media Application"
+        titleLabel.text = "Welcome to Diverse Social Media Application".localized
         titleLabel.font = UIFont.titleFont
         titleLabel.textColor = UIColor.titleColour
         
@@ -73,7 +70,7 @@ class SplashViewController: BaseViewController {
     @objc private func languageClicked(sender: UITapGestureRecognizer) {
         presenter?.openLanguagePicker()
     }
-    
+
     @IBAction private func loginClicked(_ sender: UIButton) {
         presenter?.navigateToLogin()
     }

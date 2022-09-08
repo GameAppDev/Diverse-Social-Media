@@ -13,6 +13,8 @@ final class LoginPresenter {
     private var interactor: LoginInteractor?
     private var router: LoginRouter?
     
+    public let tfTitles: [String] = ["Username", "Password"]
+    
     init(view: LoginViewController, interactor: LoginInteractor, router: LoginRouter) {
         self.view = view
         self.interactor = interactor
@@ -25,6 +27,7 @@ extension LoginPresenter: PLoginViewToPresenter {
     func viewDidLoad() {
         //view?.indicatorView(animate: true)
         view?.setupViews()
+        view?.setupTableView()
     }
     
     func viewWillAppear() {

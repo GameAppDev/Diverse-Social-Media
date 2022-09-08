@@ -13,7 +13,7 @@ final class RegisterUserInfoPresenter {
     private var interactor: RegisterUserInfoInteractor?
     private var router: RegisterUserInfoRouter?
     
-    public let tfTitles: [String] = ["Email", "About You"]
+    public let tfTitles: [String] = ["Email", "sdfssf", "About You"]
     
     public var registerModel: [String: Any]?
     

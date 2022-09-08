@@ -1,59 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterUserTypeViewController" customModule="Diverse_Social_Media" customModuleProvider="target"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController storyboardIdentifier="RegisterUserTypeVC" id="S92-P1-cWK" customClass="RegisterUserTypeViewController" customModule="Diverse_Social_Media" customModuleProvider="target">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="eY7-2O-2IC"/>
-                <viewControllerLayoutGuide type="bottom" id="wgL-Az-UbY"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="NG7-V1-Ozs">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mh4-6R-ye7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Rk-ma-pbB">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n1G-LT-3Sq">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G8j-MR-WMj">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                    </collectionView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="pNf-4V-3Ph"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="mh4-6R-ye7" secondAttribute="bottom" id="Blr-so-udB"/>
-                    <constraint firstItem="mh4-6R-ye7" firstAttribute="top" secondItem="NG7-V1-Ozs" secondAttribute="topMargin" id="K5q-cA-f2t"/>
-                    <constraint firstItem="mh4-6R-ye7" firstAttribute="leading" secondItem="NG7-V1-Ozs" secondAttribute="leading" id="YOE-ce-DmZ"/>
-                    <constraint firstAttribute="trailing" secondItem="mh4-6R-ye7" secondAttribute="trailing" id="kh2-ya-QkK"/>
-                </constraints>
-            </view>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterUserTypeViewController" customModule="Diverse_Social_Media" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="mh4-6R-ye7" id="vMP-sy-1Mq"/>
+                <outlet property="collectionView" destination="YzZ-LA-72J" id="0Jz-n9-zRQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
-            <point key="canvasLocation" x="12" y="58"/>
-        </viewController>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YzZ-LA-72J">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wzM-8U-PtD">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YzZ-LA-72J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0dE-6x-EfO"/>
+                <constraint firstAttribute="bottom" secondItem="YzZ-LA-72J" secondAttribute="bottom" id="4cN-8M-WVm"/>
+                <constraint firstAttribute="trailing" secondItem="YzZ-LA-72J" secondAttribute="trailing" id="4h3-Ov-nv5"/>
+                <constraint firstItem="YzZ-LA-72J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P77-Ua-U8f"/>
+            </constraints>
+            <point key="canvasLocation" x="120" y="-14"/>
+        </view>
     </objects>
 </document>

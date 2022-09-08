@@ -2,7 +2,7 @@
 //  RegisterUserInfoViewController.swift
 //  Diverse-Social-Media
 //
-//  Created by Oguzhan Yalcin on 7.09.2022.
+//  Created by Oguzhan Yalcin on 8.09.2022.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class RegisterUserInfoViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         presenter?.viewDidLoad()
     }
     
@@ -57,24 +57,24 @@ extension RegisterUserInfoViewController: UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if presenter?.tfTitles[safe: indexPath.row] == "Email" {
             guard let tfCell = tableView.dequeueReusableCell(withIdentifier: PrimaryTextFieldTableViewCell.className, for: indexPath) as? PrimaryTextFieldTableViewCell else { return UITableViewCell() }
-            
+
             if let tfTitles = presenter?.tfTitles {
                 if let title = tfTitles[safe: indexPath.row] {
                     tfCell.configureCell(title: title, placeholder: "")
                 }
             }
-            
+
             return tfCell
         }
         else if presenter?.tfTitles[safe: indexPath.row] == "About You" {
             guard let tvCell = tableView.dequeueReusableCell(withIdentifier: PrimaryTextViewTableViewCell.className, for: indexPath) as? PrimaryTextViewTableViewCell else { return UITableViewCell() }
-            
+
             if let tfTitles = presenter?.tfTitles {
                 if let title = tfTitles[safe: indexPath.row] {
                     tvCell.configureCell(title: title)
                 }
             }
-            
+
             return tvCell
         }
         else { return UITableViewCell() }

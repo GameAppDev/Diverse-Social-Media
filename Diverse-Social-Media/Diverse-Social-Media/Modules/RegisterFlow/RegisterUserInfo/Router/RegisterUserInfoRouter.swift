@@ -35,7 +35,7 @@ extension RegisterUserInfoRouter: PRegisterUserInfoPresenterToRouter {
     
     func openNextVC(registerModel: [String: Any]) {
         let nextVC = RegisterUsernamePasswordRouter().returnVC(registerModel: registerModel)
-        pushVC(nextVC, animated: true)
+        pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
     func showPopup(message: String) { }

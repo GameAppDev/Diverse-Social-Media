@@ -38,11 +38,11 @@ extension SplashRouter: PSplashPresenterToRouter {
     
     func openLoginVC() {
         let nextVC = LoginRouter().returnVC()
-        pushVC(nextVC, animated: true)
+        pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
     func openRegisterVC() {
         let nextVC = RegisterUserTypeRouter().returnVC()
-        pushVC(nextVC, animated: true)
+        pushVC(nextVC, navController: self.navigationController, animated: true)
     }
 }

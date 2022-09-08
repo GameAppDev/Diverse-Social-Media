@@ -14,8 +14,7 @@ class UserTypeCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var userTypeImageView: UIImageView!
     @IBOutlet private weak var userTypeNameLabel: UILabel!
     
-    //width -> 140
-    //height -> 180
+    //CGSize(width: CGFloat(140).ws, height: CGFloat(180).ws)
     
     override func awakeFromNib() {
         super.awakeFromNib()

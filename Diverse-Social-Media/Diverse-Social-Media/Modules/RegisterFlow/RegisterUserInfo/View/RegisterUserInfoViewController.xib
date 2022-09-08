@@ -1,42 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterUserInfoViewController" customModule="Diverse_Social_Media" customModuleProvider="target"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController storyboardIdentifier="RegisterUserInfoVC" id="Tjd-D2-rHF" customClass="RegisterUserInfoViewController" customModule="Diverse_Social_Media" customModuleProvider="target">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="spm-Ih-lga"/>
-                <viewControllerLayoutGuide type="bottom" id="b7j-1d-ody"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="fDf-9Y-1Wv">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-TR-4YP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tableView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="gsv-7r-IeP"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstItem="Vyb-TR-4YP" firstAttribute="leading" secondItem="fDf-9Y-1Wv" secondAttribute="leading" id="CH7-7D-jbR"/>
-                    <constraint firstAttribute="trailing" secondItem="Vyb-TR-4YP" secondAttribute="trailing" id="Wa4-nh-NPG"/>
-                    <constraint firstAttribute="bottom" secondItem="Vyb-TR-4YP" secondAttribute="bottom" id="fVH-Zh-7hi"/>
-                    <constraint firstItem="Vyb-TR-4YP" firstAttribute="top" secondItem="spm-Ih-lga" secondAttribute="bottom" id="oZx-4T-9QA"/>
-                </constraints>
-            </view>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterUserInfoViewController" customModule="Diverse_Social_Media" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="Vyb-TR-4YP" id="RbG-ZA-vYF"/>
+                <outlet property="tableView" destination="Viq-48-fSE" id="pom-Ci-Aeh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
-            <point key="canvasLocation" x="45" y="66"/>
-        </viewController>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Viq-48-fSE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Viq-48-fSE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3YA-lV-ved"/>
+                <constraint firstAttribute="bottom" secondItem="Viq-48-fSE" secondAttribute="bottom" id="BXm-Nn-QxM"/>
+                <constraint firstItem="Viq-48-fSE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K07-no-Fhl"/>
+                <constraint firstAttribute="trailing" secondItem="Viq-48-fSE" secondAttribute="trailing" id="bsS-ut-D6P"/>
+            </constraints>
+            <point key="canvasLocation" x="-3" y="11"/>
+        </view>
     </objects>
 </document>

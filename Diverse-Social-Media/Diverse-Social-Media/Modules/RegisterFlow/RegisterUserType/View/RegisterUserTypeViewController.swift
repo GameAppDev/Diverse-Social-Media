@@ -2,23 +2,23 @@
 //  RegisterUserTypeViewController.swift
 //  Diverse-Social-Media
 //
-//  Created by Oguzhan Yalcin on 6.09.2022.
+//  Created by Oguzhan Yalcin on 8.09.2022.
 //
 
 import UIKit
 
 class RegisterUserTypeViewController: BaseViewController {
 
-    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     public var presenter: RegisterUserTypePresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         presenter?.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -31,6 +31,10 @@ class RegisterUserTypeViewController: BaseViewController {
     
     public func setupViews() {
         collectionView.backgroundColor = UIColor.clear
+    }
+    
+    public func reloadCollectionView() {
+        collectionView.reloadData()
     }
     
     public func setupCollectionView() {

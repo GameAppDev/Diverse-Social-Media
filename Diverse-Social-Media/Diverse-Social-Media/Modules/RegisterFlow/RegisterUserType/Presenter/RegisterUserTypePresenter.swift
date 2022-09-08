@@ -46,14 +46,14 @@ extension RegisterUserTypePresenter: PRegisterUserTypeViewToPresenter {
     
     func setUserTypeAndReloadCollectionView(index: Int, isSelected: Bool) {
         guard userTypes[safe: index]?.isSelected != nil else {
-            debugPrint("<---! userTypes out of index. Index: \(index) !--->")
+            debugPrint("<---! userTypes out of index. Index: \(index) - out of \(userTypes.count-1) !--->")
             return
         }
         
         resetUserTypes()
         userTypes[index].isSelected = isSelected
         
-        view?.collectionView.reloadData()
+        view?.reloadCollectionView()
     }
     
     func navigateToNext() {

@@ -17,8 +17,7 @@ class PrimaryButtonCollectionViewCell: UICollectionViewCell {
     
     private weak var delegate: PrimaryButtonCellDelegate?
     
-    //width -> 320
-    //height -> 60
+    //CGSize(width: CGFloat(320).ws, height: CGFloat(60).ws)
     
     override func awakeFromNib() {
         super.awakeFromNib()

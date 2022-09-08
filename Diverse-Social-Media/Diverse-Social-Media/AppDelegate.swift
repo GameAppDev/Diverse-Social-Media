@@ -27,12 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setLanguage() {
-        var lang = Locale.current.languageCode //check short language name
-        if (lang == nil) || (lang == "") {
-            lang = "eng"
+        // language -> en, de, tr
+        var lang: String = Locale.current.languageCode ?? "en"
+        if ((lang != "en") || (lang != "de") || (lang != "tr")) {
+            lang = "en"
         }
         UserDefaults.standard.setValue(lang, forKey: "LANGUAGE")
         UserDefaults.standard.synchronize()
+        debugPrint("<--- Application Language: \(lang) --->")
     }
     
     private func decideUserLoggedInStatusAndContinue() {
