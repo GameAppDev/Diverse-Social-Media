@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if ((lang != "en") || (lang != "de") || (lang != "tr")) {
             lang = "en"
         }
+        lang = lang.languageLongName
         UserDefaults.standard.setValue(lang, forKey: "LANGUAGE")
         UserDefaults.standard.synchronize()
         debugPrint("<--- Application Language: \(lang) --->")
@@ -44,9 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func handleStatusGuest() {
-        let viewController = SplashRouter().returnVC()
+        let rootVC = SplashRouter().returnNC()
         
-        window?.rootViewController = viewController
+        window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
     }
     

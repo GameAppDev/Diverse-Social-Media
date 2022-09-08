@@ -24,24 +24,27 @@ class RegisterUserTypeViewController: BaseViewController {
         
         presenter?.viewWillAppear()
     }
+}
+
+extension RegisterUserTypeViewController: PRegisterUserTypePresenterToView {
     
-    public func setNavBar() {
-        setNavigationBarItems(title: "Select User Type".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
-    }
-    
-    public func setupViews() {
+    func setupViews() {
         collectionView.backgroundColor = UIColor.clear
     }
     
-    public func reloadCollectionView() {
-        collectionView.reloadData()
+    func setNavBar() {
+        setNavigationBarItems(title: "Select User Type".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
     }
     
-    public func setupCollectionView() {
+    func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.registerCell(UserTypeCollectionViewCell.self)
         collectionView.registerFooterCell(PrimaryButtonCollectionViewCell.self)
+    }
+    
+    func reloadCollectionView() {
+        collectionView.reloadData()
     }
 }
 

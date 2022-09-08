@@ -7,18 +7,17 @@
 
 import Foundation
 
-protocol PRegisterUserInfoViewToPresenter {
+protocol PRegisterUserInfoPresenterToView: PresenterToView {
     
-    func viewDidLoad()
-    
-    func viewWillAppear()
+    func setupTableView()
+}
+
+protocol PRegisterUserInfoViewToPresenter: ViewToPresenter {
     
     func navigateToNext(registerModel: [String: Any])
 }
 
-protocol PRegisterUserInfoPresenterToRouter {
+protocol PRegisterUserInfoPresenterToRouter: PresenterToRouter {
     
     func openNextVC(registerModel: [String: Any])
-    
-    func showPopup(message: String)
 }

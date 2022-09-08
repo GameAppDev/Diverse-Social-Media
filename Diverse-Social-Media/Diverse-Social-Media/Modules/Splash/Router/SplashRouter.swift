@@ -12,25 +12,8 @@ final class SplashRouter: Routerable {
     
     var navigationController: UINavigationController?
     
-    private func setupModule() -> UINavigationController {
-        let viewController = SplashViewController(nibName: ApplicationConstants.splashVC.nibName, bundle: nil)
-        
-        let interactor = SplashInteractor()
-        let presenter = SplashPresenter(view: viewController, interactor: interactor, router: self)
-
-        let navigationController = UINavigationController(rootViewController: viewController)
-        self.navigationController = navigationController
-        
-        viewController.presenter = presenter
-    
-        interactor.presenter = presenter
-        
-        //viewController.modalPresentationStyle = .fullScreen
-        return navigationController
-    }
-    
-    public func returnVC() -> UIViewController {
-        return self.setupModule()
+    public func returnNC() -> UINavigationController {
+        return SplashBuilder.setupModule()
     }
 }
 
@@ -38,7 +21,8 @@ extension SplashRouter: PSplashPresenterToRouter {
     
     func openLoginVC() {
         let nextVC = LoginRouter().returnVC()
-        pushVC(nextVC, navController: self.navigationController, animated: true)
+        navigationController?.pushViewController(nextVC, animated: true)
+        //pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
     func openRegisterVC() {

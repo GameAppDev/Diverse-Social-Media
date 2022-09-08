@@ -24,16 +24,15 @@ class LoginViewController: BaseViewController {
         
         presenter?.viewWillAppear()
     }
+}
+
+extension LoginViewController: PLoginPresenterToView {
     
-    public func setNavBar() {
-        setNavigationBarItems(title: "Login".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
-    }
-    
-    public func setupViews() {
+    func setupViews() {
         tableView.backgroundColor = UIColor.clear
     }
 
-    public func setupTableView() {
+    func setupTableView() {
         tableView.contentInset = UIEdgeInsets(top: CGFloat(15).ws, left: CGFloat(0), bottom: CGFloat(15).ws, right: CGFloat(0))
         tableView.dataSource = self
         tableView.delegate = self
@@ -41,7 +40,12 @@ class LoginViewController: BaseViewController {
         tableView.registerCell(PrimaryTextFieldTableViewCell.self)
         tableView.registerFooterView(PrimaryButtonFooterTableViewCell.self)
     }
+    
+    func setNavBar() {
+        setNavigationBarItems(title: "Login".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+    }
 }
+
 
 extension LoginViewController: UITableViewDataSource, UITableViewDelegate {
     

@@ -7,11 +7,14 @@
 
 import Foundation
 
-protocol PSplashViewToPresenter {
+protocol PSplashPresenterToView: PresenterToView {
     
-    func viewDidLoad()
+    func setLanguage(language: String)
     
-    func viewWillAppear()
+    func setGestureRecognizerForLanguage()
+}
+
+protocol PSplashViewToPresenter: ViewToPresenter {
     
     func navigateToLogin()
     

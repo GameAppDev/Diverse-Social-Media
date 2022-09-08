@@ -19,6 +19,12 @@ class SplashViewController: BaseViewController {
     
     public var presenter: SplashPresenter?
     
+    init() {
+        super.init(nibName: ApplicationConstants.splashVC.nibName, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,40 +37,12 @@ class SplashViewController: BaseViewController {
         presenter?.viewWillAppear()
     }
     
-    public func setNavBar() {
-        setNavigationBarItems(title: "", leftButton: nil, rightButton: nil, containerColour: UIColor.navbarBGColour)
-    }
-    
-    public func setupViews() {
-        titleLabel.text = "Welcome to Diverse Social Media Application".localized
-        titleLabel.font = UIFont.titleFont
-        titleLabel.textColor = UIColor.titleColour
-        
-        loginButton.setTitle("Login".localized, for: .normal)
-        loginButton.titleLabel?.font = UIFont.buttonTitleFont
-        loginButton.setTitleColor(UIColor.buttonTitleColour, for: .normal)
-        loginButton.backgroundColor = UIColor.buttonBGColour
-        
-        registerButton.setTitle("Register".localized, for: .normal)
-        registerButton.titleLabel?.font = UIFont.buttonTitleFont
-        registerButton.setTitleColor(UIColor.buttonTitleColour, for: .normal)
-        registerButton.backgroundColor = UIColor.buttonBGColour
-        
-        languageImageView.image = UIImage(named: "")
-        languageLabel.text = ""
-        languageLabel.font = UIFont.textFont
-        languageLabel.textColor = UIColor.textColour
-    }
-    
-    public func setLanguage(language: String) {
-        languageImageView.image = UIImage(named: language)
-        languageLabel.text = language
-    }
-    
-    public func setGestureRecognizerForLanguage() {
-        let tapGestureRec = UITapGestureRecognizer(target: self, action: #selector(self.languageClicked(sender:)))
-        languageImageView.addGestureRecognizer(tapGestureRec)
-        languageLabel.addGestureRecognizer(tapGestureRec)
+    private func setupButtonView(button:UIButton, title: String) {
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = UIFont.buttonTitleFont
+        button.setTitleColor(UIColor.buttonTitleColour, for: .normal)
+        button.backgroundColor = UIColor.buttonBGColour
+        button.roundCorners(size: CGFloat(10).ws)
     }
     
     @objc private func languageClicked(sender: UITapGestureRecognizer) {
@@ -77,5 +55,37 @@ class SplashViewController: BaseViewController {
     
     @IBAction private func registerClicked(_ sender: UIButton) {
         presenter?.navigateToRegister()
+    }
+}
+
+extension SplashViewController : PSplashPresenterToView {
+
+    func setupViews() {
+        titleLabel.text = "Welcome to Diverse Social Media Application".localized
+        titleLabel.font = UIFont.titleFont
+        titleLabel.textColor = UIColor.titleColour
+        
+        setupButtonView(button: loginButton, title: "Login".localized.returnWithMargin)
+        setupButtonView(button: registerButton, title: "Register".localized.returnWithMargin)
+        
+        languageImageView.image = UIImage(named: "")
+        languageLabel.text = ""
+        languageLabel.font = UIFont.textFont
+        languageLabel.textColor = UIColor.textColour
+    }
+    
+    func setNavBar() {
+        setNavigationBarItems(title: "", leftButton: nil, rightButton: nil, containerColour: UIColor.navbarBGColour)
+    }
+    
+    func setLanguage(language: String) {
+        languageImageView.image = UIImage(named: language)
+        languageLabel.text = language
+    }
+    
+    func setGestureRecognizerForLanguage() {
+        let tapGestureRec = UITapGestureRecognizer(target: self, action: #selector(self.languageClicked(sender:)))
+        languageImageView.addGestureRecognizer(tapGestureRec)
+        languageLabel.addGestureRecognizer(tapGestureRec)
     }
 }

@@ -24,16 +24,19 @@ class RegisterUsernamePasswordViewController: BaseViewController {
         
         presenter?.viewWillAppear()
     }
+}
+
+extension RegisterUsernamePasswordViewController: PRegisterUsernamePasswordPresenterToView {
     
-    public func setNavBar() {
-        setNavigationBarItems(title: "Account Info".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
-    }
-    
-    public func setupViews() {
+    func setupViews() {
         tableView.backgroundColor = UIColor.clear
     }
     
-    public func setupTableView() {
+    func setNavBar() {
+        setNavigationBarItems(title: "Account Info".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+    }
+    
+    func setupTableView() {
         tableView.contentInset = UIEdgeInsets(top: CGFloat(15).ws, left: CGFloat(0), bottom: CGFloat(15).ws, right: CGFloat(0))
         tableView.dataSource = self
         tableView.delegate = self

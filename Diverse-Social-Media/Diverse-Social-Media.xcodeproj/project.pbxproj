@@ -51,6 +51,9 @@
 		5C56013C28CA6CAD0050EDA6 /* RegisterUserTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C56013A28CA6CAD0050EDA6 /* RegisterUserTypeViewController.xib */; };
 		5C56013F28CA6FF20050EDA6 /* RegisterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56013D28CA6FF10050EDA6 /* RegisterUserInfoViewController.swift */; };
 		5C56014028CA6FF20050EDA6 /* RegisterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C56013E28CA6FF10050EDA6 /* RegisterUserInfoViewController.xib */; };
+		5C56014228CA73DE0050EDA6 /* SplashBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56014128CA73DE0050EDA6 /* SplashBuilder.swift */; };
+		5C56014428CA767D0050EDA6 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56014328CA767D0050EDA6 /* LoginBuilder.swift */; };
+		5C56014728CA85DA0050EDA6 /* Contractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56014628CA85DA0050EDA6 /* Contractable.swift */; };
 		5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515C828C4B30E006993E6 /* LoginContractor.swift */; };
 		5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */; };
 		5C6515D328C4CC47006993E6 /* SplashContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D228C4CC47006993E6 /* SplashContractor.swift */; };
@@ -156,6 +159,9 @@
 		5C56013A28CA6CAD0050EDA6 /* RegisterUserTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUserTypeViewController.xib; sourceTree = "<group>"; };
 		5C56013D28CA6FF10050EDA6 /* RegisterUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoViewController.swift; sourceTree = "<group>"; };
 		5C56013E28CA6FF10050EDA6 /* RegisterUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUserInfoViewController.xib; sourceTree = "<group>"; };
+		5C56014128CA73DE0050EDA6 /* SplashBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBuilder.swift; sourceTree = "<group>"; };
+		5C56014328CA767D0050EDA6 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		5C56014628CA85DA0050EDA6 /* Contractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractable.swift; sourceTree = "<group>"; };
 		5C6515C828C4B30E006993E6 /* LoginContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContractor.swift; sourceTree = "<group>"; };
 		5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
 		5C6515D228C4CC47006993E6 /* SplashContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContractor.swift; sourceTree = "<group>"; };
@@ -249,6 +255,7 @@
 		5C09CD4A28C7DACC00CB457E /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				5C56014528CA85B70050EDA6 /* ModuleProtocol */,
 				5C2AF0BD28C8756300C114F2 /* TableViews */,
 				5C09CD4C28C7DAD700CB457E /* CollectionViews */,
 			);
@@ -436,6 +443,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5C56014528CA85B70050EDA6 /* ModuleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModuleProtocol;
+			sourceTree = "<group>";
+		};
 		5C6515CA28C4BA27006993E6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +465,7 @@
 				5C6515D928C4CD75006993E6 /* Presenterable.swift */,
 				5C6515DB28C4CDBD006993E6 /* Routerable.swift */,
 				5C6515DD28C4CDF4006993E6 /* Viewable.swift */,
+				5C56014628CA85DA0050EDA6 /* Contractable.swift */,
 				5C6515EE28C4DADE006993E6 /* Networkable.swift */,
 			);
 			path = Protocols;
@@ -477,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2E00D228C285A90016B1E3 /* SplashRouter.swift */,
+				5C56014128CA73DE0050EDA6 /* SplashBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -555,6 +571,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2E00C928C277C00016B1E3 /* LoginRouter.swift */,
+				5C56014328CA767D0050EDA6 /* LoginBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1052,8 +1069,11 @@
 				5C56013B28CA6CAD0050EDA6 /* RegisterUserTypeViewController.swift in Sources */,
 				5C12B37E28C786CB001B1F26 /* ArrayExtension.swift in Sources */,
 				5C56013728CA650D0050EDA6 /* LoginViewController.swift in Sources */,
+				5C56014428CA767D0050EDA6 /* LoginBuilder.swift in Sources */,
+				5C56014728CA85DA0050EDA6 /* Contractable.swift in Sources */,
 				5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */,
 				5C09CD6428C7EEBC00CB457E /* RegisterUserInfoContractor.swift in Sources */,
+				5C56014228CA73DE0050EDA6 /* SplashBuilder.swift in Sources */,
 				5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */,
 				5CFF5AA428B2747600F529C0 /* UITableViewExtension.swift in Sources */,
 				5C6515D828C4CD1C006993E6 /* Interactorable.swift in Sources */,

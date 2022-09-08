@@ -7,11 +7,12 @@
 
 import Foundation
 
-protocol PRegisterUsernamePasswordViewToPresenter {
+protocol PRegisterUsernamePasswordPresenterToView: PresenterToView {
     
-    func viewDidLoad()
-    
-    func viewWillAppear()
+    func setupTableView()
+}
+
+protocol PRegisterUsernamePasswordViewToPresenter: ViewToPresenter {
     
     func navigateToNext(registerModel: [String: Any])
 }
@@ -40,9 +41,7 @@ protocol PRegisterUsernamePasswordInteractorToPresenter {
     func onErrorUserManager()
 }
 
-protocol PRegisterUsernamePasswordPresenterToRouter {
+protocol PRegisterUsernamePasswordPresenterToRouter: PresenterToRouter {
     
     func openHomeVC(registerModel: [String: Any])
-    
-    func showPopup(message: String)
 }

@@ -7,20 +7,21 @@
 
 import Foundation
 
-protocol PRegisterUserTypeViewToPresenter {
+protocol PRegisterUserTypePresenterToView: PresenterToView {
     
-    func viewDidLoad()
+    func setupCollectionView()
     
-    func viewWillAppear()
+    func reloadCollectionView()
+}
+
+protocol PRegisterUserTypeViewToPresenter: ViewToPresenter {
     
     func setUserTypeAndReloadCollectionView(index: Int, isSelected:Bool)
     
     func navigateToNext()
 }
 
-protocol PRegisterUserTypePresenterToRouter {
-    
-    func showPopup(message: String)
+protocol PRegisterUserTypePresenterToRouter: PresenterToRouter {
     
     func openNextVC(registerModel: [String: Any])
 }

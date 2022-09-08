@@ -7,11 +7,12 @@
 
 import Foundation
 
-protocol PLoginViewToPresenter {
+protocol PLoginPresenterToView: PresenterToView {
     
-    func viewDidLoad()
-    
-    func viewWillAppear()
+    func setupTableView()
+}
+
+protocol PLoginViewToPresenter: ViewToPresenter {
     
     func startLoginProcess(username: String, password: String)
 }
@@ -30,9 +31,7 @@ protocol PLoginInteractorToPresenter {
     func onErrorLogin(error: BaseError)
 }
 
-protocol PLoginPresenterToRouter {
-    
-    func showPopup(message: String)
+protocol PLoginPresenterToRouter: PresenterToRouter {
     
     func userLoggedIn()
 }
