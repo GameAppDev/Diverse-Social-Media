@@ -2,29 +2,32 @@
 //  SplashViewController.swift
 //  Diverse-Social-Media
 //
-//  Created by Oguzhan Yalcin on 2.09.2022.
+//  Created by Oguzhan Yalcin on 8.09.2022.
 //
 
 import UIKit
 
 class SplashViewController: BaseViewController {
 
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet private weak var loginButton: UIButton!
-    @IBOutlet private weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet private weak var languageImageView: UIImageView!
-    @IBOutlet private weak var languageLabel: UILabel!
+    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var languageImageView: UIImageView!
+    
+    @IBOutlet weak var languageLabel: UILabel!
+    
     
     public var presenter: SplashPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         presenter?.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

@@ -5,28 +5,34 @@
 //  Created by Oguzhan Yalcin on 4.09.2022.
 //
 
-import Foundation
 import UIKit
 
 protocol Routerable {
-    var view: Viewable! { get }
+    
+    var navigationController: UINavigationController? { get set }
 
-    func dismiss(animated: Bool)
-    func dismiss(animated: Bool, completion: @escaping (() -> Void))
-    func pop(animated: Bool)
+    func pushVC(_ vc:UIViewController, animated: Bool)
+    func presentVC(_ vc:UIViewController, animated: Bool)
+    func dismissVC(animated: Bool)
+    func popVC(animated: Bool)
 }
 
 extension Routerable {
     
-    func dismiss(animated: Bool) {
-        view.dismiss(animated: animated)
+    func pushVC(_ vc:UIViewController, animated: Bool) {
+        navigationController?.pushViewController(vc, animated: animated)
     }
     
-    func dismiss(animated: Bool, completion: @escaping (() -> Void)) {
-        view.dismiss(animated: animated, _completion: completion)
+    func presentVC(_ vc:UIViewController, animated: Bool) {
+        navigationController?.present(vc, animated: animated)
     }
-
-    func pop(animated: Bool) {
-        view.pop(animated: animated)
+    
+    func dismissVC(animated: Bool) {
+        navigationController?.dismiss(animated: animated)
+    }
+    
+    func popVC(animated: Bool) {
+        navigationController?.popViewController(animated: animated)
     }
 }
+

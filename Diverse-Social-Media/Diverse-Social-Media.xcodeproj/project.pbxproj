@@ -12,7 +12,6 @@
 		5C09CD4F28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD4D28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.swift */; };
 		5C09CD5028C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C09CD4E28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib */; };
 		5C09CD5828C7ECF900CB457E /* RegisterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD5728C7ECF900CB457E /* RegisterUserInfoViewController.swift */; };
-		5C09CD5A28C7ED1500CB457E /* RegisterUserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C09CD5928C7ED1500CB457E /* RegisterUserInfo.storyboard */; };
 		5C09CD5C28C7EDB200CB457E /* RegisterUserInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD5B28C7EDB200CB457E /* RegisterUserInfoInteractor.swift */; };
 		5C09CD5E28C7EDD200CB457E /* RegisterUserInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD5D28C7EDD200CB457E /* RegisterUserInfoPresenter.swift */; };
 		5C09CD6028C7EDE100CB457E /* RegisterUserInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09CD5F28C7EDE100CB457E /* RegisterUserInfoRouter.swift */; };
@@ -39,9 +38,11 @@
 		5C2E00D328C285A90016B1E3 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D228C285A90016B1E3 /* SplashRouter.swift */; };
 		5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D428C285B10016B1E3 /* SplashPresenter.swift */; };
 		5C2E00D728C285E80016B1E3 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D628C285E80016B1E3 /* SplashInteractor.swift */; };
-		5C2E00D928C2862B0016B1E3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D828C2862B0016B1E3 /* SplashViewController.swift */; };
+		5C33F95528C9E4C5005EE8A2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C33F95428C9E4C5005EE8A2 /* LoginViewController.xib */; };
+		5C33F95728C9E530005EE8A2 /* RegisterUserTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C33F95628C9E530005EE8A2 /* RegisterUserTypeViewController.xib */; };
+		5C33F95928C9E5C1005EE8A2 /* RegisterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C33F95828C9E5C1005EE8A2 /* RegisterUserInfoViewController.xib */; };
+		5C33F95B28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */; };
 		5C463F1A28C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F1928C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift */; };
-		5C463F1C28C8D6B400DD7D06 /* RegisterUsernamePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C463F1B28C8D6B400DD7D06 /* RegisterUsernamePassword.storyboard */; };
 		5C463F1E28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F1D28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift */; };
 		5C463F2028C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F1F28C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift */; };
 		5C463F2228C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F2128C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift */; };
@@ -49,8 +50,6 @@
 		5C463F2628C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F2528C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift */; };
 		5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515C828C4B30E006993E6 /* LoginContractor.swift */; };
 		5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */; };
-		5C6515CE28C4BED0006993E6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6515CD28C4BED0006993E6 /* Login.storyboard */; };
-		5C6515D128C4CA00006993E6 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6515D028C4CA00006993E6 /* Splash.storyboard */; };
 		5C6515D328C4CC47006993E6 /* SplashContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D228C4CC47006993E6 /* SplashContractor.swift */; };
 		5C6515D828C4CD1C006993E6 /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D728C4CD1C006993E6 /* Interactorable.swift */; };
 		5C6515DA28C4CD75006993E6 /* Presenterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D928C4CD75006993E6 /* Presenterable.swift */; };
@@ -63,6 +62,8 @@
 		5C6515F128C4EDDE006993E6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515F028C4EDDE006993E6 /* StringExtension.swift */; };
 		5C6515F828C50177006993E6 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515F728C50177006993E6 /* LoginEntities.swift */; };
 		5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0761D28C5323E00818F83 /* Main.storyboard */; };
+		5CA9132828CA263A0048E579 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9132628CA263A0048E579 /* SplashViewController.swift */; };
+		5CA9132928CA263A0048E579 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA9132728CA263A0048E579 /* SplashViewController.xib */; };
 		5CC55937288C13580060EF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC55936288C13580060EF7D /* AppDelegate.swift */; };
 		5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5593F288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld */; };
 		5CC55943288C13590060EF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC55942288C13590060EF7D /* Assets.xcassets */; };
@@ -75,7 +76,6 @@
 		5CDF7D1228C740780000B64C /* RegisterUserTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */; };
 		5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1328C740850000B64C /* RegisterUserTypeInteractor.swift */; };
 		5CDF7D1628C740980000B64C /* RegisterUserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */; };
-		5CDF7D1828C740A30000B64C /* RegisterUserType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */; };
 		5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */; };
 		5CE7DF9028BBA3C700699EFE /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF8F28BBA3C700699EFE /* UIViewControllerExtension.swift */; };
 		5CE7DF9628BBA77E00699EFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */; };
@@ -117,7 +117,6 @@
 		5C09CD4D28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C09CD4E28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimaryButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		5C09CD5728C7ECF900CB457E /* RegisterUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoViewController.swift; sourceTree = "<group>"; };
-		5C09CD5928C7ED1500CB457E /* RegisterUserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterUserInfo.storyboard; sourceTree = "<group>"; };
 		5C09CD5B28C7EDB200CB457E /* RegisterUserInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoInteractor.swift; sourceTree = "<group>"; };
 		5C09CD5D28C7EDD200CB457E /* RegisterUserInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoPresenter.swift; sourceTree = "<group>"; };
 		5C09CD5F28C7EDE100CB457E /* RegisterUserInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoRouter.swift; sourceTree = "<group>"; };
@@ -144,9 +143,11 @@
 		5C2E00D228C285A90016B1E3 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		5C2E00D428C285B10016B1E3 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		5C2E00D628C285E80016B1E3 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
-		5C2E00D828C2862B0016B1E3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5C33F95428C9E4C5005EE8A2 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5C33F95628C9E530005EE8A2 /* RegisterUserTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUserTypeViewController.xib; sourceTree = "<group>"; };
+		5C33F95828C9E5C1005EE8A2 /* RegisterUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUserInfoViewController.xib; sourceTree = "<group>"; };
+		5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUsernamePasswordViewController.xib; sourceTree = "<group>"; };
 		5C463F1928C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordViewController.swift; sourceTree = "<group>"; };
-		5C463F1B28C8D6B400DD7D06 /* RegisterUsernamePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterUsernamePassword.storyboard; sourceTree = "<group>"; };
 		5C463F1D28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordInteractor.swift; sourceTree = "<group>"; };
 		5C463F1F28C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordPresenter.swift; sourceTree = "<group>"; };
 		5C463F2128C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordEntities.swift; sourceTree = "<group>"; };
@@ -154,8 +155,6 @@
 		5C463F2528C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordContractor.swift; sourceTree = "<group>"; };
 		5C6515C828C4B30E006993E6 /* LoginContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContractor.swift; sourceTree = "<group>"; };
 		5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
-		5C6515CD28C4BED0006993E6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		5C6515D028C4CA00006993E6 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		5C6515D228C4CC47006993E6 /* SplashContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContractor.swift; sourceTree = "<group>"; };
 		5C6515D728C4CD1C006993E6 /* Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
 		5C6515D928C4CD75006993E6 /* Presenterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenterable.swift; sourceTree = "<group>"; };
@@ -168,6 +167,8 @@
 		5C6515F028C4EDDE006993E6 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		5C6515F728C50177006993E6 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
 		5CA0761D28C5323E00818F83 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5CA9132628CA263A0048E579 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5CA9132728CA263A0048E579 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5CC55933288C13580060EF7D /* Diverse-Social-Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diverse-Social-Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC55936288C13580060EF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC55940288C13580060EF7D /* Diverse_Social_Media.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diverse_Social_Media.xcdatamodel; sourceTree = "<group>"; };
@@ -184,7 +185,6 @@
 		5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypePresenter.swift; sourceTree = "<group>"; };
 		5CDF7D1328C740850000B64C /* RegisterUserTypeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeInteractor.swift; sourceTree = "<group>"; };
 		5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeViewController.swift; sourceTree = "<group>"; };
-		5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterUserType.storyboard; sourceTree = "<group>"; };
 		5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeContractor.swift; sourceTree = "<group>"; };
 		5CE7DF8F28BBA3C700699EFE /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				5C09CD5728C7ECF900CB457E /* RegisterUserInfoViewController.swift */,
-				5C09CD5928C7ED1500CB457E /* RegisterUserInfo.storyboard */,
+				5C33F95828C9E5C1005EE8A2 /* RegisterUserInfoViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,7 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				5C463F1928C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift */,
-				5C463F1B28C8D6B400DD7D06 /* RegisterUsernamePassword.storyboard */,
+				5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,8 +492,8 @@
 		5C6515E528C4D194006993E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5C2E00D828C2862B0016B1E3 /* SplashViewController.swift */,
-				5C6515D028C4CA00006993E6 /* Splash.storyboard */,
+				5CA9132628CA263A0048E579 /* SplashViewController.swift */,
+				5CA9132728CA263A0048E579 /* SplashViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -521,7 +521,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2E00CB28C277F30016B1E3 /* LoginViewController.swift */,
-				5C6515CD28C4BED0006993E6 /* Login.storyboard */,
+				5C33F95428C9E4C5005EE8A2 /* LoginViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,7 +630,7 @@
 			children = (
 				5C12B37428C77AA1001B1F26 /* CollectionViews */,
 				5CDF7D1528C740980000B64C /* RegisterUserTypeViewController.swift */,
-				5CDF7D1728C740A30000B64C /* RegisterUserType.storyboard */,
+				5C33F95628C9E530005EE8A2 /* RegisterUserTypeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -865,20 +865,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDF7D1828C740A30000B64C /* RegisterUserType.storyboard in Resources */,
-				5C09CD5A28C7ED1500CB457E /* RegisterUserInfo.storyboard in Resources */,
+				5C33F95528C9E4C5005EE8A2 /* LoginViewController.xib in Resources */,
 				5C2AF0C928C892D800C114F2 /* PrimaryTextViewTableViewCell.xib in Resources */,
+				5C33F95B28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib in Resources */,
 				5C2AF0C128C8758500C114F2 /* PrimaryTextFieldTableViewCell.xib in Resources */,
 				5CC55946288C13590060EF7D /* LaunchScreen.storyboard in Resources */,
 				5CC55943288C13590060EF7D /* Assets.xcassets in Resources */,
-				5C463F1C28C8D6B400DD7D06 /* RegisterUsernamePassword.storyboard in Resources */,
+				5C33F95728C9E530005EE8A2 /* RegisterUserTypeViewController.xib in Resources */,
 				5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */,
-				5C6515CE28C4BED0006993E6 /* Login.storyboard in Resources */,
+				5C33F95928C9E5C1005EE8A2 /* RegisterUserInfoViewController.xib in Resources */,
 				5C09CD5028C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib in Resources */,
 				5CFF5A9428B2520700F529C0 /* Fonts in Resources */,
 				5CE7DF9A28BBBF4B00699EFE /* NavigationBar.xib in Resources */,
 				5C2AF0C528C8853B00C114F2 /* PrimaryButtonFooterTableViewCell.xib in Resources */,
-				5C6515D128C4CA00006993E6 /* Splash.storyboard in Resources */,
+				5CA9132928CA263A0048E579 /* SplashViewController.xib in Resources */,
 				5C12B37828C77ABE001B1F26 /* UserTypeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1049,7 +1049,6 @@
 				5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */,
 				5C09CD5828C7ECF900CB457E /* RegisterUserInfoViewController.swift in Sources */,
 				5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */,
-				5C2E00D928C2862B0016B1E3 /* SplashViewController.swift in Sources */,
 				5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */,
 				5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */,
 				5C12B37E28C786CB001B1F26 /* ArrayExtension.swift in Sources */,
@@ -1065,6 +1064,7 @@
 				5CFF5AA228B2742800F529C0 /* CGFloatExtension.swift in Sources */,
 				5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */,
 				5CE7DF9828BBB5BC00699EFE /* NavigationBar.swift in Sources */,
+				5CA9132828CA263A0048E579 /* SplashViewController.swift in Sources */,
 				5C2AF0C428C8853B00C114F2 /* PrimaryButtonFooterTableViewCell.swift in Sources */,
 				5C09CD6228C7EE4B00CB457E /* RegisterUserInfoEntities.swift in Sources */,
 				5C463F2228C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift in Sources */,
@@ -1242,7 +1242,7 @@
 				INFOPLIST_FILE = "Diverse-Social-Media/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1271,7 +1271,7 @@
 				INFOPLIST_FILE = "Diverse-Social-Media/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

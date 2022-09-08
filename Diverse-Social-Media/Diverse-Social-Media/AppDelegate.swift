@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
         setLanguage()
         
         decideUserLoggedInStatusAndContinue()
@@ -41,10 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func handleStatusGuest() {
         let viewController = SplashRouter().returnVC()
-        let navigationController = UINavigationController()
-        navigationController.viewControllers = [viewController]
         
-        window?.rootViewController = navigationController
+        window?.rootViewController = viewController
         window?.makeKeyAndVisible()
     }
     

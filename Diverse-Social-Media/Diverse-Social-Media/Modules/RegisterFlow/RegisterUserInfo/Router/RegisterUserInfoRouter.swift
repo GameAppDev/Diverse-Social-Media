@@ -10,28 +10,23 @@ import UIKit
 
 final class RegisterUserInfoRouter: Routerable {
     
-    private(set) weak var view: Viewable!
+    var navigationController: UINavigationController?
     
-    private var viewController: RegisterUserInfoViewController?
-    
-    private func setupModule(registerModel: [String: Any]) -> RegisterUserInfoViewController {
-        guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.registerUserInfoVC.storyboardName, storyboardIdentifier: ApplicationConstants.registerUserInfoVC.storyboardIdentifier) as? RegisterUserInfoViewController else { return RegisterUserInfoViewController() }
+    private func setupModule(registerModel: [String: Any]) -> UIViewController {
+        let viewController = RegisterUserInfoViewController(nibName: ApplicationConstants.registerUserInfoVC.nibName, bundle: nil)
         
         let interactor = RegisterUserInfoInteractor()
-        let router = RegisterUserInfoRouter()
-        let presenter = RegisterUserInfoPresenter(view: viewController, interactor: interactor, router: router, registerModel: registerModel)
+        let presenter = RegisterUserInfoPresenter(view: viewController, interactor: interactor, router: self, registerModel: registerModel)
 
         viewController.presenter = presenter
     
         interactor.presenter = presenter
         
-        router.viewController = viewController
-        
-        viewController.modalPresentationStyle = .fullScreen
+        //viewController.modalPresentationStyle = .fullScreen
         return viewController
     }
     
-    public func returnVC(registerModel: [String: Any]) -> RegisterUserInfoViewController {
+    public func returnVC(registerModel: [String: Any]) -> UIViewController {
         return self.setupModule(registerModel: registerModel)
     }
 }
@@ -40,7 +35,7 @@ extension RegisterUserInfoRouter: PRegisterUserInfoPresenterToRouter {
     
     func openNextVC(registerModel: [String: Any]) {
         let nextVC = RegisterUsernamePasswordRouter().returnVC(registerModel: registerModel)
-        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+        pushVC(nextVC, animated: true)
     }
     
     func showPopup(message: String) { }

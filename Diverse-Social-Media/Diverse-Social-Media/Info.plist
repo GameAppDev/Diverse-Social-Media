@@ -10,11 +10,5 @@
 		<string>SourceSansPro-Italic.ttf</string>
 		<string>SourceSansPro-Bold.ttf</string>
 	</array>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
 </dict>
 </plist>

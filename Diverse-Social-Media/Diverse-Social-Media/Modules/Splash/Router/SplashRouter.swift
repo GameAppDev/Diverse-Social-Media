@@ -10,28 +10,26 @@ import UIKit
 
 final class SplashRouter: Routerable {
     
-    private(set) weak var view: Viewable!
+    var navigationController: UINavigationController?
     
-    private var viewController: SplashViewController?
-    
-    private func setupModule() -> SplashViewController {
-        guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.splashVC.storyboardName, storyboardIdentifier: ApplicationConstants.splashVC.storyboardIdentifier) as? SplashViewController else { return SplashViewController() }
+    private func setupModule() -> UINavigationController {
+        let viewController = SplashViewController(nibName: ApplicationConstants.splashVC.nibName, bundle: nil)
         
         let interactor = SplashInteractor()
-        let router = SplashRouter()
-        let presenter = SplashPresenter(view: viewController, interactor: interactor, router: router)
+        let presenter = SplashPresenter(view: viewController, interactor: interactor, router: self)
 
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.navigationController = navigationController
+        
         viewController.presenter = presenter
     
         interactor.presenter = presenter
         
-        router.viewController = viewController
-        
-        viewController.modalPresentationStyle = .fullScreen
-        return viewController
+        //viewController.modalPresentationStyle = .fullScreen
+        return navigationController
     }
     
-    public func returnVC() -> SplashViewController {
+    public func returnVC() -> UIViewController {
         return self.setupModule()
     }
 }
@@ -40,11 +38,11 @@ extension SplashRouter: PSplashPresenterToRouter {
     
     func openLoginVC() {
         let nextVC = LoginRouter().returnVC()
-        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+        pushVC(nextVC, animated: true)
     }
     
     func openRegisterVC() {
         let nextVC = RegisterUserTypeRouter().returnVC()
-        self.viewController?.navigationController?.pushViewController(nextVC, animated: true)
+        pushVC(nextVC, animated: true)
     }
 }

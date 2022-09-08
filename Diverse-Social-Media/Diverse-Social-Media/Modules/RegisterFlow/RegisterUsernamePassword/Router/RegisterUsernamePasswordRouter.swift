@@ -10,35 +10,30 @@ import UIKit
 
 final class RegisterUsernamePasswordRouter: Routerable {
     
-    private(set) weak var view: Viewable!
+    var navigationController: UINavigationController?
     
-    private var viewController: RegisterUsernamePasswordViewController?
-    
-    private func setupModule(registerModel: [String: Any]) -> RegisterUsernamePasswordViewController {
-        guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.registerUsernamePasswordVC.storyboardName, storyboardIdentifier: ApplicationConstants.registerUsernamePasswordVC.storyboardIdentifier) as? RegisterUsernamePasswordViewController else { return RegisterUsernamePasswordViewController() }
+    private func setupModule(registerModel: [String: Any]) -> UIViewController {
+        let viewController = RegisterUsernamePasswordViewController(nibName: ApplicationConstants.registerUsernamePasswordVC.nibName, bundle: nil)
         
         let interactor = RegisterUsernamePasswordInteractor()
-        let router = RegisterUsernamePasswordRouter()
-        let presenter = RegisterUsernamePasswordPresenter(view: viewController, interactor: interactor, router: router, registerModel: registerModel)
+        let presenter = RegisterUsernamePasswordPresenter(view: viewController, interactor: interactor, router: self, registerModel: registerModel)
 
         viewController.presenter = presenter
     
         interactor.presenter = presenter
         
-        router.viewController = viewController
-        
-        viewController.modalPresentationStyle = .fullScreen
+        //viewController.modalPresentationStyle = .fullScreen
         return viewController
     }
     
-    public func returnVC(registerModel: [String: Any]) -> RegisterUsernamePasswordViewController {
+    public func returnVC(registerModel: [String: Any]) -> UIViewController {
         return self.setupModule(registerModel: registerModel)
     }
 }
 
 extension RegisterUsernamePasswordRouter: PRegisterUsernamePasswordPresenterToRouter {
     
-    func openHomeVC(email: String, about: String) { }
+    func openHomeVC(registerModel: [String : Any]) { }
     
     func showPopup(message: String) { }
 }

@@ -10,28 +10,23 @@ import UIKit
 
 final class LoginRouter: Routerable {
     
-    private(set) weak var view: Viewable!
+    var navigationController: UINavigationController?
     
-    private var viewController: LoginViewController?
-    
-    private func setupModule() -> LoginViewController {
-        guard let viewController = UIStoryboard.loadViewController(storyboardName: ApplicationConstants.loginVC.storyboardName, storyboardIdentifier: ApplicationConstants.loginVC.storyboardIdentifier) as? LoginViewController else { return LoginViewController() }
+    private func setupModule() -> UIViewController {
+        let viewController = LoginViewController(nibName: ApplicationConstants.loginVC.nibName, bundle: nil)
         
         let interactor = LoginInteractor()
-        let router = LoginRouter()
-        let presenter = LoginPresenter(view: viewController, interactor: interactor, router: router)
+        let presenter = LoginPresenter(view: viewController, interactor: interactor, router: self)
         
         viewController.presenter = presenter
-        
+    
         interactor.presenter = presenter
         
-        router.viewController = viewController
-        
-        viewController.modalPresentationStyle = .fullScreen
+        //viewController.modalPresentationStyle = .fullScreen
         return viewController
     }
     
-    public func returnVC() -> LoginViewController {
+    public func returnVC() -> UIViewController {
         return setupModule()
     }
 }
