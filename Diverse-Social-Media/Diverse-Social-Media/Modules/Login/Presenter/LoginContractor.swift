@@ -14,12 +14,12 @@ protocol PLoginPresenterToView: PresenterToView {
 
 protocol PLoginViewToPresenter: ViewToPresenter {
     
-    func startLoginProcess(username: String, password: String)
+    func startLoginProcess(loginModel: [String: Any])
 }
 
 protocol PLoginPresenterToInteractor {
     
-    func fetchUserData(username: String, password: String)
+    func fetchUserData(loginModel: [String: Any])
     
     func setUserModel(user: User)
 }

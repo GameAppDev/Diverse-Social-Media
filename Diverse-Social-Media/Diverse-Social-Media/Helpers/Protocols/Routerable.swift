@@ -9,12 +9,11 @@ import UIKit
 
 protocol Routerable {
     
-    //var navigationController: UINavigationController? { get set }
+    var navigationController: UINavigationController? { get set }
 
     func pushVC(_ vc:UIViewController, navController: UINavigationController?, animated: Bool)
+    
     func presentVC(_ vc:UIViewController, navController: UINavigationController?, animated: Bool)
-    //func dismissVC(animated: Bool)
-    //func popVC(animated: Bool)
 }
 
 extension Routerable {

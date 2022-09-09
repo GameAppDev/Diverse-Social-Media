@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol PresenterToView: AnyObject {
     
@@ -23,5 +24,14 @@ protocol ViewToPresenter: AnyObject {
 
 protocol PresenterToRouter: AnyObject {
     
-    func showPopup(message: String)
+    func showAlert(from: UINavigationController?, message: String)
+}
+
+extension PresenterToRouter {
+    
+    func showAlert(from navController: UINavigationController?, message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alert.addAction(.init(title: "OK".localized, style: .cancel, handler: nil))
+        navController?.present(alert, animated: true, completion: nil)
+    }
 }

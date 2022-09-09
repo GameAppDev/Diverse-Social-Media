@@ -10,33 +10,21 @@ import UIKit
 
 final class RegisterUserTypeRouter: Routerable {
     
-    var navigationController: UINavigationController?
+    weak var navigationController: UINavigationController?
     
-    private func setupModule() -> RegisterUserTypeViewController {
-        let viewController = RegisterUserTypeViewController(nibName: ApplicationConstants.registerUserTypeVC.nibName, bundle: nil)
-        
-        let interactor = RegisterUserTypeInteractor()
-        let presenter = RegisterUserTypePresenter(view: viewController, interactor: interactor, router: self)
-
-        viewController.presenter = presenter
-    
-        interactor.presenter = presenter
-        
-        //viewController.modalPresentationStyle = .fullScreen
-        return viewController
-    }
-    
-    public func returnVC() -> UIViewController {
-        return self.setupModule()
+    public func returnVC(navigationController: UINavigationController?) -> UIViewController {
+        return RegisterUserTypeBuilder.buildModule(navigationController: navigationController)
     }
 }
 
 extension RegisterUserTypeRouter: PRegisterUserTypePresenterToRouter {
     
     func openNextVC(registerModel: [String: Any]) {
-        let nextVC = RegisterUserInfoRouter().returnVC(registerModel: registerModel)
+        let nextVC = RegisterUserInfoRouter().returnVC(navigationController: self.navigationController, registerModel: registerModel)
         pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
-    func showPopup(message: String) { }
+    func showAlert(message: String) {
+        showAlert(from: navigationController, message: message)
+    }
 }

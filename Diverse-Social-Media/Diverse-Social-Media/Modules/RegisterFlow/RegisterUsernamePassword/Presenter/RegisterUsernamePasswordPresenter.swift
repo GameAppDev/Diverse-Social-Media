@@ -39,7 +39,7 @@ extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordViewToPres
     func navigateToNext(registerModel: [String: Any]) {
         if let username = registerModel["username"] as? String, let password = registerModel["password"] as? String, let modelPrevious = self.registerModel {
             guard (username != ""), (password != "") else {
-                router?.showPopup(message: "Please enter username and password.".localized)
+                router?.showAlert(message: "Please enter username and password.".localized)
                 return
             }
             //view?.indicatorView(animate: true)
@@ -62,7 +62,7 @@ extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordInteractor
     func onErrorUsernameExists() {
         //view?.indicatorView(animate: false)
         interactor?.apiState = .failure
-        router?.showPopup(message: "Username is already exists".localized)
+        router?.showAlert(message: "Username is already exists".localized)
     }
     
     func onSuccessCoreData(registerModel: [String: Any]) {
@@ -72,7 +72,7 @@ extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordInteractor
     func onErrorCoreData() {
         //view?.indicatorView(animate: false)
         interactor?.apiState = .failure
-        router?.showPopup(message: "User data could not saved to Core Data".localized)
+        router?.showAlert(message: "User data could not saved to Core Data".localized)
     }
     
     func onSuccessUserManager() {
@@ -83,6 +83,6 @@ extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordInteractor
     func onErrorUserManager() {
         //view?.indicatorView(animate: false)
         interactor?.apiState = .failure
-        router?.showPopup(message: "Please try to login".localized)
+        router?.showAlert(message: "Please try to login".localized)
     }
 }

@@ -10,24 +10,10 @@ import UIKit
 
 final class RegisterUsernamePasswordRouter: Routerable {
     
-    var navigationController: UINavigationController?
+    weak var navigationController: UINavigationController?
     
-    private func setupModule(registerModel: [String: Any]) -> UIViewController {
-        let viewController = RegisterUsernamePasswordViewController(nibName: ApplicationConstants.registerUsernamePasswordVC.nibName, bundle: nil)
-        
-        let interactor = RegisterUsernamePasswordInteractor()
-        let presenter = RegisterUsernamePasswordPresenter(view: viewController, interactor: interactor, router: self, registerModel: registerModel)
-
-        viewController.presenter = presenter
-    
-        interactor.presenter = presenter
-        
-        //viewController.modalPresentationStyle = .fullScreen
-        return viewController
-    }
-    
-    public func returnVC(registerModel: [String: Any]) -> UIViewController {
-        return self.setupModule(registerModel: registerModel)
+    public func returnVC(navigationController: UINavigationController?, registerModel: [String: Any]) -> UIViewController {
+        return RegisterUsernamePasswordBuilder.buildModule(navigationController: navigationController, registerModel: registerModel)
     }
 }
 
@@ -35,5 +21,7 @@ extension RegisterUsernamePasswordRouter: PRegisterUsernamePasswordPresenterToRo
     
     func openHomeVC(registerModel: [String : Any]) { }
     
-    func showPopup(message: String) { }
+    func showAlert(message: String) {
+        showAlert(from: navigationController, message: message)
+    }
 }

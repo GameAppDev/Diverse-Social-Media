@@ -10,16 +10,18 @@ import UIKit
 
 final class LoginRouter: Routerable {
     
-    var navigationController: UINavigationController?
+    weak var navigationController: UINavigationController?
     
-    public func returnVC() -> UIViewController {
-        return LoginBuilder.setupModule()
+    public func returnVC(navigationController: UINavigationController?) -> UIViewController {
+        return LoginBuilder.buildModule(navigationController: navigationController)
     }
 }
 
 extension LoginRouter: PLoginPresenterToRouter {
     
-    func showPopup(message: String) { }
+    func showAlert(message: String) {
+        showAlert(from: navigationController, message: message)
+    }
     
     func userLoggedIn() { }
 }

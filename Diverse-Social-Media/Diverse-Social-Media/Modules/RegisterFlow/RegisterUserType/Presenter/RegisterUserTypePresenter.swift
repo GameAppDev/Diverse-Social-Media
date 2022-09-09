@@ -58,7 +58,7 @@ extension RegisterUserTypePresenter: PRegisterUserTypeViewToPresenter {
     
     func navigateToNext() {
         guard let type = userTypes.first(where: {$0.isSelected == true}) else {
-            router?.showPopup(message: "Please select an user type".localized)
+            router?.showAlert(message: "Please select an user type".localized)
             return
         }
         let registerModel: [String: Any] = ["userType": type]

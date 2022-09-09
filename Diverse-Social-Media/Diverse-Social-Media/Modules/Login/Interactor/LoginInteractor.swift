@@ -17,10 +17,12 @@ final class LoginInteractor: Interactorable {
 
 extension LoginInteractor: PLoginPresenterToInteractor {
     
-    func fetchUserData(username: String, password: String) {
+    func fetchUserData(loginModel: [String: Any]) {
         //Core Data will be used...
-        let user: User = User(userId: "1234", userType: .CaptanAmerica, firstName: "Steve", lastName: "Rogers", email: "steve.rogers@mail.com", characterPhoto: "CaptanAmerica", about: "Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby")
-        self.presenter?.onSuccessLogin(response: user)
+        if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {
+            let user: User = User(userId: "1234", userType: .CaptanAmerica, firstName: "Steve", lastName: "Rogers", email: "steve.rogers@mail.com", characterPhoto: "CaptanAmerica", about: "Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby")
+            self.presenter?.onSuccessLogin(response: user)
+        }
     }
     
     func setUserModel(user: User) {

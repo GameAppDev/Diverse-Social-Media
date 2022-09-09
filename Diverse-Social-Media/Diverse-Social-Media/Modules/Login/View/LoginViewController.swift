@@ -91,6 +91,7 @@ extension LoginViewController: PrimaryButtonCellDelegate {
             return
         }
         let loginModel: [String: Any] = ["username": usernameTFCell.getTextFieldText(), "password": passwordTFCell.getTextFieldText()]
+        presenter?.startLoginProcess(loginModel: loginModel)
         debugPrint("<--- Login Model: \(loginModel) --->")
     }
 }

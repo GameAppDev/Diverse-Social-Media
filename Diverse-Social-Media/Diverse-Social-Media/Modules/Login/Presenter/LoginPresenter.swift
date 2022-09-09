@@ -34,12 +34,14 @@ extension LoginPresenter: PLoginViewToPresenter {
         view?.setNavBar()
     }
     
-    func startLoginProcess(username: String, password: String) {
-        guard username != "", password != "" else {
-            router?.showPopup(message: "Username or Password is not correct".localized)
-            return
+    func startLoginProcess(loginModel: [String: Any]) {
+        if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {
+            guard username != "", password != "" else {
+                router?.showAlert(message: "Username or Password is not correct".localized)
+                return
+            }
+            interactor?.fetchUserData(loginModel: loginModel)
         }
-        interactor?.fetchUserData(username: username, password: password)
     }
 }
 
@@ -52,6 +54,6 @@ extension LoginPresenter: PLoginInteractorToPresenter {
     
     func onErrorLogin(error: BaseError) {
         //view?.indicatorView(animate: false)
-        router?.showPopup(message: error.errorMessage ?? "Please try again".localized)
+        router?.showAlert(message: error.errorMessage ?? "Please try again".localized)
     }
 }

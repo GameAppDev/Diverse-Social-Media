@@ -84,6 +84,9 @@
 		5CE7DF9628BBA77E00699EFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */; };
 		5CE7DF9828BBB5BC00699EFE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9728BBB5BC00699EFE /* NavigationBar.swift */; };
 		5CE7DF9A28BBBF4B00699EFE /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE7DF9928BBBF4B00699EFE /* NavigationBar.xib */; };
+		5CF0B54B28CB942D0080EA21 /* RegisterUserTypeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0B54A28CB942D0080EA21 /* RegisterUserTypeBuilder.swift */; };
+		5CF0B54D28CB96220080EA21 /* RegisterUserInfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0B54C28CB96220080EA21 /* RegisterUserInfoBuilder.swift */; };
+		5CF0B54F28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0B54E28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift */; };
 		5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A8F28B24E8200F529C0 /* ThemeManager.swift */; };
 		5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9128B2517500F529C0 /* Colours.swift */; };
 		5CFF5A9428B2520700F529C0 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9328B2520700F529C0 /* Fonts */; };
@@ -196,6 +199,9 @@
 		5CE7DF9528BBA77E00699EFE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5CE7DF9728BBB5BC00699EFE /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		5CE7DF9928BBBF4B00699EFE /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		5CF0B54A28CB942D0080EA21 /* RegisterUserTypeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserTypeBuilder.swift; sourceTree = "<group>"; };
+		5CF0B54C28CB96220080EA21 /* RegisterUserInfoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfoBuilder.swift; sourceTree = "<group>"; };
+		5CF0B54E28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordBuilder.swift; sourceTree = "<group>"; };
 		5CFF5A8F28B24E8200F529C0 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		5CFF5A9128B2517500F529C0 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		5CFF5A9328B2520700F529C0 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
@@ -287,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				5C09CD5F28C7EDE100CB457E /* RegisterUserInfoRouter.swift */,
+				5CF0B54C28CB96220080EA21 /* RegisterUserInfoBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -405,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				5C463F2328C8D71000DD7D06 /* RegisterUsernamePasswordRouter.swift */,
+				5CF0B54E28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -664,6 +672,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDF7D0D28C7404F0000B64C /* RegisterUserTypeRouter.swift */,
+				5CF0B54A28CB942D0080EA21 /* RegisterUserTypeBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1039,6 +1048,7 @@
 				5C2E00C828C277A80016B1E3 /* LoginPresenter.swift in Sources */,
 				5C463F2628C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift in Sources */,
 				5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */,
+				5CF0B54F28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift in Sources */,
 				5C463F2028C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift in Sources */,
 				5CDF7D1028C740640000B64C /* RegisterUserTypeEntities.swift in Sources */,
 				5C6515EF28C4DADE006993E6 /* Networkable.swift in Sources */,
@@ -1064,6 +1074,7 @@
 				5C2E00C228C2664C0016B1E3 /* NSObjectExtension.swift in Sources */,
 				5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */,
 				5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */,
+				5CF0B54D28CB96220080EA21 /* RegisterUserInfoBuilder.swift in Sources */,
 				5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */,
 				5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */,
 				5C56013B28CA6CAD0050EDA6 /* RegisterUserTypeViewController.swift in Sources */,
@@ -1083,6 +1094,7 @@
 				5C2E00C028C259970016B1E3 /* UIViewExtension.swift in Sources */,
 				5CFF5AA228B2742800F529C0 /* CGFloatExtension.swift in Sources */,
 				5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */,
+				5CF0B54B28CB942D0080EA21 /* RegisterUserTypeBuilder.swift in Sources */,
 				5CE7DF9828BBB5BC00699EFE /* NavigationBar.swift in Sources */,
 				5C56013328CA5D590050EDA6 /* SplashViewController.swift in Sources */,
 				5C2AF0C428C8853B00C114F2 /* PrimaryButtonFooterTableViewCell.swift in Sources */,

@@ -10,12 +10,14 @@ import UIKit
 
 enum LoginBuilder {
 
-    static func setupModule() -> UIViewController {
+    static func buildModule(navigationController: UINavigationController?) -> UIViewController {
         let viewController = LoginViewController(nibName: ApplicationConstants.loginVC.nibName, bundle: nil)
         
         let interactor = LoginInteractor()
         let router = LoginRouter()
         let presenter = LoginPresenter(view: viewController, interactor: interactor, router: router)
+        
+        router.navigationController = navigationController
         
         viewController.presenter = presenter
     

@@ -13,7 +13,7 @@ final class RegisterUserInfoPresenter {
     private var interactor: RegisterUserInfoInteractor?
     private var router: RegisterUserInfoRouter?
     
-    public let tfTitles: [String] = ["Email", "sdfssf", "About You"]
+    public let tfTitles: [String] = ["Email", "About You"]
     
     public var registerModel: [String: Any]?
     
@@ -39,7 +39,7 @@ extension RegisterUserInfoPresenter: PRegisterUserInfoViewToPresenter {
     func navigateToNext(registerModel: [String: Any]) {
         if let email = registerModel["email"] as? String, let about = registerModel["about"] as? String, let modelPrevious = self.registerModel {
             guard (email.isValidEmail()), (about != "") else {
-                router?.showPopup(message: "Please enter valid email and tell about yourself.".localized)
+                router?.showAlert(message: "Please enter valid email and tell about yourself.".localized)
                 return
             }
             var model: [String: Any] = modelPrevious

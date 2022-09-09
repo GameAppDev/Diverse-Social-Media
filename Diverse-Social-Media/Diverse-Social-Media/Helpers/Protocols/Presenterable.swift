@@ -7,11 +7,5 @@
 
 import Foundation
 
-protocol Presenterable {
-    associatedtype V: Viewable
-    associatedtype I: Interactorable
-    associatedtype R: Routerable
-    
-    var dependencies: (view: V, router: R, interactor: I) { get }
-}
+protocol Presenterable { }
 

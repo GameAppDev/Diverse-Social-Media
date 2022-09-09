@@ -10,7 +10,7 @@ import UIKit
 
 enum SplashBuilder {
 
-    static func setupModule() -> UINavigationController {
+    static func buildModule() -> UINavigationController {
         let viewController = SplashViewController()
         
         let interactor = SplashInteractor()
