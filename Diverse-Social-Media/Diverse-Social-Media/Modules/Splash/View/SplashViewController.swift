@@ -15,9 +15,11 @@ class SplashViewController: BaseViewController {
     @IBOutlet private weak var registerButton: UIButton!
     
     @IBOutlet private weak var languageImageView: UIImageView!
-    @IBOutlet private weak var languageLabel: UILabel!
+    @IBOutlet private weak var languageTextField: UITextField!
     
     public var presenter: SplashPresenter?
+    
+    private var pickerIndex: Int = 0
     
     init() {
         super.init(nibName: ApplicationConstants.splashVC.nibName, bundle: nil)
@@ -48,6 +50,10 @@ class SplashViewController: BaseViewController {
     @objc private func languageClicked(sender: UITapGestureRecognizer) {
         presenter?.openLanguagePicker()
     }
+    
+    @objc private func languageSelected(sender: UIButton) {
+        presenter?.selectLanguageFromPicker(index: pickerIndex)
+    }
 
     @IBAction private func loginClicked(_ sender: UIButton) {
         presenter?.navigateToLogin()
@@ -58,7 +64,7 @@ class SplashViewController: BaseViewController {
     }
 }
 
-extension SplashViewController : PSplashPresenterToView {
+extension SplashViewController: PSplashPresenterToView {
 
     func setupViews() {
         titleLabel.text = "Welcome to Diverse Social Media Application".localized
@@ -69,9 +75,11 @@ extension SplashViewController : PSplashPresenterToView {
         setupButtonView(button: registerButton, title: "Register".localized.returnWithMargin)
         
         languageImageView.image = UIImage(named: "")
-        languageLabel.text = ""
-        languageLabel.font = UIFont.textFont
-        languageLabel.textColor = UIColor.textColour
+        languageTextField.text = ""
+        languageTextField.font = UIFont.textFont
+        languageTextField.textColor = UIColor.textColour
+        languageTextField.tintColor = UIColor.clear
+        languageTextField.delegate = self
     }
     
     func setNavBar() {
@@ -80,12 +88,69 @@ extension SplashViewController : PSplashPresenterToView {
     
     func setLanguage(language: String) {
         languageImageView.image = UIImage(named: language)
-        languageLabel.text = language
+        languageTextField.text = language
     }
     
     func setGestureRecognizerForLanguage() {
         let tapGestureRec = UITapGestureRecognizer(target: self, action: #selector(self.languageClicked(sender:)))
+        languageImageView.isUserInteractionEnabled = true
         languageImageView.addGestureRecognizer(tapGestureRec)
-        languageLabel.addGestureRecognizer(tapGestureRec)
+    }
+    
+    func setupPicker() {
+        let pickerView = UIPickerView(frame:CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: CGFloat(180).ws))
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerView.backgroundColor = UIColor.viewBGColour
+        pickerView.selectRow(pickerIndex, inComponent: 0, animated: true)
+        languageTextField.inputView = pickerView
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.backgroundColor = UIColor.buttonBGColour
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor.buttonTitleColour
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Select".localized, style: .done, target: self, action: #selector(languageSelected))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let languageLabel = UIBarButtonItem(title: "Select your language".localized, style: .plain, target: nil, action: nil)
+        toolBar.setItems([languageLabel, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        languageTextField.inputAccessoryView = toolBar
+    }
+    
+    func becomeFirstResponderLanguageTextField() {
+        languageTextField.becomeFirstResponder()
+    }
+    
+    func resignFirstResponderLanguageTextField() {
+        languageTextField.resignFirstResponder()
+    }
+}
+
+extension SplashViewController : UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        presenter?.openLanguagePicker()
+    }
+}
+
+extension SplashViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return (presenter?.languages.count ?? 0)
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return presenter?.languages[row].languageLongName
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickerIndex = row
     }
 }

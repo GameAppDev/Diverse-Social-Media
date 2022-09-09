@@ -11,6 +11,8 @@ final class ApplicationConstants {
     
     static let baseUrl = "https://www.text-diverse-social-media.com"
     
+    static let languages: [String] = ["en", "de", "tr"]
+    
     static let splashVC: NibItem = NibItem(nibName: SplashViewController.className)
     static let loginVC: NibItem = NibItem(nibName: LoginViewController.className)
     static let registerUserTypeVC: NibItem = NibItem(nibName: RegisterUserTypeViewController.className)

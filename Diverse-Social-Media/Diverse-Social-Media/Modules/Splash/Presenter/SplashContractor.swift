@@ -12,6 +12,12 @@ protocol PSplashPresenterToView: PresenterToView {
     func setLanguage(language: String)
     
     func setGestureRecognizerForLanguage()
+    
+    func setupPicker()
+    
+    func becomeFirstResponderLanguageTextField()
+    
+    func resignFirstResponderLanguageTextField()
 }
 
 protocol PSplashViewToPresenter: ViewToPresenter {
@@ -21,6 +27,8 @@ protocol PSplashViewToPresenter: ViewToPresenter {
     func navigateToRegister()
     
     func openLanguagePicker()
+    
+    func selectLanguageFromPicker(index: Int)
 }
 
 protocol PSplashPresenterToInteractor {

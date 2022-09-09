@@ -19,23 +19,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        setLanguage()
+        getLanguage()
         
         decideUserLoggedInStatusAndContinue()
         
         return true
     }
     
-    private func setLanguage() {
-        // language -> en, de, tr
-        var lang: String = Locale.current.languageCode ?? "en"
-        if ((lang != "en") || (lang != "de") || (lang != "tr")) {
-            lang = "en"
+    private func getLanguage() {
+        // languages -> en, de, tr
+        var deviceLang: String = "da"// Locale.current.languageCode ?? "en"
+        let appLanguages: [String] = ApplicationConstants.languages
+        
+        if (appLanguages.first(where: {$0 == deviceLang}) == nil) {
+            deviceLang = "en"
         }
-        lang = lang.languageLongName
-        UserDefaults.standard.setValue(lang, forKey: "LANGUAGE")
+        deviceLang = deviceLang.languageLongName
+        UserDefaults.standard.setValue(deviceLang, forKey: "LANGUAGE")
         UserDefaults.standard.synchronize()
-        debugPrint("<--- Application Language: \(lang) --->")
+        debugPrint("<--- Application Language: \(deviceLang) --->")
+    }
+    
+    func setLanguage(language: String) {
+        window?.rootViewController?.view.removeFromSuperview()
+        window?.rootViewController = nil
+        
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+            UserDefaults.standard.setValue(language.languageLongName, forKey: "LANGUAGE")
+            UserDefaults.standard.synchronize()
+            Bundle.setLanguage(language)
+            self.decideUserLoggedInStatusAndContinue()
+        }
     }
     
     private func decideUserLoggedInStatusAndContinue() {

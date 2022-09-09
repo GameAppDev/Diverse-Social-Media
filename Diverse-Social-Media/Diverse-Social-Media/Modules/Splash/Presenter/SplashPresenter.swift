@@ -13,6 +13,8 @@ final class SplashPresenter {
     private var interactor: SplashInteractor?
     private var router: SplashRouter?
     
+    public var languages: [String] = ApplicationConstants.languages
+    
     init(view: SplashViewController, interactor: SplashInteractor, router: SplashRouter) {
         self.view = view
         self.interactor = interactor
@@ -45,7 +47,17 @@ extension SplashPresenter: PSplashViewToPresenter {
         router?.openRegisterVC()
     }
     
-    func openLanguagePicker() { }
+    func openLanguagePicker() {
+        view?.setupPicker()
+        view?.becomeFirstResponderLanguageTextField()
+    }
+    
+    func selectLanguageFromPicker(index: Int) {
+        view?.resignFirstResponderLanguageTextField()
+        if let lang = languages[safe: index] {
+            appDelegate.setLanguage(language: lang)
+        }
+    }
 }
 
 extension SplashPresenter: PSplashInteractorToPresenter {

@@ -68,6 +68,7 @@
 		5C6515F128C4EDDE006993E6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515F028C4EDDE006993E6 /* StringExtension.swift */; };
 		5C6515F828C50177006993E6 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515F728C50177006993E6 /* LoginEntities.swift */; };
 		5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA0761D28C5323E00818F83 /* Main.storyboard */; };
+		5CB396FF28CBCDFD00349B34 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB396FE28CBCDFD00349B34 /* Bundle+Ext.swift */; };
 		5CC55937288C13580060EF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC55936288C13580060EF7D /* AppDelegate.swift */; };
 		5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5593F288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld */; };
 		5CC55943288C13590060EF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC55942288C13590060EF7D /* Assets.xcassets */; };
@@ -179,6 +180,7 @@
 		5C6515F028C4EDDE006993E6 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		5C6515F728C50177006993E6 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
 		5CA0761D28C5323E00818F83 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5CB396FE28CBCDFD00349B34 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		5CC55933288C13580060EF7D /* Diverse-Social-Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diverse-Social-Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC55936288C13580060EF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC55940288C13580060EF7D /* Diverse_Social_Media.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diverse_Social_Media.xcdatamodel; sourceTree = "<group>"; };
@@ -261,7 +263,6 @@
 		5C09CD4A28C7DACC00CB457E /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				5C56014528CA85B70050EDA6 /* ModuleProtocol */,
 				5C2AF0BD28C8756300C114F2 /* TableViews */,
 				5C09CD4C28C7DAD700CB457E /* CollectionViews */,
 			);
@@ -449,13 +450,6 @@
 				5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5C56014528CA85B70050EDA6 /* ModuleProtocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModuleProtocol;
 			sourceTree = "<group>";
 		};
 		5C6515CA28C4BA27006993E6 /* Constants */ = {
@@ -761,6 +755,7 @@
 			children = (
 				5CFF5AA128B2742800F529C0 /* CGFloatExtension.swift */,
 				5C2E00BF28C259970016B1E3 /* UIViewExtension.swift */,
+				5CB396FE28CBCDFD00349B34 /* Bundle+Ext.swift */,
 				5C6515F028C4EDDE006993E6 /* StringExtension.swift */,
 				5C12B37928C77DF3001B1F26 /* UICollectionViewExtension.swift */,
 				5C2E00CF28C27A290016B1E3 /* UIStoryboardExtension.swift */,
@@ -1084,6 +1079,7 @@
 				5C56014728CA85DA0050EDA6 /* Contractable.swift in Sources */,
 				5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */,
 				5C09CD6428C7EEBC00CB457E /* RegisterUserInfoContractor.swift in Sources */,
+				5CB396FF28CBCDFD00349B34 /* Bundle+Ext.swift in Sources */,
 				5C56014228CA73DE0050EDA6 /* SplashBuilder.swift in Sources */,
 				5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */,
 				5CFF5AA428B2747600F529C0 /* UITableViewExtension.swift in Sources */,

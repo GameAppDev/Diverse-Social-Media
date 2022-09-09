@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Diverse_Social_Media" customModuleProvider="target">
             <connections>
                 <outlet property="languageImageView" destination="eq7-Kt-qdH" id="gwd-ix-6jZ"/>
-                <outlet property="languageLabel" destination="WJP-xl-AEJ" id="ojh-VG-pD6"/>
+                <outlet property="languageTextField" destination="B4Y-OT-dZh" id="x7X-0X-UEi"/>
                 <outlet property="loginButton" destination="dns-Ac-1CQ" id="Kat-5v-jAX"/>
                 <outlet property="registerButton" destination="EWt-1m-Egs" id="qOX-rv-2XK"/>
                 <outlet property="titleLabel" destination="vi5-cp-0KN" id="yvj-QF-IfO"/>
@@ -80,13 +80,12 @@
                         <constraint firstAttribute="width" secondItem="eq7-Kt-qdH" secondAttribute="height" multiplier="1:1" id="bWH-PI-QMs"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJP-xl-AEJ">
-                    <rect key="frame" x="160" y="529" width="0.0" height="0.0"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-OT-dZh">
+                    <rect key="frame" x="158" y="510.5" width="4" height="18.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="yLN-mS-2j2"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,21 +99,21 @@
                 <constraint firstItem="0bf-zb-Ztb" firstAttribute="leading" secondItem="yLN-mS-2j2" secondAttribute="leading" id="9Xn-DP-ddD"/>
                 <constraint firstItem="9TD-aA-PWH" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="CGp-vx-tLW"/>
                 <constraint firstItem="dns-Ac-1CQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLN-mS-2j2" secondAttribute="leading" id="Frz-Yq-rwz"/>
-                <constraint firstItem="WJP-xl-AEJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GUO-Eb-qfS"/>
-                <constraint firstItem="7XH-eh-evF" firstAttribute="top" secondItem="WJP-xl-AEJ" secondAttribute="bottom" id="KOk-1J-m3C"/>
                 <constraint firstItem="eq7-Kt-qdH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.075" id="KZa-6d-ACN"/>
+                <constraint firstItem="B4Y-OT-dZh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KoL-V6-B7F"/>
                 <constraint firstItem="EWt-1m-Egs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mvc-rl-FeW"/>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WJP-xl-AEJ" secondAttribute="trailing" id="OeO-EK-gZv"/>
+                <constraint firstItem="B4Y-OT-dZh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLN-mS-2j2" secondAttribute="leading" id="POz-wE-XGy"/>
+                <constraint firstItem="yLN-mS-2j2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B4Y-OT-dZh" secondAttribute="trailing" id="TaC-is-cy4"/>
                 <constraint firstItem="9TD-aA-PWH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Urx-Jg-k1g"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vi5-cp-0KN" secondAttribute="trailing" id="V3n-7t-0KS"/>
                 <constraint firstItem="vi5-cp-0KN" firstAttribute="top" secondItem="9TD-aA-PWH" secondAttribute="bottom" id="Vm4-xD-k1H"/>
                 <constraint firstItem="EWt-1m-Egs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLN-mS-2j2" secondAttribute="leading" id="XhD-V4-MGT"/>
                 <constraint firstItem="9if-3y-6u8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZYi-Oh-DJn"/>
+                <constraint firstItem="7XH-eh-evF" firstAttribute="top" secondItem="B4Y-OT-dZh" secondAttribute="bottom" id="bOF-j8-wU9"/>
                 <constraint firstItem="7XH-eh-evF" firstAttribute="trailing" secondItem="yLN-mS-2j2" secondAttribute="trailing" id="bl7-k9-nMC"/>
                 <constraint firstItem="0bf-zb-Ztb" firstAttribute="trailing" secondItem="yLN-mS-2j2" secondAttribute="trailing" id="ci7-Kg-CUi"/>
                 <constraint firstItem="7XH-eh-evF" firstAttribute="leading" secondItem="yLN-mS-2j2" secondAttribute="leading" id="cyV-rn-ZwT"/>
                 <constraint firstItem="9if-3y-6u8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="daA-ce-1aI"/>
-                <constraint firstItem="WJP-xl-AEJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f6w-6L-hyS"/>
                 <constraint firstItem="eq7-Kt-qdH" firstAttribute="top" secondItem="7XH-eh-evF" secondAttribute="bottom" id="gJW-FH-ZuE"/>
                 <constraint firstItem="yLN-mS-2j2" firstAttribute="bottom" secondItem="0bf-zb-Ztb" secondAttribute="bottom" id="jeR-Bc-Ggd"/>
                 <constraint firstItem="vi5-cp-0KN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="knX-WP-iRi"/>
