@@ -9,7 +9,7 @@ import Foundation
 
 final class RegisterUserTypePresenter {
     
-    private var view: RegisterUserTypeViewController?
+    private weak var view: RegisterUserTypeViewController?
     private var interactor: RegisterUserTypeInteractor?
     private var router: RegisterUserTypeRouter?
     

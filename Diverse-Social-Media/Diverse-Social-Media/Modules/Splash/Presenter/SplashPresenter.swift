@@ -9,7 +9,7 @@ import Foundation
 
 final class SplashPresenter {
     
-    private var view: SplashViewController?
+    private weak var view: SplashViewController?
     private var interactor: SplashInteractor?
     private var router: SplashRouter?
     

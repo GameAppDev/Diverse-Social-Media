@@ -9,7 +9,7 @@ import Foundation
 
 final class LoginPresenter {
     
-    private var view: LoginViewController?
+    private weak var view: LoginViewController?
     private var interactor: LoginInteractor?
     private var router: LoginRouter?
     

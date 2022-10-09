@@ -9,7 +9,7 @@ import Foundation
 
 final class RegisterUsernamePasswordPresenter {
     
-    private var view: RegisterUsernamePasswordViewController?
+    private weak var view: RegisterUsernamePasswordViewController?
     private var interactor: RegisterUsernamePasswordInteractor?
     private var router: RegisterUsernamePasswordRouter?
     

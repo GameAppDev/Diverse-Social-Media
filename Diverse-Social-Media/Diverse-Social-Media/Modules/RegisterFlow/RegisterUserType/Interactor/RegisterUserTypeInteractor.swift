@@ -10,7 +10,7 @@ import Foundation
 final class RegisterUserTypeInteractor: Interactorable {
     
     private var networkManager: Networkable?
-    public var presenter: RegisterUserTypePresenter?
+    public weak var presenter: RegisterUserTypePresenter?
     
     public var apiState: ApiState = .beforeRequest
 }

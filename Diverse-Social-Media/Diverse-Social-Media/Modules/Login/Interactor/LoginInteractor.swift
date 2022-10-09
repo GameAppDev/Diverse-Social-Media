@@ -10,7 +10,7 @@ import Foundation
 final class LoginInteractor: Interactorable {
     
     private var networkManager: Networkable?
-    public var presenter: LoginPresenter?
+    public weak var presenter: LoginPresenter?
     
     public var apiState: ApiState = .beforeRequest
 }

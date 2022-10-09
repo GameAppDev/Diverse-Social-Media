@@ -10,7 +10,7 @@ import Foundation
 final class RegisterUsernamePasswordInteractor: Interactorable {
     
     private var networkManager: Networkable?
-    public var presenter: RegisterUsernamePasswordPresenter?
+    public weak var presenter: RegisterUsernamePasswordPresenter?
     
     public var apiState: ApiState = .beforeRequest
     

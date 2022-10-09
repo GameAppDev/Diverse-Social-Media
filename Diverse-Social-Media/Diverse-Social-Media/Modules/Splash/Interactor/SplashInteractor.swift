@@ -10,7 +10,7 @@ import Foundation
 final class SplashInteractor: Interactorable {
     
     private var networkManager: Networkable?
-    public var presenter: SplashPresenter?
+    public weak var presenter: SplashPresenter?
     
     private var userDefaults = UserDefaults.standard
     
