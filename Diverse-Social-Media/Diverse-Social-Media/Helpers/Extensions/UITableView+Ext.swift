@@ -1,5 +1,5 @@
 //
-//  UITableViewExtension.swift
+//  UITableView+Ext.swift
 //  Diverse-Social-Media
 //
 //  Created by Oguzhan Yalcin on 21.08.2022.

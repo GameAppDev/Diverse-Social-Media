@@ -1,5 +1,5 @@
 //
-//  UIViewControllerExtension.swift
+//  UIViewController+Ext.swift
 //  Diverse-Social-Media
 //
 //  Created by Oguzhan Yalcin on 28.08.2022.

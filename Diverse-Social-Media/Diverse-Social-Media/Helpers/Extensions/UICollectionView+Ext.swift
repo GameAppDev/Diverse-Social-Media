@@ -1,5 +1,5 @@
 //
-//  UICollectionViewExtension.swift
+//  UICollectionView+Ext.swift
 //  Diverse-Social-Media
 //
 //  Created by Oguzhan Yalcin on 6.09.2022.
