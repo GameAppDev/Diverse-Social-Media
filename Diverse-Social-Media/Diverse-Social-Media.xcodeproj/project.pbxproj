@@ -288,11 +288,12 @@
 		5C09CD5128C7EC8100CB457E /* RegisterUserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				5C09CD5628C7ECD000CB457E /* View */,
-				5C09CD5528C7ECC800CB457E /* Interactor */,
-				5C09CD5428C7ECC100CB457E /* Presenter */,
-				5C09CD5328C7ECBB00CB457E /* Entity */,
+				92A9A30A296E055400E92E0C /* Contractor */,
 				5C09CD5228C7ECB400CB457E /* Router */,
+				5C09CD5628C7ECD000CB457E /* View */,
+				5C09CD5428C7ECC100CB457E /* Presenter */,
+				5C09CD5528C7ECC800CB457E /* Interactor */,
+				5C09CD5328C7ECBB00CB457E /* Entity */,
 			);
 			path = RegisterUserInfo;
 			sourceTree = "<group>";
@@ -318,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				5C09CD5D28C7EDD200CB457E /* RegisterUserInfoPresenter.swift */,
-				5C09CD6328C7EEBC00CB457E /* RegisterUserInfoContractor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -383,11 +383,12 @@
 		5C2E00C628C277820016B1E3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5C6515F228C4FCC8006993E6 /* View */,
-				5C6515F328C4FCCF006993E6 /* Interactor */,
-				5C6515F428C4FCD9006993E6 /* Presenter */,
-				5C6515F528C4FCE0006993E6 /* Entity */,
+				92A9A308296E04B900E92E0C /* Contractor */,
 				5C6515F628C4FCEC006993E6 /* Router */,
+				5C6515F228C4FCC8006993E6 /* View */,
+				5C6515F428C4FCD9006993E6 /* Presenter */,
+				5C6515F328C4FCCF006993E6 /* Interactor */,
+				5C6515F528C4FCE0006993E6 /* Entity */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -395,11 +396,12 @@
 		5C2E00D128C2859E0016B1E3 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				5C6515E528C4D194006993E6 /* View */,
-				5C6515E128C4D153006993E6 /* Interactor */,
-				5C6515E228C4D15E006993E6 /* Presenter */,
-				5C6515E428C4D175006993E6 /* Entity */,
+				92A9A2F5296DF1C800E92E0C /* Contractor */,
 				5C6515E328C4D169006993E6 /* Router */,
+				5C6515E528C4D194006993E6 /* View */,
+				5C6515E228C4D15E006993E6 /* Presenter */,
+				5C6515E128C4D153006993E6 /* Interactor */,
+				5C6515E428C4D175006993E6 /* Entity */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -407,11 +409,12 @@
 		5C463F1328C8D63000DD7D06 /* RegisterUsernamePassword */ = {
 			isa = PBXGroup;
 			children = (
-				5C463F1828C8D66800DD7D06 /* View */,
-				5C463F1728C8D66100DD7D06 /* Interactor */,
-				5C463F1628C8D65B00DD7D06 /* Presenter */,
-				5C463F1528C8D65600DD7D06 /* Entity */,
+				92A9A30B296E056B00E92E0C /* Contractor */,
 				5C463F1428C8D65100DD7D06 /* Router */,
+				5C463F1828C8D66800DD7D06 /* View */,
+				5C463F1628C8D65B00DD7D06 /* Presenter */,
+				5C463F1728C8D66100DD7D06 /* Interactor */,
+				5C463F1528C8D65600DD7D06 /* Entity */,
 			);
 			path = RegisterUsernamePassword;
 			sourceTree = "<group>";
@@ -437,7 +440,6 @@
 			isa = PBXGroup;
 			children = (
 				5C463F1F28C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift */,
-				5C463F2528C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -490,7 +492,6 @@
 			isa = PBXGroup;
 			children = (
 				5C2E00D428C285B10016B1E3 /* SplashPresenter.swift */,
-				5C6515D228C4CC47006993E6 /* SplashContractor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -562,7 +563,6 @@
 			isa = PBXGroup;
 			children = (
 				5C2E00C728C277A80016B1E3 /* LoginPresenter.swift */,
-				5C6515C828C4B30E006993E6 /* LoginContractor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -641,11 +641,12 @@
 		5CDF7D0728C73FEB0000B64C /* RegisterUserType */ = {
 			isa = PBXGroup;
 			children = (
-				5CDF7D0828C73FFD0000B64C /* View */,
-				5CDF7D0928C740030000B64C /* Interactor */,
-				5CDF7D0C28C7401A0000B64C /* Presenter */,
-				5CDF7D0B28C740130000B64C /* Entity */,
+				92A9A309296E053C00E92E0C /* Contractor */,
 				5CDF7D0A28C7400B0000B64C /* Router */,
+				5CDF7D0828C73FFD0000B64C /* View */,
+				5CDF7D0C28C7401A0000B64C /* Presenter */,
+				5CDF7D0928C740030000B64C /* Interactor */,
+				5CDF7D0B28C740130000B64C /* Entity */,
 			);
 			path = RegisterUserType;
 			sourceTree = "<group>";
@@ -689,7 +690,6 @@
 			isa = PBXGroup;
 			children = (
 				5CDF7D1128C740780000B64C /* RegisterUserTypePresenter.swift */,
-				5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -861,6 +861,38 @@
 				92A9A303296DFAE100E92E0C /* PopupViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		92A9A308296E04B900E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				5C6515C828C4B30E006993E6 /* LoginContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92A9A309296E053C00E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF7D1928C742600000B64C /* RegisterUserTypeContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92A9A30A296E055400E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				5C09CD6328C7EEBC00CB457E /* RegisterUserInfoContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92A9A30B296E056B00E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				5C463F2528C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift */,
+			);
+			path = Contractor;
 			sourceTree = "<group>";
 		};
 		B7048B099789BC1D87EB54BF /* Frameworks */ = {
