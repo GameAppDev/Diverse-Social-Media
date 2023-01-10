@@ -9,11 +9,11 @@ import UIKit
 
 extension UIColor {
     
-    static let navbarBGColour    = ThemeManager().getThemeColourFor(item: .NavBarBG)
-    static let navbarTitleColour = ThemeManager().getThemeColourFor(item: .NavBarTitle)
-    static let buttonBGColour    = ThemeManager().getThemeColourFor(item: .ButtonBG)
-    static let buttonTitleColour = ThemeManager().getThemeColourFor(item: .ButtonTitle)
-    static let textColour        = ThemeManager().getThemeColourFor(item: .Text)
-    static let titleColour       = ThemeManager().getThemeColourFor(item: .Title)
-    static let viewBGColour      = ThemeManager().getThemeColourFor(item: .ViewBG)
+    static let navbarBGColour    = ThemeManager.shared.getThemeColourFor(item: .NavBarBG)
+    static let navbarTitleColour = ThemeManager.shared.getThemeColourFor(item: .NavBarTitle)
+    static let buttonBGColour    = ThemeManager.shared.getThemeColourFor(item: .ButtonBG)
+    static let buttonTitleColour = ThemeManager.shared.getThemeColourFor(item: .ButtonTitle)
+    static let textColour        = ThemeManager.shared.getThemeColourFor(item: .Text)
+    static let titleColour       = ThemeManager.shared.getThemeColourFor(item: .Title)
+    static let viewBGColour      = ThemeManager.shared.getThemeColourFor(item: .ViewBG)
 }

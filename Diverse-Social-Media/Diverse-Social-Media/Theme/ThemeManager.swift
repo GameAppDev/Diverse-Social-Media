@@ -20,6 +20,8 @@ enum ThemeItem {
 
 final class ThemeManager {
     
+    static let shared = ThemeManager()
+    
     public func getThemeColourFor(item: ThemeItem) -> UIColor {
         let userType: UserType = UserManager.shared.getUserType()
         

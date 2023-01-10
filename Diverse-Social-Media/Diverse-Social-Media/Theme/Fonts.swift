@@ -9,8 +9,8 @@ import UIKit
 
 extension UIFont {
     
-    static let navbarTitleFont = ThemeManager().getThemeFontFor(item: .NavBarTitle)
-    static let buttonTitleFont = ThemeManager().getThemeFontFor(item: .ButtonTitle)
-    static let textFont        = ThemeManager().getThemeFontFor(item: .Text)
-    static let titleFont       = ThemeManager().getThemeFontFor(item: .Title)
+    static let navbarTitleFont = ThemeManager.shared.getThemeFontFor(item: .NavBarTitle)
+    static let buttonTitleFont = ThemeManager.shared.getThemeFontFor(item: .ButtonTitle)
+    static let textFont        = ThemeManager.shared.getThemeFontFor(item: .Text)
+    static let titleFont       = ThemeManager.shared.getThemeFontFor(item: .Title)
 }
