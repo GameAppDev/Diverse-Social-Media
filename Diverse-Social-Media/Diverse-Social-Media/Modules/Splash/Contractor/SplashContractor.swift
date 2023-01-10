@@ -22,16 +22,16 @@ protocol PSplashViewToPresenter: ViewToPresenter {
     func selectLanguageFromPicker(index: Int)
 }
 
-protocol PSplashPresenterToInteractor {
+protocol PSplashPresenterToInteractor: PresenterToInteractor {
     func fetchConfigData()
 }
 
-protocol PSplashInteractorToPresenter {
+protocol PSplashInteractorToPresenter: InteractorToPresenter {
     func onSuccessConfig(response: Config)
     func onErrorConfig(error: BaseError)
 }
 
-protocol PSplashPresenterToRouter {
+protocol PSplashPresenterToRouter: PresenterToRouter {
     func openLoginVC()
     func openRegisterVC()
 }

@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 7.09.2022.
 //
 
-import Foundation
 import UIKit
 
 final class RegisterUsernamePasswordRouter: Routerable {
@@ -21,7 +20,5 @@ extension RegisterUsernamePasswordRouter: PRegisterUsernamePasswordPresenterToRo
     
     func openHomeVC(registerModel: [String : Any]) { }
     
-    func showAlert(message: String) {
-        showAlert(from: navigationController, message: message)
-    }
+    func showAlert(message: String) { }
 }

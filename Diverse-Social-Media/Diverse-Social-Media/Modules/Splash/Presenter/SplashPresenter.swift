@@ -62,6 +62,10 @@ extension SplashPresenter: PSplashViewToPresenter {
 
 extension SplashPresenter: PSplashInteractorToPresenter {
     
+    func setData<T>(data: T) { }
+    
+    func setError(error: BaseError) { }
+    
     func onSuccessConfig(response: Config) {
         //view?.indicatorView(animate: false)
         interactor?.apiState = .success

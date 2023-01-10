@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RegisterUserInfoViewController: BaseViewController {
+final class RegisterUserInfoViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     
-    public var presenter: RegisterUserInfoPresenter?
+    var presenter: RegisterUserInfoPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -25,6 +25,8 @@ final class SplashInteractor: Interactorable {
 
 extension SplashInteractor: PSplashPresenterToInteractor {
     
+    func fetchData<T>(request: T) { }
+    
     func fetchConfigData() {
         networkManager?.get(path: configPath, nil, onSuccess: { (response: BaseResponse<Config>) in
             guard let data = response.model else { return }

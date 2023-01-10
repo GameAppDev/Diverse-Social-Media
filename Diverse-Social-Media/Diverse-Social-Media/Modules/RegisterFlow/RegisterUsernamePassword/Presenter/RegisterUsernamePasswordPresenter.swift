@@ -17,7 +17,10 @@ final class RegisterUsernamePasswordPresenter {
     
     let tfTitles: [String] = ["Username", "Password"]
     
-    init(view: RegisterUsernamePasswordViewController, interactor: RegisterUsernamePasswordInteractor, router: RegisterUsernamePasswordRouter, registerModel: [String: Any]) {
+    init(view: RegisterUsernamePasswordViewController,
+         interactor: RegisterUsernamePasswordInteractor,
+         router: RegisterUsernamePasswordRouter,
+         registerModel: [String: Any]) {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -54,6 +57,10 @@ extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordViewToPres
 }
 
 extension RegisterUsernamePasswordPresenter: PRegisterUsernamePasswordInteractorToPresenter {
+    
+    func setData<T>(data: T) { }
+    
+    func setError(error: BaseError) { }
     
     func onSuccessUsernameExists(registerModel: [String: Any]) {
         interactor?.setRegisterDataToCoreData(registerModel: registerModel)

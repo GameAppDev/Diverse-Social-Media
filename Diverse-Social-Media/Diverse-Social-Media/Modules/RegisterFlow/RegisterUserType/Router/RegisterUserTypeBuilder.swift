@@ -15,7 +15,9 @@ enum RegisterUserTypeBuilder {
         
         let interactor = RegisterUserTypeInteractor()
         let router = RegisterUserTypeRouter()
-        let presenter = RegisterUserTypePresenter(view: viewController, interactor: interactor, router: router)
+        let presenter = RegisterUserTypePresenter(view: viewController,
+                                                  interactor: interactor,
+                                                  router: router)
         
         router.navigationController = navigationController
         

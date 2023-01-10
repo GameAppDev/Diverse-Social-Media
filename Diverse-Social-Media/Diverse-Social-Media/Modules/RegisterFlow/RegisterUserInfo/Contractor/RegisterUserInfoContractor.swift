@@ -8,16 +8,13 @@
 import Foundation
 
 protocol PRegisterUserInfoPresenterToView: PresenterToView {
-    
     func setupTableView()
 }
 
 protocol PRegisterUserInfoViewToPresenter: ViewToPresenter {
-    
     func navigateToNext(registerModel: [String: Any])
 }
 
 protocol PRegisterUserInfoPresenterToRouter: PresenterToRouter {
-    
     func openNextVC(registerModel: [String: Any])
 }

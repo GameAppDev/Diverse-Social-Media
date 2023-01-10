@@ -15,7 +15,9 @@ final class LoginPresenter {
     
     public let tfTitles: [String] = ["Username", "Password"]
     
-    init(view: LoginViewController, interactor: LoginInteractor, router: LoginRouter) {
+    init(view: LoginViewController,
+         interactor: LoginInteractor,
+         router: LoginRouter) {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -46,6 +48,10 @@ extension LoginPresenter: PLoginViewToPresenter {
 }
 
 extension LoginPresenter: PLoginInteractorToPresenter {
+    
+    func setData<T>(data: T) { }
+    
+    func setError(error: BaseError) { }
     
     func onSuccessLogin(response: User) {
         //view?.indicatorView(animate: false)

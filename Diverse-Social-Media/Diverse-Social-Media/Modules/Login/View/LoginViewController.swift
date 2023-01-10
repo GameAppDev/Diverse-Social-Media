@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+final class LoginViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
 
-    public var presenter: LoginPresenter?
+    var presenter: LoginPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()

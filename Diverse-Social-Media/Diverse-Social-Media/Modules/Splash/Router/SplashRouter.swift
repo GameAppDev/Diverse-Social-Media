@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 2.09.2022.
 //
 
-import Foundation
 import UIKit
 
 final class SplashRouter: Routerable {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserTypeCollectionViewCell: UICollectionViewCell {
+final class UserTypeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet private weak var userTypeCellView: UIView!
     

@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 8.09.2022.
 //
 
-import Foundation
 import UIKit
 
 enum LoginBuilder {
@@ -15,7 +14,9 @@ enum LoginBuilder {
         
         let interactor = LoginInteractor()
         let router = LoginRouter()
-        let presenter = LoginPresenter(view: viewController, interactor: interactor, router: router)
+        let presenter = LoginPresenter(view: viewController,
+                                       interactor: interactor,
+                                       router: router)
         
         router.navigationController = navigationController
         

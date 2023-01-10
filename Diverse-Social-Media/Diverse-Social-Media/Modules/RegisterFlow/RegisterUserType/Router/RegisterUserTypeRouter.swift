@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 6.09.2022.
 //
 
-import Foundation
 import UIKit
 
 final class RegisterUserTypeRouter: Routerable {
@@ -24,7 +23,5 @@ extension RegisterUserTypeRouter: PRegisterUserTypePresenterToRouter {
         pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
-    func showAlert(message: String) {
-        showAlert(from: navigationController, message: message)
-    }
+    func showAlert(message: String) { }
 }

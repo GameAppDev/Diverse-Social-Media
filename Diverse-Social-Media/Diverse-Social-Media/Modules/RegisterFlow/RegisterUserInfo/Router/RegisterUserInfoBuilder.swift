@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 9.09.2022.
 //
 
-import Foundation
 import UIKit
 
 enum RegisterUserInfoBuilder {
@@ -15,7 +14,10 @@ enum RegisterUserInfoBuilder {
         
         let interactor = RegisterUserInfoInteractor()
         let router = RegisterUserInfoRouter()
-        let presenter = RegisterUserInfoPresenter(view: viewController, interactor: interactor, router: router, registerModel: registerModel)
+        let presenter = RegisterUserInfoPresenter(view: viewController,
+                                                  interactor: interactor,
+                                                  router: router,
+                                                  registerModel: registerModel)
         
         router.navigationController = navigationController
         

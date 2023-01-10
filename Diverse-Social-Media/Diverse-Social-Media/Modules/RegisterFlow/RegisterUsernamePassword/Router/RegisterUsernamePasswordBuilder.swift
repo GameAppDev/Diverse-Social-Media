@@ -15,7 +15,10 @@ enum RegisterUsernamePasswordBuilder {
 
         let interactor = RegisterUsernamePasswordInteractor()
         let router = RegisterUsernamePasswordRouter()
-        let presenter = RegisterUsernamePasswordPresenter(view: viewController, interactor: interactor, router: router, registerModel: registerModel)
+        let presenter = RegisterUsernamePasswordPresenter(view: viewController,
+                                                          interactor: interactor,
+                                                          router: router,
+                                                          registerModel: registerModel)
         
         router.navigationController = navigationController
         

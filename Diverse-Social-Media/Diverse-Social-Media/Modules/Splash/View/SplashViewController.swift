@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashViewController: BaseViewController {
+final class SplashViewController: BaseViewController {
 
     @IBOutlet private weak var titleLabel: UILabel!
     
@@ -17,7 +17,7 @@ class SplashViewController: BaseViewController {
     @IBOutlet private weak var languageImageView: UIImageView!
     @IBOutlet private weak var languageTextField: UITextField!
     
-    public var presenter: SplashPresenter?
+    var presenter: SplashPresenter?
     
     private var pickerIndex: Int = 0
     

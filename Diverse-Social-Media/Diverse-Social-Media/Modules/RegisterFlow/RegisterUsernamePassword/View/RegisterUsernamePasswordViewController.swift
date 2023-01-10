@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RegisterUsernamePasswordViewController: BaseViewController {
+final class RegisterUsernamePasswordViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     
-    public var presenter: RegisterUsernamePasswordPresenter?
+    var presenter: RegisterUsernamePasswordPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()

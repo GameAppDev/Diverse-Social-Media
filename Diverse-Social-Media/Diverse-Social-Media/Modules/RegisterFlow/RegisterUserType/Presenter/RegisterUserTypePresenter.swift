@@ -17,7 +17,9 @@ final class RegisterUserTypePresenter {
     public var userTypes: [UserTypeItems] = []
     public var userTypeCount: Int = 0
     
-    init(view: RegisterUserTypeViewController, interactor: RegisterUserTypeInteractor, router: RegisterUserTypeRouter) {
+    init(view: RegisterUserTypeViewController,
+         interactor: RegisterUserTypeInteractor,
+         router: RegisterUserTypeRouter) {
         self.view = view
         self.interactor = interactor
         self.router = router

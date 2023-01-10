@@ -8,3 +8,6 @@
 import Foundation
 
 struct Config: Codable { }
+
+// Request -> Encodable
+// Response -> Decodable

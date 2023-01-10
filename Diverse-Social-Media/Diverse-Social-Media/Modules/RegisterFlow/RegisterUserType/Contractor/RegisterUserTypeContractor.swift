@@ -8,20 +8,15 @@
 import Foundation
 
 protocol PRegisterUserTypePresenterToView: PresenterToView {
-    
     func setupCollectionView()
-    
     func reloadCollectionView()
 }
 
 protocol PRegisterUserTypeViewToPresenter: ViewToPresenter {
-    
     func setUserTypeAndReloadCollectionView(index: Int, isSelected:Bool)
-    
     func navigateToNext()
 }
 
 protocol PRegisterUserTypePresenterToRouter: PresenterToRouter {
-    
     func openNextVC(registerModel: [String: Any])
 }

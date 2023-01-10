@@ -8,30 +8,23 @@
 import Foundation
 
 protocol PLoginPresenterToView: PresenterToView {
-    
     func setupTableView()
 }
 
 protocol PLoginViewToPresenter: ViewToPresenter {
-    
     func startLoginProcess(loginModel: [String: Any])
 }
 
-protocol PLoginPresenterToInteractor {
-    
+protocol PLoginPresenterToInteractor: PresenterToInteractor {
     func fetchUserData(loginModel: [String: Any])
-    
     func setUserModel(user: User)
 }
 
-protocol PLoginInteractorToPresenter {
-    
+protocol PLoginInteractorToPresenter: InteractorToPresenter {
     func onSuccessLogin(response: User)
-    
     func onErrorLogin(error: BaseError)
 }
 
 protocol PLoginPresenterToRouter: PresenterToRouter {
-    
     func userLoggedIn()
 }

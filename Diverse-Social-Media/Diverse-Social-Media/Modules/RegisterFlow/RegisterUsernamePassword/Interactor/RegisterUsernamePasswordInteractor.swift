@@ -24,6 +24,8 @@ final class RegisterUsernamePasswordInteractor: Interactorable {
 
 extension RegisterUsernamePasswordInteractor: PRegisterUsernamePasswordPresenterToInteractor {
     
+    func fetchData<T>(request: T) { }
+    
     func checkUsernameExists(registerModel: [String: Any]) {
         presenter?.onSuccessUsernameExists(registerModel: registerModel)
     }

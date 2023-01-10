@@ -17,7 +17,10 @@ final class RegisterUserInfoPresenter {
     
     public var registerModel: [String: Any]?
     
-    init(view: RegisterUserInfoViewController, interactor: RegisterUserInfoInteractor, router: RegisterUserInfoRouter, registerModel: [String: Any]) {
+    init(view: RegisterUserInfoViewController,
+         interactor: RegisterUserInfoInteractor,
+         router: RegisterUserInfoRouter,
+         registerModel: [String: Any]) {
         self.view = view
         self.interactor = interactor
         self.router = router

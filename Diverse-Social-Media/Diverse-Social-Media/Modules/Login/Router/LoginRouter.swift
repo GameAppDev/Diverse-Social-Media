@@ -5,7 +5,6 @@
 //  Created by Oguzhan Yalcin on 2.09.2022.
 //
 
-import Foundation
 import UIKit
 
 final class LoginRouter: Routerable {
@@ -19,9 +18,7 @@ final class LoginRouter: Routerable {
 
 extension LoginRouter: PLoginPresenterToRouter {
     
-    func showAlert(message: String) {
-        showAlert(from: navigationController, message: message)
-    }
+    func showAlert(message: String) { }
     
     func userLoggedIn() { }
 }

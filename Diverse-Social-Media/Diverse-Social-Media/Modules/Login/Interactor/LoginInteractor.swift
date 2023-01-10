@@ -17,6 +17,8 @@ final class LoginInteractor: Interactorable {
 
 extension LoginInteractor: PLoginPresenterToInteractor {
     
+    func fetchData<T>(request: T) { }
+    
     func fetchUserData(loginModel: [String: Any]) {
         //Core Data will be used...
         if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {

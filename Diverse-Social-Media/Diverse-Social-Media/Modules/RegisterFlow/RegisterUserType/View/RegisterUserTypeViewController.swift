@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RegisterUserTypeViewController: BaseViewController {
+final class RegisterUserTypeViewController: BaseViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    public var presenter: RegisterUserTypePresenter?
+    var presenter: RegisterUserTypePresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
