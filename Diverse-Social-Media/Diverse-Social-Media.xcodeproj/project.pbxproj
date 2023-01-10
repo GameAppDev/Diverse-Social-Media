@@ -96,8 +96,13 @@
 		5CFF5AA228B2742800F529C0 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA128B2742800F529C0 /* CGFloat+Ext.swift */; };
 		5CFF5AA428B2747600F529C0 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */; };
 		92A9A2EC296DEEB900E92E0C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */; };
-		92A9A2F1296DEF4700E92E0C /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F0296DEF4700E92E0C /* PopupManager.swift */; };
 		92A9A2F4296DF12500E92E0C /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */; };
+		92A9A2F7296DF3C000E92E0C /* PopupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F6296DF3C000E92E0C /* PopupBuilder.swift */; };
+		92A9A2FF296DF54600E92E0C /* PopupContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2FE296DF54600E92E0C /* PopupContractor.swift */; };
+		92A9A301296DF9A100E92E0C /* PopupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A300296DF9A100E92E0C /* PopupRouter.swift */; };
+		92A9A304296DFAE100E92E0C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A302296DFAE100E92E0C /* PopupViewController.swift */; };
+		92A9A305296DFAE100E92E0C /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A9A303296DFAE100E92E0C /* PopupViewController.xib */; };
+		92A9A307296DFBA300E92E0C /* PopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A306296DFBA300E92E0C /* PopupPresenter.swift */; };
 		B52D319AFEA4F8FC69E9F0B8 /* Pods_Diverse_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B954CE80CE9BB23948A5C8 /* Pods_Diverse_Social_Media.framework */; };
 		D29F3C91E2D96ED10344104D /* Pods_Diverse_Social_MediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA2465E390756689BF542D9 /* Pods_Diverse_Social_MediaTests.framework */; };
 /* End PBXBuildFile section */
@@ -216,8 +221,13 @@
 		5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-MediaTests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-MediaTests/Pods-Diverse-Social-MediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		92A9A2F0296DEF4700E92E0C /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
+		92A9A2F6296DF3C000E92E0C /* PopupBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBuilder.swift; sourceTree = "<group>"; };
+		92A9A2FE296DF54600E92E0C /* PopupContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContractor.swift; sourceTree = "<group>"; };
+		92A9A300296DF9A100E92E0C /* PopupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRouter.swift; sourceTree = "<group>"; };
+		92A9A302296DFAE100E92E0C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		92A9A303296DFAE100E92E0C /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		92A9A306296DFBA300E92E0C /* PopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresenter.swift; sourceTree = "<group>"; };
 		BAF909CE7EF4088555FCEAFB /* Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE4A8D3B5AC874B1F7F60088 /* Pods-Diverse-Social-Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.release.xcconfig"; sourceTree = "<group>"; };
 		C16B2818DAFA94B054C0C23F /* Pods-Diverse-Social-Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.debug.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.debug.xcconfig"; sourceTree = "<group>"; };
@@ -795,7 +805,10 @@
 		92A9A2EF296DEF3A00E92E0C /* Popup */ = {
 			isa = PBXGroup;
 			children = (
-				92A9A2F0296DEF4700E92E0C /* PopupManager.swift */,
+				92A9A2F8296DF3E700E92E0C /* Contractor */,
+				92A9A2F9296DF3EE00E92E0C /* Router */,
+				92A9A2FD296DF41800E92E0C /* View */,
+				92A9A2FA296DF40600E92E0C /* Presenter */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
@@ -806,6 +819,48 @@
 				92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */,
 			);
 			path = AppLanguage;
+			sourceTree = "<group>";
+		};
+		92A9A2F5296DF1C800E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				5C6515D228C4CC47006993E6 /* SplashContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92A9A2F8296DF3E700E92E0C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				92A9A2FE296DF54600E92E0C /* PopupContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92A9A2F9296DF3EE00E92E0C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				92A9A2F6296DF3C000E92E0C /* PopupBuilder.swift */,
+				92A9A300296DF9A100E92E0C /* PopupRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		92A9A2FA296DF40600E92E0C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				92A9A306296DFBA300E92E0C /* PopupPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		92A9A2FD296DF41800E92E0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92A9A302296DFAE100E92E0C /* PopupViewController.swift */,
+				92A9A303296DFAE100E92E0C /* PopupViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B7048B099789BC1D87EB54BF /* Frameworks */ = {
@@ -938,6 +993,7 @@
 				5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */,
 				5C09CD5028C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib in Resources */,
 				5CFF5A9428B2520700F529C0 /* Fonts in Resources */,
+				92A9A305296DFAE100E92E0C /* PopupViewController.xib in Resources */,
 				5CE7DF9A28BBBF4B00699EFE /* NavigationBar.xib in Resources */,
 				5C2AF0C528C8853B00C114F2 /* PrimaryButtonFooterTableViewCell.xib in Resources */,
 				5C56013428CA5D590050EDA6 /* SplashViewController.xib in Resources */,
@@ -1078,6 +1134,7 @@
 				5C6515F128C4EDDE006993E6 /* String+Ext.swift in Sources */,
 				5C2E00CE28C2784D0016B1E3 /* LoginInteractor.swift in Sources */,
 				5CDF7D1228C740780000B64C /* RegisterUserTypePresenter.swift in Sources */,
+				92A9A2F7296DF3C000E92E0C /* PopupBuilder.swift in Sources */,
 				5C2E00D028C27A290016B1E3 /* UIStoryboard+Ext.swift in Sources */,
 				5C2E00D728C285E80016B1E3 /* SplashInteractor.swift in Sources */,
 				5C6515DC28C4CDBD006993E6 /* Routerable.swift in Sources */,
@@ -1104,11 +1161,13 @@
 				5C463F1E28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift in Sources */,
 				5C2AF0C828C892D800C114F2 /* PrimaryTextViewTableViewCell.swift in Sources */,
 				5C09CD5E28C7EDD200CB457E /* RegisterUserInfoPresenter.swift in Sources */,
+				92A9A301296DF9A100E92E0C /* PopupRouter.swift in Sources */,
 				5C6515ED28C4DA88006993E6 /* NetworkManager.swift in Sources */,
 				5C463F1A28C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift in Sources */,
+				92A9A304296DFAE100E92E0C /* PopupViewController.swift in Sources */,
 				5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */,
+				92A9A307296DFBA300E92E0C /* PopupPresenter.swift in Sources */,
 				5C6515DE28C4CDF4006993E6 /* Viewable.swift in Sources */,
-				92A9A2F1296DEF4700E92E0C /* PopupManager.swift in Sources */,
 				5C2E00C228C2664C0016B1E3 /* NSObject+Ext.swift in Sources */,
 				5CDF7D1428C740850000B64C /* RegisterUserTypeInteractor.swift in Sources */,
 				5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */,
@@ -1141,6 +1200,7 @@
 				5C463F2228C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift in Sources */,
 				92A9A2EC296DEEB900E92E0C /* CoreDataManager.swift in Sources */,
 				5C6515E028C4D0D3006993E6 /* SplashEntities.swift in Sources */,
+				92A9A2FF296DF54600E92E0C /* PopupContractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
