@@ -97,6 +97,7 @@
 		5CFF5AA428B2747600F529C0 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */; };
 		92A9A2EC296DEEB900E92E0C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */; };
 		92A9A2F1296DEF4700E92E0C /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F0296DEF4700E92E0C /* PopupManager.swift */; };
+		92A9A2F4296DF12500E92E0C /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */; };
 		B52D319AFEA4F8FC69E9F0B8 /* Pods_Diverse_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B954CE80CE9BB23948A5C8 /* Pods_Diverse_Social_Media.framework */; };
 		D29F3C91E2D96ED10344104D /* Pods_Diverse_Social_MediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA2465E390756689BF542D9 /* Pods_Diverse_Social_MediaTests.framework */; };
 /* End PBXBuildFile section */
@@ -216,6 +217,7 @@
 		85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-MediaTests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-MediaTests/Pods-Diverse-Social-MediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		92A9A2F0296DEF4700E92E0C /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
 		BAF909CE7EF4088555FCEAFB /* Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE4A8D3B5AC874B1F7F60088 /* Pods-Diverse-Social-Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.release.xcconfig"; sourceTree = "<group>"; };
 		C16B2818DAFA94B054C0C23F /* Pods-Diverse-Social-Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.debug.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.debug.xcconfig"; sourceTree = "<group>"; };
@@ -697,6 +699,7 @@
 		5CE7DF9228BBA6B500699EFE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				92A9A2F2296DF10400E92E0C /* AppLanguage */,
 				5CFF5A9B28B2721500F529C0 /* User */,
 				92A9A2EE296DEF1A00E92E0C /* BaseProtocols */,
 				5C6515EB28C4DA77006993E6 /* Network */,
@@ -795,6 +798,14 @@
 				92A9A2F0296DEF4700E92E0C /* PopupManager.swift */,
 			);
 			path = Popup;
+			sourceTree = "<group>";
+		};
+		92A9A2F2296DF10400E92E0C /* AppLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */,
+			);
+			path = AppLanguage;
 			sourceTree = "<group>";
 		};
 		B7048B099789BC1D87EB54BF /* Frameworks */ = {
@@ -1061,6 +1072,7 @@
 				5C12B37A28C77DF3001B1F26 /* UICollectionView+Ext.swift in Sources */,
 				5C09CD6028C7EDE100CB457E /* RegisterUserInfoRouter.swift in Sources */,
 				5C56013F28CA6FF20050EDA6 /* RegisterUserInfoViewController.swift in Sources */,
+				92A9A2F4296DF12500E92E0C /* AppLanguageManager.swift in Sources */,
 				5C09CD4F28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.swift in Sources */,
 				5C6515E928C4D7F5006993E6 /* Models.swift in Sources */,
 				5C6515F128C4EDDE006993E6 /* String+Ext.swift in Sources */,
