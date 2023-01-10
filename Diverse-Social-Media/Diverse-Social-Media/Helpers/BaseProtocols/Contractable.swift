@@ -5,33 +5,48 @@
 //  Created by Oguzhan Yalcin on 8.09.2022.
 //
 
-import Foundation
 import UIKit
 
-protocol PresenterToView: AnyObject {
-    
-    func setupViews()
-    
-    func setNavBar()
+// MARK: - PresenterToView
+@objc protocol PresenterToView: AnyObject {
+    func showIndicatorView()
+    func hideIndicatorView()
+    @objc optional func setNavBar(title: String)
 }
 
-protocol ViewToPresenter: AnyObject {
+extension UIViewController: PresenterToView {
     
-    func viewDidLoad()
+    func showIndicatorView() {
+        // MARK: - ActivityIndicatorManager will be added.
+    }
     
-    func viewWillAppear()
-}
-
-protocol PresenterToRouter: AnyObject {
-    
-    func showAlert(from: UINavigationController?, message: String)
-}
-
-extension PresenterToRouter {
-    
-    func showAlert(from navController: UINavigationController?, message: String) {
-        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-        alert.addAction(.init(title: "OK".localized, style: .cancel, handler: nil))
-        navController?.present(alert, animated: true, completion: nil)
+    func hideIndicatorView() {
+        // MARK: - ActivityIndicatorManager will be added.
     }
 }
+
+// MARK: - ViewToPresenter
+@objc protocol ViewToPresenter: AnyObject {
+    func viewDidLoad()
+    func viewWillAppear()
+    @objc optional func viewDidAppear()
+    @objc optional func viewWillDisappear()
+    @objc optional func viewDidDisappear()
+}
+
+// MARK: - PresenterToInteractor
+protocol PresenterToInteractor: AnyObject {
+    func fetchData<T>(request: T)
+}
+
+// MARK: - InteractorToPresenter
+protocol InteractorToPresenter: AnyObject {
+    func setData<T>(data: T)
+    func setError(error: BaseError)
+}
+
+// MARK: - PresenterToRouter
+protocol PresenterToRouter: AnyObject { }
+
+// MARK: - ConnectorToPresenter
+@objc protocol ConnectorToPresenter: AnyObject { }
