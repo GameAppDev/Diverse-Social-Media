@@ -7,24 +7,24 @@
 
 import UIKit
 
-final class SplashRouter: Routerable {
+final class SplashRouter {
     
-    weak var navigationController: UINavigationController?
+    weak var view: UIViewController?
     
-    public func returnNC() -> UINavigationController {
+    public func returnVC() -> UIViewController {
         return SplashBuilder.buildModule()
     }
 }
 
 extension SplashRouter: PSplashPresenterToRouter {
     
-    func openLoginVC() {
-        let nextVC = LoginRouter().returnVC(navigationController: self.navigationController)
-        pushVC(nextVC, navController: self.navigationController, animated: true)
+    func navigateToLogin() {
+        let viewController = LoginRouter().returnVC()
+        view?.navigationController?.push(viewController)
     }
     
-    func openRegisterVC() {
-        let nextVC = RegisterUserTypeRouter().returnVC(navigationController: self.navigationController)
-        pushVC(nextVC, navController: self.navigationController, animated: true)
+    func navigateToRegister() {
+        let viewController = RegisterUserTypeRouter().returnVC()
+        view?.navigationController?.push(viewController)
     }
 }

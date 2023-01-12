@@ -10,22 +10,21 @@ import UIKit
 
 enum RegisterUserTypeBuilder {
 
-    static func buildModule(navigationController: UINavigationController?) -> UIViewController {
-        let viewController = RegisterUserTypeViewController(nibName: ApplicationConstants.registerUserTypeVC.nibName, bundle: nil)
-        
+    static func buildModule() -> UIViewController {
+        let viewController = RegisterUserTypeViewController()
         let interactor = RegisterUserTypeInteractor()
         let router = RegisterUserTypeRouter()
         let presenter = RegisterUserTypePresenter(view: viewController,
                                                   interactor: interactor,
                                                   router: router)
         
-        router.navigationController = navigationController
+        router.view = viewController
         
         viewController.presenter = presenter
+        viewController.modalPresentationStyle = .fullScreen
         
         interactor.presenter = presenter
         
-        //viewController.modalPresentationStyle = .fullScreen
         return viewController
     }
 }

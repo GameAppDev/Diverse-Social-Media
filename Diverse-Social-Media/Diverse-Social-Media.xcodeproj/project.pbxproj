@@ -35,7 +35,6 @@
 		5C2E00D028C27A290016B1E3 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00CF28C27A290016B1E3 /* UIStoryboard+Ext.swift */; };
 		5C2E00D328C285A90016B1E3 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D228C285A90016B1E3 /* SplashRouter.swift */; };
 		5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D428C285B10016B1E3 /* SplashPresenter.swift */; };
-		5C2E00D728C285E80016B1E3 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E00D628C285E80016B1E3 /* SplashInteractor.swift */; };
 		5C33F95B28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */; };
 		5C463F1A28C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F1928C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift */; };
 		5C463F1E28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C463F1D28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift */; };
@@ -61,7 +60,6 @@
 		5C6515DA28C4CD75006993E6 /* Presenterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D928C4CD75006993E6 /* Presenterable.swift */; };
 		5C6515DC28C4CDBD006993E6 /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515DB28C4CDBD006993E6 /* Routerable.swift */; };
 		5C6515DE28C4CDF4006993E6 /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515DD28C4CDF4006993E6 /* Viewable.swift */; };
-		5C6515E028C4D0D3006993E6 /* SplashEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515DF28C4D0D3006993E6 /* SplashEntities.swift */; };
 		5C6515E928C4D7F5006993E6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515E828C4D7F5006993E6 /* Models.swift */; };
 		5C6515ED28C4DA88006993E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515EC28C4DA88006993E6 /* NetworkManager.swift */; };
 		5C6515EF28C4DADE006993E6 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515EE28C4DADE006993E6 /* Networkable.swift */; };
@@ -95,7 +93,21 @@
 		5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9C28B2722D00F529C0 /* UserManager.swift */; };
 		5CFF5AA228B2742800F529C0 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA128B2742800F529C0 /* CGFloat+Ext.swift */; };
 		5CFF5AA428B2747600F529C0 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */; };
-		92A9A2EC296DEEB900E92E0C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */; };
+		927E5235297043E400FF2E8C /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E5233297043E400FF2E8C /* Picker.swift */; };
+		927E5236297043E400FF2E8C /* Picker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927E5234297043E400FF2E8C /* Picker.xib */; };
+		927E523B2970483000FF2E8C /* PickerDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E52392970483000FF2E8C /* PickerDataTableViewCell.swift */; };
+		927E523C2970483000FF2E8C /* PickerDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927E523A2970483000FF2E8C /* PickerDataTableViewCell.xib */; };
+		927E524329704AF300FF2E8C /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524229704AF300FF2E8C /* PickerPresenter.swift */; };
+		927E524529704B4800FF2E8C /* PickerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524429704B4800FF2E8C /* PickerTableView.swift */; };
+		927E524729704B6E00FF2E8C /* PickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524629704B6E00FF2E8C /* PickerRouter.swift */; };
+		927E524A29704B8100FF2E8C /* PickerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524929704B8100FF2E8C /* PickerBuilder.swift */; };
+		927E524C29704B9000FF2E8C /* PickerContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524B29704B9000FF2E8C /* PickerContractor.swift */; };
+		927E524F29704BDD00FF2E8C /* PickerEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E524E29704BDD00FF2E8C /* PickerEntities.swift */; };
+		927E525129704CF800FF2E8C /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E525029704CF800FF2E8C /* UINavigationController+Ext.swift */; };
+		927E5259297055E800FF2E8C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E5258297055E800FF2E8C /* AppRouter.swift */; };
+		927E525B2970569F00FF2E8C /* UserCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E525A2970569F00FF2E8C /* UserCoreDataManager.swift */; };
+		927E52622970743300FF2E8C /* BaseInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E52612970743300FF2E8C /* BaseInput.swift */; };
+		927E52642970743D00FF2E8C /* BaseInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927E52632970743D00FF2E8C /* BaseInput.xib */; };
 		92A9A2F4296DF12500E92E0C /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */; };
 		92A9A2F7296DF3C000E92E0C /* PopupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2F6296DF3C000E92E0C /* PopupBuilder.swift */; };
 		92A9A2FF296DF54600E92E0C /* PopupContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A2FE296DF54600E92E0C /* PopupContractor.swift */; };
@@ -103,6 +115,7 @@
 		92A9A304296DFAE100E92E0C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A302296DFAE100E92E0C /* PopupViewController.swift */; };
 		92A9A305296DFAE100E92E0C /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A9A303296DFAE100E92E0C /* PopupViewController.xib */; };
 		92A9A307296DFBA300E92E0C /* PopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9A306296DFBA300E92E0C /* PopupPresenter.swift */; };
+		92DD711E29709DB700DAC81A /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD711D29709DB700DAC81A /* Validatable.swift */; };
 		B52D319AFEA4F8FC69E9F0B8 /* Pods_Diverse_Social_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B954CE80CE9BB23948A5C8 /* Pods_Diverse_Social_Media.framework */; };
 		D29F3C91E2D96ED10344104D /* Pods_Diverse_Social_MediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA2465E390756689BF542D9 /* Pods_Diverse_Social_MediaTests.framework */; };
 /* End PBXBuildFile section */
@@ -155,7 +168,6 @@
 		5C2E00CF28C27A290016B1E3 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
 		5C2E00D228C285A90016B1E3 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		5C2E00D428C285B10016B1E3 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
-		5C2E00D628C285E80016B1E3 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		5C33F95A28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUsernamePasswordViewController.xib; sourceTree = "<group>"; };
 		5C463F1928C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordViewController.swift; sourceTree = "<group>"; };
 		5C463F1D28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernamePasswordInteractor.swift; sourceTree = "<group>"; };
@@ -181,7 +193,6 @@
 		5C6515D928C4CD75006993E6 /* Presenterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenterable.swift; sourceTree = "<group>"; };
 		5C6515DB28C4CDBD006993E6 /* Routerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		5C6515DD28C4CDF4006993E6 /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
-		5C6515DF28C4D0D3006993E6 /* SplashEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEntities.swift; sourceTree = "<group>"; };
 		5C6515E828C4D7F5006993E6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5C6515EC28C4DA88006993E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5C6515EE28C4DADE006993E6 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
@@ -220,7 +231,21 @@
 		5CFF5AA128B2742800F529C0 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
 		5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-MediaTests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-MediaTests/Pods-Diverse-Social-MediaTests.release.xcconfig"; sourceTree = "<group>"; };
-		92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		927E5233297043E400FF2E8C /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		927E5234297043E400FF2E8C /* Picker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Picker.xib; sourceTree = "<group>"; };
+		927E52392970483000FF2E8C /* PickerDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataTableViewCell.swift; sourceTree = "<group>"; };
+		927E523A2970483000FF2E8C /* PickerDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerDataTableViewCell.xib; sourceTree = "<group>"; };
+		927E524229704AF300FF2E8C /* PickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
+		927E524429704B4800FF2E8C /* PickerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableView.swift; sourceTree = "<group>"; };
+		927E524629704B6E00FF2E8C /* PickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerRouter.swift; sourceTree = "<group>"; };
+		927E524929704B8100FF2E8C /* PickerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBuilder.swift; sourceTree = "<group>"; };
+		927E524B29704B9000FF2E8C /* PickerContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContractor.swift; sourceTree = "<group>"; };
+		927E524E29704BDD00FF2E8C /* PickerEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerEntities.swift; sourceTree = "<group>"; };
+		927E525029704CF800FF2E8C /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		927E5258297055E800FF2E8C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		927E525A2970569F00FF2E8C /* UserCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoreDataManager.swift; sourceTree = "<group>"; };
+		927E52612970743300FF2E8C /* BaseInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInput.swift; sourceTree = "<group>"; };
+		927E52632970743D00FF2E8C /* BaseInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseInput.xib; sourceTree = "<group>"; };
 		92A9A2F3296DF12500E92E0C /* AppLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
 		92A9A2F6296DF3C000E92E0C /* PopupBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBuilder.swift; sourceTree = "<group>"; };
 		92A9A2FE296DF54600E92E0C /* PopupContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContractor.swift; sourceTree = "<group>"; };
@@ -228,6 +253,7 @@
 		92A9A302296DFAE100E92E0C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		92A9A303296DFAE100E92E0C /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		92A9A306296DFBA300E92E0C /* PopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresenter.swift; sourceTree = "<group>"; };
+		92DD711D29709DB700DAC81A /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		BAF909CE7EF4088555FCEAFB /* Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests/Pods-Diverse-Social-Media-Diverse-Social-MediaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE4A8D3B5AC874B1F7F60088 /* Pods-Diverse-Social-Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.release.xcconfig"; sourceTree = "<group>"; };
 		C16B2818DAFA94B054C0C23F /* Pods-Diverse-Social-Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-Media.debug.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-Media/Pods-Diverse-Social-Media.debug.xcconfig"; sourceTree = "<group>"; };
@@ -400,8 +426,6 @@
 				5C6515E328C4D169006993E6 /* Router */,
 				5C6515E528C4D194006993E6 /* View */,
 				5C6515E228C4D15E006993E6 /* Presenter */,
-				5C6515E128C4D153006993E6 /* Interactor */,
-				5C6515E428C4D175006993E6 /* Entity */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -480,14 +504,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		5C6515E128C4D153006993E6 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				5C2E00D628C285E80016B1E3 /* SplashInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		5C6515E228C4D15E006993E6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,14 +519,6 @@
 				5C56014128CA73DE0050EDA6 /* SplashBuilder.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		5C6515E428C4D175006993E6 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				5C6515DF28C4D0D3006993E6 /* SplashEntities.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		5C6515E528C4D194006993E6 /* View */ = {
@@ -609,7 +617,7 @@
 		5CC55935288C13580060EF7D /* Diverse-Social-Media */ = {
 			isa = PBXGroup;
 			children = (
-				5CC55936288C13580060EF7D /* AppDelegate.swift */,
+				927E5257297055D900FF2E8C /* Application */,
 				5C6515EA28C4DA3A006993E6 /* Modules */,
 				92A9A2E9296DEE4E00E92E0C /* Commons */,
 				5CE7DF9228BBA6B500699EFE /* Helpers */,
@@ -770,13 +778,107 @@
 				5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */,
 				5C2E00C128C2664C0016B1E3 /* NSObject+Ext.swift */,
 				5CE7DF8F28BBA3C700699EFE /* UIViewController+Ext.swift */,
+				927E525029704CF800FF2E8C /* UINavigationController+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		927E52242970416C00FF2E8C /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				927E524029704AC000FF2E8C /* Contractor */,
+				927E523F29704ABA00FF2E8C /* Router */,
+				927E523E29704AB500FF2E8C /* View */,
+				927E523D29704AAC00FF2E8C /* Presenter */,
+				927E524D29704BCA00FF2E8C /* Entity */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		927E52382970480D00FF2E8C /* PickerDataCell */ = {
+			isa = PBXGroup;
+			children = (
+				927E52392970483000FF2E8C /* PickerDataTableViewCell.swift */,
+				927E523A2970483000FF2E8C /* PickerDataTableViewCell.xib */,
+			);
+			path = PickerDataCell;
+			sourceTree = "<group>";
+		};
+		927E523D29704AAC00FF2E8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				927E524229704AF300FF2E8C /* PickerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		927E523E29704AB500FF2E8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				927E524129704ACA00FF2E8C /* Connector */,
+				927E5233297043E400FF2E8C /* Picker.swift */,
+				927E5234297043E400FF2E8C /* Picker.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		927E523F29704ABA00FF2E8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				927E524629704B6E00FF2E8C /* PickerRouter.swift */,
+				927E524929704B8100FF2E8C /* PickerBuilder.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		927E524029704AC000FF2E8C /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				927E524B29704B9000FF2E8C /* PickerContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		927E524129704ACA00FF2E8C /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				927E52382970480D00FF2E8C /* PickerDataCell */,
+				927E524429704B4800FF2E8C /* PickerTableView.swift */,
+			);
+			path = Connector;
+			sourceTree = "<group>";
+		};
+		927E524D29704BCA00FF2E8C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				927E524E29704BDD00FF2E8C /* PickerEntities.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		927E5257297055D900FF2E8C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5CC55936288C13580060EF7D /* AppDelegate.swift */,
+				927E5258297055E800FF2E8C /* AppRouter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		927E5260297073AB00FF2E8C /* BaseInput */ = {
+			isa = PBXGroup;
+			children = (
+				927E52612970743300FF2E8C /* BaseInput.swift */,
+				927E52632970743D00FF2E8C /* BaseInput.xib */,
+			);
+			path = BaseInput;
 			sourceTree = "<group>";
 		};
 		92A9A2E9296DEE4E00E92E0C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				92DD711C29709D9A00DAC81A /* Inputs */,
+				927E52242970416C00FF2E8C /* Picker */,
 				92A9A2EF296DEF3A00E92E0C /* Popup */,
 				5CE7DF9428BBA76500699EFE /* Base */,
 				5CE7DF9328BBA6C800699EFE /* NavigationBar */,
@@ -789,7 +891,7 @@
 		92A9A2EA296DEEA600E92E0C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				92A9A2EB296DEEB900E92E0C /* CoreDataManager.swift */,
+				927E525A2970569F00FF2E8C /* UserCoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -893,6 +995,15 @@
 				5C463F2528C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift */,
 			);
 			path = Contractor;
+			sourceTree = "<group>";
+		};
+		92DD711C29709D9A00DAC81A /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				927E5260297073AB00FF2E8C /* BaseInput */,
+				92DD711D29709DB700DAC81A /* Validatable.swift */,
+			);
+			path = Inputs;
 			sourceTree = "<group>";
 		};
 		B7048B099789BC1D87EB54BF /* Frameworks */ = {
@@ -1015,15 +1126,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2AF0C928C892D800C114F2 /* PrimaryTextViewTableViewCell.xib in Resources */,
+				927E52642970743D00FF2E8C /* BaseInput.xib in Resources */,
 				5C56014028CA6FF20050EDA6 /* RegisterUserInfoViewController.xib in Resources */,
 				5C56013C28CA6CAD0050EDA6 /* RegisterUserTypeViewController.xib in Resources */,
 				5C33F95B28C9E5F6005EE8A2 /* RegisterUsernamePasswordViewController.xib in Resources */,
 				5C2AF0C128C8758500C114F2 /* PrimaryTextFieldTableViewCell.xib in Resources */,
+				927E5236297043E400FF2E8C /* Picker.xib in Resources */,
 				5CC55946288C13590060EF7D /* LaunchScreen.storyboard in Resources */,
 				5CC55943288C13590060EF7D /* Assets.xcassets in Resources */,
 				5C56013828CA650D0050EDA6 /* LoginViewController.xib in Resources */,
 				5CA0761E28C5323E00818F83 /* Main.storyboard in Resources */,
 				5C09CD5028C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.xib in Resources */,
+				927E523C2970483000FF2E8C /* PickerDataTableViewCell.xib in Resources */,
 				5CFF5A9428B2520700F529C0 /* Fonts in Resources */,
 				92A9A305296DFAE100E92E0C /* PopupViewController.xib in Resources */,
 				5CE7DF9A28BBBF4B00699EFE /* NavigationBar.xib in Resources */,
@@ -1164,23 +1278,27 @@
 				5C09CD4F28C7DAFC00CB457E /* PrimaryButtonCollectionViewCell.swift in Sources */,
 				5C6515E928C4D7F5006993E6 /* Models.swift in Sources */,
 				5C6515F128C4EDDE006993E6 /* String+Ext.swift in Sources */,
+				927E525B2970569F00FF2E8C /* UserCoreDataManager.swift in Sources */,
 				5C2E00CE28C2784D0016B1E3 /* LoginInteractor.swift in Sources */,
 				5CDF7D1228C740780000B64C /* RegisterUserTypePresenter.swift in Sources */,
 				92A9A2F7296DF3C000E92E0C /* PopupBuilder.swift in Sources */,
 				5C2E00D028C27A290016B1E3 /* UIStoryboard+Ext.swift in Sources */,
-				5C2E00D728C285E80016B1E3 /* SplashInteractor.swift in Sources */,
 				5C6515DC28C4CDBD006993E6 /* Routerable.swift in Sources */,
 				5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */,
 				5C2E00C828C277A80016B1E3 /* LoginPresenter.swift in Sources */,
 				5C463F2628C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift in Sources */,
 				5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */,
+				927E524529704B4800FF2E8C /* PickerTableView.swift in Sources */,
 				5CF0B54F28CB97240080EA21 /* RegisterUsernamePasswordBuilder.swift in Sources */,
+				927E524729704B6E00FF2E8C /* PickerRouter.swift in Sources */,
+				92DD711E29709DB700DAC81A /* Validatable.swift in Sources */,
 				5C463F2028C8D6F700DD7D06 /* RegisterUsernamePasswordPresenter.swift in Sources */,
 				5CDF7D1028C740640000B64C /* RegisterUserTypeEntities.swift in Sources */,
 				5C6515EF28C4DADE006993E6 /* Networkable.swift in Sources */,
 				5C12B37728C77ABE001B1F26 /* UserTypeCollectionViewCell.swift in Sources */,
 				5C6515D328C4CC47006993E6 /* SplashContractor.swift in Sources */,
 				5C463F2428C8D71000DD7D06 /* RegisterUsernamePasswordRouter.swift in Sources */,
+				927E525129704CF800FF2E8C /* UINavigationController+Ext.swift in Sources */,
 				5C09CD4928C7CCC200CB457E /* UserTypeConfig.swift in Sources */,
 				5C6515F828C50177006993E6 /* LoginEntities.swift in Sources */,
 				5CFF5A9628B2521400F529C0 /* Fonts.swift in Sources */,
@@ -1190,11 +1308,15 @@
 				5C2E00CA28C277C00016B1E3 /* LoginRouter.swift in Sources */,
 				5C2AF0C028C8758500C114F2 /* PrimaryTextFieldTableViewCell.swift in Sources */,
 				5CC55937288C13580060EF7D /* AppDelegate.swift in Sources */,
+				927E523B2970483000FF2E8C /* PickerDataTableViewCell.swift in Sources */,
 				5C463F1E28C8D6E000DD7D06 /* RegisterUsernamePasswordInteractor.swift in Sources */,
 				5C2AF0C828C892D800C114F2 /* PrimaryTextViewTableViewCell.swift in Sources */,
 				5C09CD5E28C7EDD200CB457E /* RegisterUserInfoPresenter.swift in Sources */,
+				927E524329704AF300FF2E8C /* PickerPresenter.swift in Sources */,
+				927E52622970743300FF2E8C /* BaseInput.swift in Sources */,
 				92A9A301296DF9A100E92E0C /* PopupRouter.swift in Sources */,
 				5C6515ED28C4DA88006993E6 /* NetworkManager.swift in Sources */,
+				927E524C29704B9000FF2E8C /* PickerContractor.swift in Sources */,
 				5C463F1A28C8D6A400DD7D06 /* RegisterUsernamePasswordViewController.swift in Sources */,
 				92A9A304296DFAE100E92E0C /* PopupViewController.swift in Sources */,
 				5CFF5A9028B24E8200F529C0 /* ThemeManager.swift in Sources */,
@@ -1211,9 +1333,11 @@
 				5C56013728CA650D0050EDA6 /* LoginViewController.swift in Sources */,
 				5C56014428CA767D0050EDA6 /* LoginBuilder.swift in Sources */,
 				5C56014728CA85DA0050EDA6 /* Contractable.swift in Sources */,
+				927E5259297055E800FF2E8C /* AppRouter.swift in Sources */,
 				5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */,
 				5C09CD6428C7EEBC00CB457E /* RegisterUserInfoContractor.swift in Sources */,
 				5CB396FF28CBCDFD00349B34 /* Bundle+Ext.swift in Sources */,
+				927E524F29704BDD00FF2E8C /* PickerEntities.swift in Sources */,
 				5C56014228CA73DE0050EDA6 /* SplashBuilder.swift in Sources */,
 				5C2E00D528C285B10016B1E3 /* SplashPresenter.swift in Sources */,
 				5CFF5AA428B2747600F529C0 /* UITableView+Ext.swift in Sources */,
@@ -1222,16 +1346,16 @@
 				5CDF7D0E28C7404F0000B64C /* RegisterUserTypeRouter.swift in Sources */,
 				5C2E00D328C285A90016B1E3 /* SplashRouter.swift in Sources */,
 				5C2E00C028C259970016B1E3 /* UIView+Ext.swift in Sources */,
+				927E5235297043E400FF2E8C /* Picker.swift in Sources */,
 				5CFF5AA228B2742800F529C0 /* CGFloat+Ext.swift in Sources */,
 				5CFF5A9228B2517500F529C0 /* Colours.swift in Sources */,
 				5CF0B54B28CB942D0080EA21 /* RegisterUserTypeBuilder.swift in Sources */,
+				927E524A29704B8100FF2E8C /* PickerBuilder.swift in Sources */,
 				5CE7DF9828BBB5BC00699EFE /* NavigationBar.swift in Sources */,
 				5C56013328CA5D590050EDA6 /* SplashViewController.swift in Sources */,
 				5C2AF0C428C8853B00C114F2 /* PrimaryButtonFooterTableViewCell.swift in Sources */,
 				5C09CD6228C7EE4B00CB457E /* RegisterUserInfoEntities.swift in Sources */,
 				5C463F2228C8D70500DD7D06 /* RegisterUsernamePasswordEntities.swift in Sources */,
-				92A9A2EC296DEEB900E92E0C /* CoreDataManager.swift in Sources */,
-				5C6515E028C4D0D3006993E6 /* SplashEntities.swift in Sources */,
 				92A9A2FF296DF54600E92E0C /* PopupContractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

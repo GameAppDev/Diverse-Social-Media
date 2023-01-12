@@ -9,10 +9,12 @@ import UIKit
 
 final class LoginViewController: BaseViewController {
 
+    // MARK: - Outlets
     @IBOutlet private weak var tableView: UITableView!
 
-    var presenter: LoginPresenter?
+    var presenter: PLoginViewToPresenter?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,25 +30,27 @@ final class LoginViewController: BaseViewController {
 
 extension LoginViewController: PLoginPresenterToView {
     
-    func setupViews() {
-        tableView.backgroundColor = UIColor.clear
-    }
-
-    func setupTableView() {
-        tableView.contentInset = UIEdgeInsets(top: CGFloat(15).ws, left: CGFloat(0), bottom: CGFloat(15).ws, right: CGFloat(0))
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.separatorStyle = .none
-        tableView.registerCell(PrimaryTextFieldTableViewCell.self)
-        tableView.registerFooterView(PrimaryButtonFooterTableViewCell.self)
+    // MARK: - NavBar
+    func setNavBar(title: String) {
+        setNavigationBarItems(title: title,
+                              leftButton: nil,
+                              rightButton: nil)
     }
     
-    func setNavBar() {
-        setNavigationBarItems(title: "Login".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+    func showWarningPopup(content: String) {
+        showPopup(identifier: nil,
+                  title: "Warning".localized,
+                  content: content,
+                  image: "",
+                  buttonType: .single,
+                  leftButtonText: "OK".localized,
+                  rightButtonText: nil,
+                  rightButtonAction: nil,
+                  parentVC: self)
     }
 }
 
-
+/*
 extension LoginViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -95,3 +99,4 @@ extension LoginViewController: PrimaryButtonCellDelegate {
         debugPrint("<--- Login Model: \(loginModel) --->")
     }
 }
+*/

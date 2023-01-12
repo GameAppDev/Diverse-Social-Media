@@ -8,7 +8,8 @@
 import Foundation
 
 protocol PLoginPresenterToView: PresenterToView {
-    func setupTableView()
+    func setNavBar(title: String)
+    func showWarningPopup(content: String)
 }
 
 protocol PLoginViewToPresenter: ViewToPresenter {
@@ -16,15 +17,13 @@ protocol PLoginViewToPresenter: ViewToPresenter {
 }
 
 protocol PLoginPresenterToInteractor: PresenterToInteractor {
-    func fetchUserData(loginModel: [String: Any])
     func setUserModel(user: User)
 }
 
-protocol PLoginInteractorToPresenter: InteractorToPresenter {
-    func onSuccessLogin(response: User)
-    func onErrorLogin(error: BaseError)
-}
+protocol PLoginInteractorToPresenter: InteractorToPresenter { }
 
 protocol PLoginPresenterToRouter: PresenterToRouter {
-    func userLoggedIn()
+    func navigateToMain()
 }
+
+protocol PLoginConnectorToPresenter: ConnectorToPresenter { }

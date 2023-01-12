@@ -7,18 +7,16 @@
 
 import UIKit
 
-final class LoginRouter: Routerable {
+final class LoginRouter {
     
-    weak var navigationController: UINavigationController?
+    weak var view: UIViewController?
     
-    public func returnVC(navigationController: UINavigationController?) -> UIViewController {
-        return LoginBuilder.buildModule(navigationController: navigationController)
+    public func returnVC() -> UIViewController {
+        return LoginBuilder.buildModule()
     }
 }
 
 extension LoginRouter: PLoginPresenterToRouter {
     
-    func showAlert(message: String) { }
-    
-    func userLoggedIn() { }
+    func navigateToMain() { }
 }

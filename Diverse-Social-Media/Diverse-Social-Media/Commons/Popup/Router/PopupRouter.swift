@@ -12,8 +12,7 @@ final class PopupRouter {
     weak var view: UIViewController?
 
     static func setupModule(popupSettings: PopupSettings,
-                            buttonActions: PopupButtonDelegate?,
-                            dismissDelegate: PopupDismissDelegate?) -> PopupViewController {
+                            buttonActions: PopupButtonDelegate?) -> PopupViewController {
         let viewController = PopupViewController()
         let router = PopupRouter()
         let presenter = PopupPresenter(view: viewController,
@@ -23,7 +22,6 @@ final class PopupRouter {
         viewController.presenter = presenter
         viewController.modalPresentationStyle = .overCurrentContext
         viewController.buttonActions = buttonActions
-        viewController.dismissDelegate = dismissDelegate
 
         router.view = viewController
 

@@ -11,7 +11,6 @@ final class PopupViewController: BaseViewController {
 
     var presenter: PPopupViewToPresenter?
     var buttonActions: PopupButtonDelegate?
-    var dismissDelegate: PopupDismissDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

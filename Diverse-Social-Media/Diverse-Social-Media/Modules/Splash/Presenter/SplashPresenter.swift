@@ -5,74 +5,55 @@
 //  Created by Oguzhan Yalcin on 2.09.2022.
 //
 
-import Foundation
+import UIKit
 
 final class SplashPresenter {
     
-    private weak var view: SplashViewController?
-    private var interactor: SplashInteractor?
-    private var router: SplashRouter?
+    private weak var view: PSplashPresenterToView?
+    private var router: PSplashPresenterToRouter?
     
-    public var languages: [String] = ApplicationConstants.languages
-    
-    init(view: SplashViewController, interactor: SplashInteractor, router: SplashRouter) {
+    init(view: PSplashPresenterToView,
+         router: PSplashPresenterToRouter) {
         self.view = view
-        self.interactor = interactor
         self.router = router
     }
 }
 
 extension SplashPresenter: PSplashViewToPresenter {
     
+    func handleLogin() {
+        router?.navigateToLogin()
+    }
+    
+    func handleRegister() {
+        router?.navigateToRegister()
+    }
+    
+    func handleLanguagePicker() { }
+    
+    // MARK: - PresenterToView
     func viewDidLoad() {
-        //view?.indicatorView(animate: true)
-        view?.setupViews()
-        view?.setGestureRecognizerForLanguage()
-        interactor?.apiState = .loading
-        interactor?.fetchConfigData()
+        view?.setTitle(text: "Welcome to Diverse Social Media Application".localized)
+        view?.setTitle(font: UIFont.titleFont)
+        view?.setTitle(colour: UIColor.titleColour)
+        view?.setLoginButton(title: "Login".localized.returnWithMargin)
+        view?.setLoginButton(font: UIFont.buttonTitleFont)
+        view?.setLoginButton(bgColour: UIColor.buttonBGColour, titleColour: UIColor.buttonTitleColour)
+        view?.setLoginButton(roundCornersSize: CGFloat(10).ws)
+        view?.setRegisterButton(title: "Register".localized.returnWithMargin)
+        view?.setRegisterButton(font: UIFont.buttonTitleFont)
+        view?.setRegisterButton(bgColour: UIColor.buttonBGColour, titleColour: UIColor.buttonTitleColour)
+        view?.setRegisterButton(roundCornersSize: CGFloat(10).ws)
+        // TODO: - set language
+        let language: String = "English"
+        view?.setLanguageImageView(image: language)
+        view?.setLanguageTextField(text: language)
+        view?.setLanguageTextField(font: UIFont.textFont)
+        view?.setLanguageTextField(textColour: UIColor.textColour, tintColor: UIColor.clear)
+        view?.setPickerView()
     }
     
     func viewWillAppear() {
-        if let lang = interactor?.getUserDefaultsStringValueOf("LANGUAGE") {
-            view?.setLanguage(language: lang)
-        }
-        view?.setNavBar()
-    }
-    
-    func navigateToLogin() {
-        router?.openLoginVC()
-    }
-    
-    func navigateToRegister() {
-        router?.openRegisterVC()
-    }
-    
-    func openLanguagePicker() {
-        view?.setupPicker()
-        view?.becomeFirstResponderLanguageTextField()
-    }
-    
-    func selectLanguageFromPicker(index: Int) {
-        view?.resignFirstResponderLanguageTextField()
-        if let lang = languages[safe: index] {
-            appDelegate.setLanguage(language: lang)
-        }
-    }
-}
-
-extension SplashPresenter: PSplashInteractorToPresenter {
-    
-    func setData<T>(data: T) { }
-    
-    func setError(error: BaseError) { }
-    
-    func onSuccessConfig(response: Config) {
-        //view?.indicatorView(animate: false)
-        interactor?.apiState = .success
-    }
-    
-    func onErrorConfig(error: BaseError) {
-        //view?.indicatorView(animate: false)
-        interactor?.apiState = .failure
+        view?.setNavBar(title: "")
     }
 }

@@ -33,7 +33,7 @@ extension RegisterUserInfoViewController: PRegisterUserInfoPresenterToView {
     }
     
     func setNavBar() {
-        setNavigationBarItems(title: "About You".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+        setNavigationBarItems(title: "About You".localized, leftButton: .back, rightButton: nil)
     }
     
     func setupTableView() {

@@ -23,6 +23,10 @@ class UserManager {
         return (self.userType ?? .Guest) == .Guest
     }
     
+    public var isLoggedIn: Bool {
+        return UserCoreDataManager.shared.isUserLoggedIn()
+    }
+    
     private init() {}
     
     public func setUserModel(model:[String: Any]) -> Bool {

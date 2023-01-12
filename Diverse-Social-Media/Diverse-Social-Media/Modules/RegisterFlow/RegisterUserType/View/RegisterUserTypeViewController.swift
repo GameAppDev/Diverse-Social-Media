@@ -32,8 +32,8 @@ extension RegisterUserTypeViewController: PRegisterUserTypePresenterToView {
         collectionView.backgroundColor = UIColor.clear
     }
     
-    func setNavBar() {
-        setNavigationBarItems(title: "Select User Type".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+    func setNavBar(title: String) {
+        setNavigationBarItems(title: "Select User Type".localized, leftButton: .back, rightButton: nil)
     }
     
     func setupCollectionView() {

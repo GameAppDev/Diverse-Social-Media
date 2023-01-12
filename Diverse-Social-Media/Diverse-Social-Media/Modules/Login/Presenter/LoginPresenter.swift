@@ -9,15 +9,13 @@ import Foundation
 
 final class LoginPresenter {
     
-    private weak var view: LoginViewController?
-    private var interactor: LoginInteractor?
-    private var router: LoginRouter?
+    private weak var view: PLoginPresenterToView?
+    private var interactor: PLoginPresenterToInteractor?
+    private var router: PLoginPresenterToRouter?
     
-    public let tfTitles: [String] = ["Username", "Password"]
-    
-    init(view: LoginViewController,
-         interactor: LoginInteractor,
-         router: LoginRouter) {
+    init(view: PLoginPresenterToView,
+         interactor: PLoginPresenterToInteractor,
+         router: PLoginPresenterToRouter) {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -26,23 +24,19 @@ final class LoginPresenter {
 
 extension LoginPresenter: PLoginViewToPresenter {
     
-    func viewDidLoad() {
-        //view?.indicatorView(animate: true)
-        view?.setupViews()
-        view?.setupTableView()
-    }
+    func viewDidLoad() { }
     
     func viewWillAppear() {
-        view?.setNavBar()
+        view?.setNavBar(title: "Login".localized)
     }
     
     func startLoginProcess(loginModel: [String: Any]) {
         if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {
             guard username != "", password != "" else {
-                router?.showAlert(message: "Username or Password is not correct".localized)
+                view?.showWarningPopup(content: "Username or Password is not correct".localized)
                 return
             }
-            interactor?.fetchUserData(loginModel: loginModel)
+            interactor?.fetchData(request: loginModel)
         }
     }
 }
@@ -52,14 +46,4 @@ extension LoginPresenter: PLoginInteractorToPresenter {
     func setData<T>(data: T) { }
     
     func setError(error: BaseError) { }
-    
-    func onSuccessLogin(response: User) {
-        //view?.indicatorView(animate: false)
-        router?.userLoggedIn()
-    }
-    
-    func onErrorLogin(error: BaseError) {
-        //view?.indicatorView(animate: false)
-        router?.showAlert(message: error.errorMessage ?? "Please try again".localized)
-    }
 }

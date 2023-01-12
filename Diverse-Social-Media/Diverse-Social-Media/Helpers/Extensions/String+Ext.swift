@@ -17,6 +17,10 @@ extension String {
         return "  \(self)  "
     }
     
+    var isNumeric: Bool {
+        return CharacterSet(charactersIn: self).isSubset(of: CharacterSet.decimalDigits)
+    }
+    
     var languageLongName: String {
         switch self {
         case "en": return "English"

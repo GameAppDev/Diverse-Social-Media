@@ -8,10 +8,18 @@
 import UIKit
 
 // MARK: - PresenterToView
-@objc protocol PresenterToView: AnyObject {
+protocol PresenterToView: AnyObject {
     func showIndicatorView()
     func hideIndicatorView()
-    @objc optional func setNavBar(title: String)
+    func showPopup(identifier: String?,
+                   title: String?,
+                   content: String?,
+                   image: String?,
+                   buttonType: PopupButtonType?,
+                   leftButtonText: String?,
+                   rightButtonText: String?,
+                   rightButtonAction: PopupButtonDelegate?,
+                   parentVC: UIViewController)
 }
 
 extension UIViewController: PresenterToView {
@@ -22,6 +30,27 @@ extension UIViewController: PresenterToView {
     
     func hideIndicatorView() {
         // MARK: - ActivityIndicatorManager will be added.
+    }
+    
+    func showPopup(identifier: String?,
+                   title: String?,
+                   content: String?,
+                   image: String?,
+                   buttonType: PopupButtonType?,
+                   leftButtonText: String?,
+                   rightButtonText: String?,
+                   rightButtonAction: PopupButtonDelegate?,
+                   parentVC: UIViewController) {
+        PopupBuilder()
+            .setPopupIdentifier(identifier ?? "")
+            .setTitle(title ?? "")
+            .setContent(content ?? "")
+            .setImageName(image ?? "")
+            .setButtonType(buttonType ?? .single)
+            .setLeftButtonText(leftButtonText ?? "")
+            .setRightButtonText(rightButtonText ?? "")
+            .build()
+            .show(parentVC: parentVC, buttonActions: rightButtonAction)
     }
 }
 

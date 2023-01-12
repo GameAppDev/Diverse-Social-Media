@@ -7,25 +7,12 @@
 
 import Foundation
 
-final class LoginInteractor: Interactorable {
+final class LoginInteractor {
     
-    private var networkManager: Networkable?
     public weak var presenter: LoginPresenter?
-    
-    public var apiState: ApiState = .beforeRequest
 }
 
 extension LoginInteractor: PLoginPresenterToInteractor {
-    
-    func fetchData<T>(request: T) { }
-    
-    func fetchUserData(loginModel: [String: Any]) {
-        //Core Data will be used...
-        if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {
-            let user: User = User(userId: "1234", userType: .CaptanAmerica, firstName: "Steve", lastName: "Rogers", email: "steve.rogers@mail.com", characterPhoto: "CaptanAmerica", about: "Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby")
-            self.presenter?.onSuccessLogin(response: user)
-        }
-    }
     
     func setUserModel(user: User) {
         let model: [String: Any] = [
@@ -38,5 +25,15 @@ extension LoginInteractor: PLoginPresenterToInteractor {
         ]
         
         UserManager.shared.setUserModel(model: model)
+    }
+    
+    // MARK: - PresenterToRouter
+    func fetchData<T>(request: T) {
+        if let loginModel = request as? [String: Any],
+           let username = loginModel["username"] as? String,
+           let password = loginModel["password"] as? String {
+            let user: User = User(userId: "1234", userType: .CaptanAmerica, firstName: "Steve", lastName: "Rogers", email: "steve.rogers@mail.com", characterPhoto: "CaptanAmerica", about: "Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby")
+            self.presenter?.setData(data: user)
+        }
     }
 }

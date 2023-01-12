@@ -5,33 +5,35 @@
 //  Created by Oguzhan Yalcin on 4.09.2022.
 //
 
-import Foundation
+import UIKit
 
 protocol PSplashPresenterToView: PresenterToView {
-    func setLanguage(language: String)
-    func setGestureRecognizerForLanguage()
-    func setupPicker()
-    func becomeFirstResponderLanguageTextField()
-    func resignFirstResponderLanguageTextField()
+    func setNavBar(title: String)
+    func setTitle(text: String)
+    func setTitle(font: UIFont)
+    func setTitle(colour: UIColor)
+    func setLoginButton(title: String)
+    func setLoginButton(font: UIFont)
+    func setLoginButton(bgColour: UIColor, titleColour: UIColor)
+    func setLoginButton(roundCornersSize: CGFloat)
+    func setRegisterButton(title: String)
+    func setRegisterButton(font: UIFont)
+    func setRegisterButton(bgColour: UIColor, titleColour: UIColor)
+    func setRegisterButton(roundCornersSize: CGFloat)
+    func setLanguageImageView(image: String)
+    func setLanguageTextField(text: String)
+    func setLanguageTextField(font: UIFont)
+    func setLanguageTextField(textColour: UIColor, tintColor: UIColor)
+    func setPickerView()
 }
 
 protocol PSplashViewToPresenter: ViewToPresenter {
-    func navigateToLogin()
-    func navigateToRegister()
-    func openLanguagePicker()
-    func selectLanguageFromPicker(index: Int)
-}
-
-protocol PSplashPresenterToInteractor: PresenterToInteractor {
-    func fetchConfigData()
-}
-
-protocol PSplashInteractorToPresenter: InteractorToPresenter {
-    func onSuccessConfig(response: Config)
-    func onErrorConfig(error: BaseError)
+    func handleLogin()
+    func handleRegister()
+    func handleLanguagePicker()
 }
 
 protocol PSplashPresenterToRouter: PresenterToRouter {
-    func openLoginVC()
-    func openRegisterVC()
+    func navigateToLogin()
+    func navigateToRegister()
 }

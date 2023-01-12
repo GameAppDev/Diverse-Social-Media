@@ -7,20 +7,20 @@
 
 import UIKit
 
-final class RegisterUserTypeRouter: Routerable {
+final class RegisterUserTypeRouter {
     
-    weak var navigationController: UINavigationController?
+    weak var view: UIViewController?
     
-    public func returnVC(navigationController: UINavigationController?) -> UIViewController {
-        return RegisterUserTypeBuilder.buildModule(navigationController: navigationController)
+    public func returnVC() -> UIViewController {
+        return RegisterUserTypeBuilder.buildModule()
     }
 }
 
 extension RegisterUserTypeRouter: PRegisterUserTypePresenterToRouter {
     
     func openNextVC(registerModel: [String: Any]) {
-        let nextVC = RegisterUserInfoRouter().returnVC(navigationController: self.navigationController, registerModel: registerModel)
-        pushVC(nextVC, navController: self.navigationController, animated: true)
+        //let nextVC = RegisterUserInfoRouter().returnVC(navigationController: self.navigationController, registerModel: registerModel)
+        //pushVC(nextVC, navController: self.navigationController, animated: true)
     }
     
     func showAlert(message: String) { }

@@ -1,18 +1,18 @@
 //
-//  SplashBuilder.swift
+//  PickerBuilder.swift
 //  Diverse-Social-Media
 //
-//  Created by Oguzhan Yalcin on 8.09.2022.
+//  Created by Oguzhan Yalcin on 12.01.2023.
 //
 
 import UIKit
 
-enum SplashBuilder {
+enum PickerBuilder {
 
     static func buildModule() -> UIViewController {
-        let viewController = SplashViewController()
-        let router = SplashRouter()
-        let presenter = SplashPresenter(view: viewController,
+        let viewController = Picker()
+        let router = PickerRouter()
+        let presenter = PickerPresenter(view: viewController,
                                         router: router)
         
         router.view = viewController

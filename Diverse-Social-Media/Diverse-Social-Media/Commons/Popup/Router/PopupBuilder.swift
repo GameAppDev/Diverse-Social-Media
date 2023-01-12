@@ -20,14 +20,11 @@ struct PopupSettings {
     var buttonType: PopupButtonType = .single
     var leftButtonText: String?
     var rightButtonText: String?
-    var dismissAfterButtonClicked: Bool = true
 
     func show(parentVC: UIViewController,
-              buttonActions: PopupButtonDelegate?,
-              dismissDelegate: PopupDismissDelegate? = nil) {
+              buttonActions: PopupButtonDelegate?) {
         let viewController = PopupRouter.setupModule(popupSettings: self,
-                                                     buttonActions: buttonActions,
-                                                     dismissDelegate: dismissDelegate)
+                                                     buttonActions: buttonActions)
         parentVC.present(viewController, animated: false)
     }
 }
@@ -69,11 +66,6 @@ final class PopupBuilder {
     
     public func setRightButtonText(_ rightButtonText: String?) -> PopupBuilder {
         popup.rightButtonText = rightButtonText
-        return self
-    }
-
-    public func setDismissAfterPrimaryButtonClick(_ dismissAfterButtonClicked: Bool) -> PopupBuilder {
-        popup.dismissAfterButtonClicked = dismissAfterButtonClicked
         return self
     }
     

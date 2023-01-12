@@ -8,6 +8,7 @@
 import Foundation
 
 protocol PRegisterUserTypePresenterToView: PresenterToView {
+    func setNavBar(title: String)
     func setupCollectionView()
     func reloadCollectionView()
 }

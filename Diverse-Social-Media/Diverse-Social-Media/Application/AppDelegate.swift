@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         getLanguage()
         
-        decideUserLoggedInStatusAndContinue()
+        AppRouter.shared.openApp()
         
         return true
     }
@@ -51,21 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.decideUserLoggedInStatusAndContinue()
         }
     }
-    
-    private func decideUserLoggedInStatusAndContinue() {
-        let isUserLoggedIn: Bool = (UserDefaults.standard.string(forKey: "LOGGEDIN") ?? "0") == "1"
-        isUserLoggedIn ? (handleStatusUserLoggedIn()) : (handleStatusGuest())
-        debugPrint("<--- Is User already loggedin? \(isUserLoggedIn) --->")
-    }
-    
-    private func handleStatusGuest() {
-        let rootVC = SplashRouter().returnNC()
-        
-        window?.rootViewController = rootVC
-        window?.makeKeyAndVisible()
-    }
-    
-    private func handleStatusUserLoggedIn() { }
 
     // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer = {

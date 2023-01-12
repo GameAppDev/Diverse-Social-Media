@@ -33,7 +33,7 @@ extension RegisterUsernamePasswordViewController: PRegisterUsernamePasswordPrese
     }
     
     func setNavBar() {
-        setNavigationBarItems(title: "Account Info".localized, leftButton: .back, rightButton: nil, containerColour: UIColor.navbarBGColour)
+        setNavigationBarItems(title: "Account Info".localized, leftButton: .back, rightButton: nil)
     }
     
     func setupTableView() {

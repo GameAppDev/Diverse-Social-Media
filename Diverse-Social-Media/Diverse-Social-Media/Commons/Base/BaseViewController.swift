@@ -32,7 +32,7 @@ class BaseViewController: UIViewController {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
-    public func setNavigationBarItems(title: String?, leftButton: NavigationBarButtonType?, rightButton: NavigationBarButtonType?, containerColour: UIColor?) {
+    public func setNavigationBarItems(title: String?, leftButton: NavigationBarButtonType?, rightButton: NavigationBarButtonType?) {
         guard let navigationBar = NavigationBar().loadNib() as? NavigationBar else { return }
         
         navigationBar.frame = getNavigationBarFrame()
@@ -41,7 +41,7 @@ class BaseViewController: UIViewController {
         navigationBar.leftButtonType = leftButton
         navigationBar.rightButtonType = rightButton
 
-        navigationBar.containerBGColour = containerColour
+        navigationBar.containerBGColour = UIColor.navbarBGColour
 
         navigationBar.delegate = self
 

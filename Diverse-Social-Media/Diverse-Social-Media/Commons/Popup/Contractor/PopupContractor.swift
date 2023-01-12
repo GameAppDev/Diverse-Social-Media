@@ -26,7 +26,3 @@ protocol PPopupPresenterToRouter: AnyObject { }
     @objc optional func leftButtonClicked()
     @objc optional func leftButtonClicked(with identifier: String?)
 }
-
-@objc protocol PopupDismissDelegate: AnyObject {
-    @objc optional func dissmissPopup(with identifier: String?)
-}

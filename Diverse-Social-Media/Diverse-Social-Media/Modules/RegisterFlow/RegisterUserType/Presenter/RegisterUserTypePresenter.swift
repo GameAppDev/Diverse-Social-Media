@@ -43,7 +43,7 @@ extension RegisterUserTypePresenter: PRegisterUserTypeViewToPresenter {
     }
     
     func viewWillAppear() {
-        view?.setNavBar()
+        view?.setNavBar(title: "")
     }
     
     func setUserTypeAndReloadCollectionView(index: Int, isSelected: Bool) {
