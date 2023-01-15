@@ -11,7 +11,7 @@ import UIKit
 enum RegisterUsernamePasswordBuilder {
 
     static func buildModule(navigationController: UINavigationController?, registerModel: [String: Any]) -> UIViewController {
-        let viewController = RegisterUsernamePasswordViewController(nibName: ApplicationConstants.registerUsernamePasswordVC.nibName, bundle: nil)
+        let viewController = RegisterUsernamePasswordViewController()
 
         let interactor = RegisterUsernamePasswordInteractor()
         let router = RegisterUsernamePasswordRouter()

@@ -10,7 +10,7 @@ import UIKit
 enum RegisterUserInfoBuilder {
 
     static func buildModule(navigationController: UINavigationController?, registerModel: [String: Any]) -> UIViewController {
-        let viewController = RegisterUserInfoViewController(nibName: ApplicationConstants.registerUserInfoVC.nibName, bundle: nil)
+        let viewController = RegisterUserInfoViewController()
         
         let interactor = RegisterUserInfoInteractor()
         let router = RegisterUserInfoRouter()
