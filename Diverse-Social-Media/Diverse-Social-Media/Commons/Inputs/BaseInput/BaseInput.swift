@@ -117,17 +117,17 @@ class BaseInput: UIView, Validatable {
     
     private func setNotReadyStatus() {
         headerLabel.textColor = UIColor.buttonTitleColour
-        baseTextFieldView.setBorder(width: CGFloat(1), color: UIColor.buttonTitleColour)
+        baseTextFieldView.setBorder(width: CGFloat(1).ws, color: UIColor.buttonTitleColour)
     }
     
     private func setNotValidStatus() {
         headerLabel.textColor = UIColor.navbarBGColour
-        baseTextFieldView.setBorder(width: CGFloat(1), color: UIColor.navbarBGColour)
+        baseTextFieldView.setBorder(width: CGFloat(1).ws, color: UIColor.navbarBGColour)
     }
     
     private func setValidStatus() {
         headerLabel.textColor = UIColor.textColour
-        baseTextFieldView.setBorder(width: CGFloat(1), color: UIColor.textColour)
+        baseTextFieldView.setBorder(width: CGFloat(1).ws, color: UIColor.textColour)
     }
 }
 

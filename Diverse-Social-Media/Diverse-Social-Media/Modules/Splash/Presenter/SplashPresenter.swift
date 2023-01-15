@@ -29,7 +29,9 @@ extension SplashPresenter: PSplashViewToPresenter {
         router?.navigateToRegister()
     }
     
-    func handleLanguagePicker() { }
+    func handleLanguagePicker() {
+        // TODO: - PickerView will be added.
+    }
     
     // MARK: - PresenterToView
     func viewDidLoad() {
@@ -44,12 +46,11 @@ extension SplashPresenter: PSplashViewToPresenter {
         view?.setRegisterButton(font: UIFont.buttonTitleFont)
         view?.setRegisterButton(bgColour: UIColor.buttonBGColour, titleColour: UIColor.buttonTitleColour)
         view?.setRegisterButton(roundCornersSize: CGFloat(10).ws)
-        // TODO: - set language
-        let language: String = "English"
-        view?.setLanguageImageView(image: language)
-        view?.setLanguageTextField(text: language)
-        view?.setLanguageTextField(font: UIFont.textFont)
-        view?.setLanguageTextField(textColour: UIColor.textColour, tintColor: UIColor.clear)
+        let appLanguage: String = AppLanguageManager.shared.getAppLanguage()
+        view?.setLanguageImageView(image: appLanguage)
+        view?.setLanguageLabel(text: appLanguage)
+        view?.setLanguageLabel(font: UIFont.textFont)
+        view?.setLanguageLabel(textColour: UIColor.textColour)
         view?.setPickerView()
     }
     

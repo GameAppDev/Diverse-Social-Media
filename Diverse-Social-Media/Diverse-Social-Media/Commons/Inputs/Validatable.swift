@@ -14,7 +14,7 @@ protocol Validatable: BaseInput {
 extension Validatable {
     
     func isValid() -> Bool {
-        return self.validations().filter {( $0.validate(self.baseText ?? "") == false )}.isEmpty
+        return self.validations().filter {( $0.validate(self.baseText.orEmpty) == false )}.isEmpty
     }
 }
 

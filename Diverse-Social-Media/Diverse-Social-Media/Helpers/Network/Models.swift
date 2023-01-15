@@ -21,7 +21,6 @@ struct BaseResponse<T : Codable> {
 }
 
 class BaseError {
-    
     var errorMessage: String?
     var statusCode: Int?
     var debugMessage: String?

@@ -21,9 +21,9 @@ protocol PSplashPresenterToView: PresenterToView {
     func setRegisterButton(bgColour: UIColor, titleColour: UIColor)
     func setRegisterButton(roundCornersSize: CGFloat)
     func setLanguageImageView(image: String)
-    func setLanguageTextField(text: String)
-    func setLanguageTextField(font: UIFont)
-    func setLanguageTextField(textColour: UIColor, tintColor: UIColor)
+    func setLanguageLabel(text: String)
+    func setLanguageLabel(font: UIFont)
+    func setLanguageLabel(textColour: UIColor)
     func setPickerView()
 }
 

@@ -37,7 +37,7 @@ class PrimaryTextFieldTableViewCell: UITableViewCell {
     }
     
     public func getTextFieldText() -> String {
-        return primaryTF.text ?? ""
+        return primaryTF.text.orEmpty
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

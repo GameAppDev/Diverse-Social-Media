@@ -21,7 +21,7 @@ final class SplashViewController: BaseViewController {
             languageImageView.addGestureRecognizer(tapGestureRec)
         }
     }
-    @IBOutlet private weak var languageTextField: UITextField!
+    @IBOutlet private weak var languageLabel: UILabel!
     
     var presenter: PSplashViewToPresenter?
     
@@ -115,18 +115,17 @@ extension SplashViewController: PSplashPresenterToView {
         languageImageView.image = UIImage(named: image)
     }
     
-    // MARK: - languageTextField
-    func setLanguageTextField(text: String) {
-        languageTextField.text = text
+    // MARK: - languageLabel
+    func setLanguageLabel(text: String) {
+        languageLabel.text = text
     }
     
-    func setLanguageTextField(font: UIFont) {
-        languageTextField.font = font
+    func setLanguageLabel(font: UIFont) {
+        languageLabel.font = font
     }
     
-    func setLanguageTextField(textColour: UIColor, tintColor: UIColor) {
-        languageTextField.textColor = textColour
-        languageTextField.tintColor = tintColor
+    func setLanguageLabel(textColour: UIColor) {
+        languageLabel.textColor = textColour
     }
     
     // MARK: - PickerView

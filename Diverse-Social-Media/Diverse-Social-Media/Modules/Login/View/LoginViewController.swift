@@ -10,8 +10,7 @@ import UIKit
 final class LoginViewController: BaseViewController {
 
     // MARK: - Outlets
-    @IBOutlet private weak var tableView: UITableView!
-
+    
     var presenter: PLoginViewToPresenter?
     
     // MARK: - Lifecycle
@@ -33,7 +32,7 @@ extension LoginViewController: PLoginPresenterToView {
     // MARK: - NavBar
     func setNavBar(title: String) {
         setNavigationBarItems(title: title,
-                              leftButton: nil,
+                              leftButton: .back,
                               rightButton: nil)
     }
     

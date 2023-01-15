@@ -42,13 +42,13 @@ extension UIViewController: PresenterToView {
                    rightButtonAction: PopupButtonDelegate?,
                    parentVC: UIViewController) {
         PopupBuilder()
-            .setPopupIdentifier(identifier ?? "")
-            .setTitle(title ?? "")
-            .setContent(content ?? "")
-            .setImageName(image ?? "")
+            .setPopupIdentifier(identifier.orEmpty)
+            .setTitle(title.orEmpty)
+            .setContent(content.orEmpty)
+            .setImageName(image.orEmpty)
             .setButtonType(buttonType ?? .single)
-            .setLeftButtonText(leftButtonText ?? "")
-            .setRightButtonText(rightButtonText ?? "")
+            .setLeftButtonText(leftButtonText.orEmpty)
+            .setRightButtonText(rightButtonText.orEmpty)
             .build()
             .show(parentVC: parentVC, buttonActions: rightButtonAction)
     }

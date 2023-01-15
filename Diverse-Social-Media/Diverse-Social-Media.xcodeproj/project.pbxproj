@@ -54,7 +54,6 @@
 		5C56014428CA767D0050EDA6 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56014328CA767D0050EDA6 /* LoginBuilder.swift */; };
 		5C56014728CA85DA0050EDA6 /* Contractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56014628CA85DA0050EDA6 /* Contractable.swift */; };
 		5C6515C928C4B30E006993E6 /* LoginContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515C828C4B30E006993E6 /* LoginContractor.swift */; };
-		5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */; };
 		5C6515D328C4CC47006993E6 /* SplashContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D228C4CC47006993E6 /* SplashContractor.swift */; };
 		5C6515D828C4CD1C006993E6 /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D728C4CD1C006993E6 /* Interactorable.swift */; };
 		5C6515DA28C4CD75006993E6 /* Presenterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6515D928C4CD75006993E6 /* Presenterable.swift */; };
@@ -93,6 +92,7 @@
 		5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5A9C28B2722D00F529C0 /* UserManager.swift */; };
 		5CFF5AA228B2742800F529C0 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA128B2742800F529C0 /* CGFloat+Ext.swift */; };
 		5CFF5AA428B2747600F529C0 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */; };
+		922EE5202974087D00110C7F /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EE51F2974087C00110C7F /* Optional+Ext.swift */; };
 		927E5235297043E400FF2E8C /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E5233297043E400FF2E8C /* Picker.swift */; };
 		927E5236297043E400FF2E8C /* Picker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927E5234297043E400FF2E8C /* Picker.xib */; };
 		927E523B2970483000FF2E8C /* PickerDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E52392970483000FF2E8C /* PickerDataTableViewCell.swift */; };
@@ -187,7 +187,6 @@
 		5C56014328CA767D0050EDA6 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
 		5C56014628CA85DA0050EDA6 /* Contractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractable.swift; sourceTree = "<group>"; };
 		5C6515C828C4B30E006993E6 /* LoginContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContractor.swift; sourceTree = "<group>"; };
-		5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
 		5C6515D228C4CC47006993E6 /* SplashContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContractor.swift; sourceTree = "<group>"; };
 		5C6515D728C4CD1C006993E6 /* Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
 		5C6515D928C4CD75006993E6 /* Presenterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenterable.swift; sourceTree = "<group>"; };
@@ -231,6 +230,7 @@
 		5CFF5AA128B2742800F529C0 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
 		5CFF5AA328B2747600F529C0 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		85EDBD4511071668912E1E6D /* Pods-Diverse-Social-MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diverse-Social-MediaTests.release.xcconfig"; path = "Target Support Files/Pods-Diverse-Social-MediaTests/Pods-Diverse-Social-MediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		922EE51F2974087C00110C7F /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
 		927E5233297043E400FF2E8C /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		927E5234297043E400FF2E8C /* Picker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Picker.xib; sourceTree = "<group>"; };
 		927E52392970483000FF2E8C /* PickerDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataTableViewCell.swift; sourceTree = "<group>"; };
@@ -485,14 +485,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5C6515CA28C4BA27006993E6 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				5C6515CB28C4BA36006993E6 /* ApplicationConstants.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		5C6515D628C4CD0A006993E6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -705,7 +697,6 @@
 		5CE7DF8728BB7DDB00699EFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C6515CA28C4BA27006993E6 /* Constants */,
 				5C2E00C328C274B70016B1E3 /* Debug */,
 				5CC55942288C13590060EF7D /* Assets.xcassets */,
 				5CC55944288C13590060EF7D /* LaunchScreen.storyboard */,
@@ -779,6 +770,7 @@
 				5C2E00C128C2664C0016B1E3 /* NSObject+Ext.swift */,
 				5CE7DF8F28BBA3C700699EFE /* UIViewController+Ext.swift */,
 				927E525029704CF800FF2E8C /* UINavigationController+Ext.swift */,
+				922EE51F2974087C00110C7F /* Optional+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1284,7 +1276,6 @@
 				92A9A2F7296DF3C000E92E0C /* PopupBuilder.swift in Sources */,
 				5C2E00D028C27A290016B1E3 /* UIStoryboard+Ext.swift in Sources */,
 				5C6515DC28C4CDBD006993E6 /* Routerable.swift in Sources */,
-				5C6515CC28C4BA36006993E6 /* ApplicationConstants.swift in Sources */,
 				5C2E00C828C277A80016B1E3 /* LoginPresenter.swift in Sources */,
 				5C463F2628C8D73D00DD7D06 /* RegisterUsernamePasswordContractor.swift in Sources */,
 				5CC55941288C13580060EF7D /* Diverse_Social_Media.xcdatamodeld in Sources */,
@@ -1327,6 +1318,7 @@
 				5C2E00C528C274EF0016B1E3 /* DebugManager.swift in Sources */,
 				5CF0B54D28CB96220080EA21 /* RegisterUserInfoBuilder.swift in Sources */,
 				5CDF7D1A28C742600000B64C /* RegisterUserTypeContractor.swift in Sources */,
+				922EE5202974087D00110C7F /* Optional+Ext.swift in Sources */,
 				5CFF5A9D28B2722D00F529C0 /* UserManager.swift in Sources */,
 				5C56013B28CA6CAD0050EDA6 /* RegisterUserTypeViewController.swift in Sources */,
 				5C12B37E28C786CB001B1F26 /* Array+Ext.swift in Sources */,

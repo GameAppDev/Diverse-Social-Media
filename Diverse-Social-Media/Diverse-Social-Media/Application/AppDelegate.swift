@@ -19,37 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        getLanguage()
-        
+        AppLanguageManager.shared.setAppLanguageInitial()
         AppRouter.shared.openApp()
         
         return true
-    }
-    
-    private func getLanguage() {
-        // languages -> en, de, tr
-        var deviceLang: String = "da"// Locale.current.languageCode ?? "en"
-        let appLanguages: [String] = ApplicationConstants.languages
-        
-        if (appLanguages.first(where: {$0 == deviceLang}) == nil) {
-            deviceLang = "en"
-        }
-        deviceLang = deviceLang.languageLongName
-        UserDefaults.standard.setValue(deviceLang, forKey: "LANGUAGE")
-        UserDefaults.standard.synchronize()
-        debugPrint("<--- Application Language: \(deviceLang) --->")
-    }
-    
-    func setLanguage(language: String) {
-        window?.rootViewController?.view.removeFromSuperview()
-        window?.rootViewController = nil
-        
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
-            UserDefaults.standard.setValue(language.languageLongName, forKey: "LANGUAGE")
-            UserDefaults.standard.synchronize()
-            Bundle.setLanguage(language)
-            self.decideUserLoggedInStatusAndContinue()
-        }
     }
 
     // MARK: - Core Data stack

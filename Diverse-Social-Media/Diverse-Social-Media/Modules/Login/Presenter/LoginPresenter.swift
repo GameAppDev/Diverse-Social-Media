@@ -24,12 +24,6 @@ final class LoginPresenter {
 
 extension LoginPresenter: PLoginViewToPresenter {
     
-    func viewDidLoad() { }
-    
-    func viewWillAppear() {
-        view?.setNavBar(title: "Login".localized)
-    }
-    
     func startLoginProcess(loginModel: [String: Any]) {
         if let username = loginModel["username"] as? String, let password = loginModel["password"] as? String {
             guard username != "", password != "" else {
@@ -39,10 +33,18 @@ extension LoginPresenter: PLoginViewToPresenter {
             interactor?.fetchData(request: loginModel)
         }
     }
+    
+    // MARK: - PresenterToView
+    func viewDidLoad() { }
+    
+    func viewWillAppear() {
+        view?.setNavBar(title: "Login".localized)
+    }
 }
 
 extension LoginPresenter: PLoginInteractorToPresenter {
     
+    // MARK: - InteractorToPresenter
     func setData<T>(data: T) { }
     
     func setError(error: BaseError) { }

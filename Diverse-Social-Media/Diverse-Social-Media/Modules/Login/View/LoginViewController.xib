@@ -3,8 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,19 +17,21 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUf-C7-ZGL">
-                    <rect key="frame" x="40" y="207" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUf-C7-ZGL" userLabel="marginH20">
+                    <rect key="frame" x="0.0" y="274" width="320" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lUf-C7-ZGL" secondAttribute="height" multiplier="16:1" id="fOU-r0-WJ6"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lUf-C7-ZGL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PS5-CU-Q4d"/>
+                <constraint firstAttribute="trailing" secondItem="lUf-C7-ZGL" secondAttribute="trailing" id="ot5-cJ-nOj"/>
+                <constraint firstItem="lUf-C7-ZGL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zQP-3y-enQ"/>
+            </constraints>
             <point key="canvasLocation" x="-255" y="55"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

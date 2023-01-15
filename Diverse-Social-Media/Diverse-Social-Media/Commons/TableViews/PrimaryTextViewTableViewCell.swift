@@ -36,7 +36,7 @@ class PrimaryTextViewTableViewCell: UITableViewCell {
     }
 
     public func getTextViewText() -> String {
-        return primaryTV.text ?? ""
+        return primaryTV.text.orEmpty
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

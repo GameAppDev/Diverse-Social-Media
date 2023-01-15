@@ -13,7 +13,7 @@ typealias Error = (BaseError) -> Void
 
 class NetworkManager: Networkable {
     
-    private let baseUrl: String = ApplicationConstants.baseUrl
+    private let baseUrl: String = "https://www.test-diverse-social-media.com"
 
     public func get<T: Codable>(path: String, _ paramaters: [String: String]?, onSuccess: @escaping Success<T>, onError: @escaping Error) {
         AF.request(networkRequestUrlWith(path), method: .get, parameters: paramaters).validate().responseDecodable(of: T.self) { (response) in
@@ -21,7 +21,7 @@ class NetworkManager: Networkable {
                 onError(BaseError(response.error))
                 return
             }
-            onSuccess(BaseResponse.init(model: model, message: "Success"))
+            onSuccess(BaseResponse.init(model: model, message: "SUCCESS"))
         }
     }
 }

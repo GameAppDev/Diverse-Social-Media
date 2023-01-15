@@ -18,3 +18,21 @@ final class PickerPresenter {
         self.router = router
     }
 }
+
+extension PickerPresenter: PPickerViewToPresenter {
+    
+    // MARK: - PresenterToView
+    func viewDidLoad() { }
+    
+    func viewWillAppear() { }
+}
+
+extension PickerPresenter: PPickerInteractorToPresenter {
+    
+    // MARK: - InteractorToPresenter
+    func setData<T>(data: T) { }
+    
+    func setError(error: BaseError) { }
+}
+
+extension PickerPresenter: PPickerConnectorToPresenter { }

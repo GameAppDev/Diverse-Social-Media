@@ -21,3 +21,5 @@ final class Picker: BaseViewController {
         // Do any additional setup after loading the view.
     }
 }
+
+extension Picker: PPickerPresenterToView { }
